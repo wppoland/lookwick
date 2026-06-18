@@ -25,6 +25,15 @@ guides, recipe ingredient shots, anywhere several products live in one picture.
 The code is developed in the open. Browse it or report a bug at
 https://github.com/wppoland/lookbook.
 
+= Documentation and links =
+
+* **Documentation** - https://plogins.com/lookbook/docs/
+* **Plugin page** - https://plogins.com/lookbook/
+* **Source code** - https://github.com/wppoland/lookbook
+* **Bug reports and feature requests** - https://github.com/wppoland/lookbook/issues
+* **Discussions and questions** - https://github.com/wppoland/lookbook/discussions
+
+
 = How it works =
 
 1. Create a lookbook under the **Lookbooks** menu and set its image with the
