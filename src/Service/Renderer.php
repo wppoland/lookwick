@@ -97,15 +97,66 @@ final class Renderer implements HasHooks
             wp_enqueue_script(self::HANDLE);
         }
 
+        $scenes = $this->resolveScenes($lookbookId, $post, $imageId, $hotspots);
+
+        if ($scenes === []) {
+            return '';
+        }
+
         $context = [
             'lookbookId' => $lookbookId,
             'title'      => $post->post_title,
-            'imageId'    => $imageId,
-            'hotspots'   => $hotspots,
+            'scenes'     => $scenes,
             'settings'   => $this->settings(),
         ];
 
         return $this->renderTemplate('lookbook', $context);
+    }
+
+    /**
+     * Build the scene list (featured image first), then allow PRO to append more.
+     *
+     * @param array<int, array{x: float, y: float, product_id: int, product: \WC_Product}> $featuredHotspots
+     * @return array<int, array{image_id: int, label: string, hotspots: array<int, array{x: float, y: float, product_id: int, product: \WC_Product}>}>
+     */
+    private function resolveScenes(int $lookbookId, \WP_Post $post, int $featuredImageId, array $featuredHotspots): array
+    {
+        $default = [
+            [
+                'image_id' => $featuredImageId,
+                'label'    => '',
+                'hotspots' => $featuredHotspots,
+            ],
+        ];
+
+        /** @var array<int, array<string, mixed>> $raw */
+        $raw = apply_filters('lookbook/scenes', $default, $lookbookId, $post);
+
+        $scenes = [];
+
+        foreach ($raw as $scene) {
+            if (! is_array($scene)) {
+                continue;
+            }
+
+            $imageId = isset($scene['image_id']) ? (int) $scene['image_id'] : 0;
+            if ($imageId <= 0) {
+                continue;
+            }
+
+            $spots = $scene['hotspots'] ?? [];
+            if (! is_array($spots)) {
+                $spots = [];
+            }
+
+            $scenes[] = [
+                'image_id' => $imageId,
+                'label'    => isset($scene['label']) ? (string) $scene['label'] : '',
+                'hotspots' => $spots,
+            ];
+        }
+
+        return $scenes;
     }
 
     /**

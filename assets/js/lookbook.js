@@ -28,18 +28,15 @@
 		var left = rect.left + rect.width / 2 - cardRect.width / 2;
 		var top = rect.bottom + margin;
 
-		// Keep the card within the viewport horizontally.
 		left = Math.max(
 			margin,
 			Math.min( left, window.innerWidth - cardRect.width - margin )
 		);
 
-		// Flip above the marker if there is no room below.
 		if ( top + cardRect.height > window.innerHeight - margin ) {
 			top = rect.top - cardRect.height - margin;
 		}
 
-		// Clamp vertically as a last resort.
 		top = Math.max( margin, top );
 
 		card.style.position = 'fixed';
@@ -48,8 +45,57 @@
 		card.style.top = Math.round( top ) + 'px';
 	}
 
-	function initRoot( root ) {
-		var hotspots = root.querySelectorAll( '.lookbook__hotspot' );
+	function closeAll( root ) {
+		root.querySelectorAll( '.lookbook__marker[aria-expanded="true"]' ).forEach(
+			function ( marker ) {
+				marker.setAttribute( 'aria-expanded', 'false' );
+				var card = marker.parentNode.querySelector( '.lookbook__card' );
+				if ( card ) {
+					card.hidden = true;
+				}
+			}
+		);
+
+		if ( supportsPopover ) {
+			root
+				.querySelectorAll( '.lookbook__card:popover-open' )
+				.forEach( function ( card ) {
+					if ( typeof card.hidePopover === 'function' ) {
+						card.hidePopover();
+					}
+				} );
+		}
+	}
+
+	function activateScene( root, index ) {
+		var tabs = root.querySelectorAll( '[data-lookbook-tab]' );
+		var scenes = root.querySelectorAll( '[data-lookbook-scene]' );
+
+		closeAll( root );
+
+		tabs.forEach( function ( tab ) {
+			var active =
+				parseInt( tab.getAttribute( 'data-scene-index' ), 10 ) === index;
+			tab.classList.toggle( 'is-active', active );
+			tab.setAttribute( 'aria-selected', active ? 'true' : 'false' );
+		} );
+
+		scenes.forEach( function ( scene ) {
+			var active =
+				parseInt( scene.getAttribute( 'data-scene-index' ), 10 ) ===
+				index;
+			scene.classList.toggle( 'is-active', active );
+			scene.hidden = ! active;
+		} );
+	}
+
+	function initScene( scene ) {
+		var root = scene.closest( '[data-lookbook]' );
+		if ( ! root ) {
+			return;
+		}
+
+		var hotspots = scene.querySelectorAll( '.lookbook__hotspot' );
 
 		hotspots.forEach( function ( hotspot ) {
 			var marker = hotspot.querySelector( '.lookbook__marker' );
@@ -60,7 +106,6 @@
 			}
 
 			if ( supportsPopover ) {
-				// Native popover: just reposition when it opens.
 				card.addEventListener( 'toggle', function ( event ) {
 					if ( event.newState === 'open' ) {
 						positionCard( marker, card );
@@ -69,7 +114,6 @@
 				return;
 			}
 
-			// Fallback: toggle a class and manage focus + Escape ourselves.
 			marker.setAttribute( 'aria-expanded', 'false' );
 			card.classList.add( 'lookbook__card--fallback' );
 			card.hidden = true;
@@ -84,6 +128,20 @@
 				}
 			} );
 		} );
+	}
+
+	function initRoot( root ) {
+		root.querySelectorAll( '[data-lookbook-scene]' ).forEach( initScene );
+
+		root.querySelectorAll( '[data-lookbook-tab]' ).forEach( function ( tab ) {
+			tab.addEventListener( 'click', function () {
+				var index = parseInt(
+					tab.getAttribute( 'data-scene-index' ),
+					10
+				);
+				activateScene( root, index );
+			} );
+		} );
 
 		if ( ! supportsPopover ) {
 			document.addEventListener( 'keydown', function ( event ) {
@@ -93,23 +151,11 @@
 			} );
 
 			document.addEventListener( 'click', function ( event ) {
-				if ( ! event.target.closest( '.lookbook__hotspot' ) ) {
+				if ( ! event.target.closest( '[data-lookbook]' ) ) {
 					closeAll( root );
 				}
 			} );
 		}
-	}
-
-	function closeAll( root ) {
-		root.querySelectorAll( '.lookbook__marker[aria-expanded="true"]' ).forEach(
-			function ( marker ) {
-				marker.setAttribute( 'aria-expanded', 'false' );
-				var card = marker.parentNode.querySelector( '.lookbook__card' );
-				if ( card ) {
-					card.hidden = true;
-				}
-			}
-		);
 	}
 
 	function init() {
@@ -122,7 +168,6 @@
 		init();
 	}
 
-	// Reposition any open native popovers on resize.
 	window.addEventListener( 'resize', function () {
 		document
 			.querySelectorAll( '.lookbook__card:popover-open' )
