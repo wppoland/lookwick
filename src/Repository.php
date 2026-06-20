@@ -48,11 +48,16 @@ final class Repository
                 continue;
             }
 
-            $clean[] = [
+            $entry = [
                 'x'          => $this->clampPercent($row['x'] ?? 50),
                 'y'          => $this->clampPercent($row['y'] ?? 50),
                 'product_id' => $productId,
             ];
+
+            /** @var array{x: float, y: float, product_id: int} $entry */
+            $entry = apply_filters('lookbook/sanitize_hotspot', $entry, $row);
+
+            $clean[] = $entry;
         }
 
         return $clean;
@@ -83,11 +88,16 @@ final class Repository
                 continue;
             }
 
-            $clean[] = [
+            $entry = [
                 'x'          => $this->clampPercent($row['x'] ?? 50),
                 'y'          => $this->clampPercent($row['y'] ?? 50),
                 'product_id' => $productId,
             ];
+
+            /** @var array{x: float, y: float, product_id: int} $entry */
+            $entry = apply_filters('lookbook/sanitize_hotspot', $entry, $row);
+
+            $clean[] = $entry;
         }
 
         return array_values($clean);

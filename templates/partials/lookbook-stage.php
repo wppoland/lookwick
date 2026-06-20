@@ -1,12 +1,15 @@
 <?php
 /**
- * Single lookbook scene: one image plus its hotspot markers.
+ * Single lookbook scene: image or video plus its hotspot markers.
  *
  * @package Lookbook
  *
  * @var int                                                                         $lookbookId Lookbook post id.
  * @var int                                                                         $sceneIndex Zero-based scene index.
- * @var int                                                                         $imageId    Attachment id.
+ * @var string                                                                      $mediaType  Scene media type (image|video).
+ * @var int                                                                         $imageId    Attachment id (image or video poster).
+ * @var string                                                                      $videoUrl   Video source URL when mediaType is video.
+ * @var int                                                                         $videoId    Video attachment id.
  * @var string                                                                      $sceneLabel Tab label.
  * @var array<int, array{x: float, y: float, product_id: int, product: \WC_Product}> $hotspots  Resolved hotspots.
  * @var array<string, mixed>                                                        $settings   Resolved plugin settings.
@@ -23,19 +26,65 @@ $showPrice      = ! empty($settings['show_price']);
 $showAddToCart  = ! empty($settings['show_add_to_cart']);
 $addToCartLabel = trim((string) ($settings['add_to_cart_text'] ?? ''));
 
-$image = wp_get_attachment_image(
-    $imageId,
-    'large',
-    false,
-    [
-        'class'    => 'lookbook__image',
-        'loading'  => $sceneIndex === 0 ? 'lazy' : 'lazy',
-        'decoding' => 'async',
-        'alt'      => $title !== '' ? $title : __('Shoppable lookbook', 'lookbook'),
-    ],
-);
+$mediaContext = [
+    'lookbookId' => $lookbookId,
+    'sceneIndex' => $sceneIndex,
+    'media_type' => $mediaType,
+    'image_id'   => $imageId,
+    'video_url'  => $videoUrl,
+    'video_id'   => $videoId,
+    'title'      => $title,
+];
 
-if (! is_string($image) || $image === '') {
+/** @var string $mediaHtml */
+$mediaHtml = apply_filters('lookbook/scene_media_html', '', $mediaContext);
+
+if ($mediaHtml === '') {
+    if ($mediaType === 'video' && $videoUrl !== '') {
+        $poster = $imageId > 0 ? wp_get_attachment_image_url($imageId, 'large') : false;
+        $attrs  = [
+            'class'    => 'lookbook__video',
+            'src'      => $videoUrl,
+            'playsinline' => true,
+            'muted'    => true,
+            'loop'     => true,
+            'autoplay' => true,
+            'preload'  => 'metadata',
+        ];
+
+        if (is_string($poster) && $poster !== '') {
+            $attrs['poster'] = $poster;
+        }
+
+        $attrString = '';
+        foreach ($attrs as $name => $value) {
+            if ($value === true) {
+                $attrString .= ' ' . esc_attr($name);
+                continue;
+            }
+
+            $attrString .= sprintf(' %s="%s"', esc_attr($name), esc_attr((string) $value));
+        }
+
+        $mediaHtml = sprintf('<video%s></video>', $attrString);
+    } else {
+        $image = wp_get_attachment_image(
+            $imageId,
+            'large',
+            false,
+            [
+                'class'    => 'lookbook__image',
+                'loading'  => 'lazy',
+                'decoding' => 'async',
+                'alt'      => $title !== '' ? $title : __('Shoppable lookbook', 'lookbook'),
+            ],
+        );
+
+        $mediaHtml = is_string($image) ? $image : '';
+    }
+}
+
+if ($mediaHtml === '') {
     return;
 }
 
@@ -52,7 +101,7 @@ $active = $sceneIndex === 0;
     <?php echo $active ? '' : ' hidden'; ?>
 >
     <div class="lookbook__stage">
-        <?php echo wp_kses_post($image); ?>
+        <?php echo wp_kses_post($mediaHtml); ?>
 
         <?php if ($hotspots !== []) : ?>
             <ul class="lookbook__hotspots" role="list">
@@ -100,7 +149,7 @@ $active = $sceneIndex === 0;
                                     ['class' => 'lookbook__card-thumb', 'loading' => 'lazy', 'decoding' => 'async'],
                                 );
                                 // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Default is sanitized above; custom HTML from filter is safe.
-                                echo apply_filters('lookbook/card_image_html', wp_kses_post($thumb), $product);
+                                echo apply_filters('lookbook/card_image_html', wp_kses_post($thumb), $product, $hotspot);
                                 ?>
                                 <span class="lookbook__card-title"><?php echo esc_html($productName); ?></span>
                             </a>

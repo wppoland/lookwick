@@ -67,11 +67,41 @@
 		}
 	}
 
+	function pauseVideos( root ) {
+		root.querySelectorAll( '.lookbook__video' ).forEach( function ( video ) {
+			if ( typeof video.pause === 'function' ) {
+				video.pause();
+			}
+		} );
+	}
+
+	function playActiveSceneVideos( root, index ) {
+		var scene = root.querySelector(
+			'[data-lookbook-scene][data-scene-index="' + index + '"]'
+		);
+
+		if ( ! scene ) {
+			return;
+		}
+
+		scene.querySelectorAll( '.lookbook__video' ).forEach( function ( video ) {
+			if (
+				typeof video.play === 'function' &&
+				! window.matchMedia( '(prefers-reduced-motion: reduce)' ).matches
+			) {
+				video.play().catch( function () {
+					// Autoplay may be blocked; ignore.
+				} );
+			}
+		} );
+	}
+
 	function activateScene( root, index ) {
 		var tabs = root.querySelectorAll( '[data-lookbook-tab]' );
 		var scenes = root.querySelectorAll( '[data-lookbook-scene]' );
 
 		closeAll( root );
+		pauseVideos( root );
 
 		tabs.forEach( function ( tab ) {
 			var active =
@@ -87,6 +117,8 @@
 			scene.classList.toggle( 'is-active', active );
 			scene.hidden = ! active;
 		} );
+
+		playActiveSceneVideos( root, index );
 	}
 
 	function initScene( scene ) {

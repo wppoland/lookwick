@@ -94,6 +94,20 @@
 	border-radius: var( --lookbook-radius );
 }
 
+.lookbook__video {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	border-radius: var( --lookbook-radius );
+	object-fit: cover;
+}
+
+@media ( prefers-reduced-motion: reduce ) {
+	.lookbook__video {
+		animation: none;
+	}
+}
+
 .lookbook__hotspots {
 	position: absolute;
 	inset: 0;

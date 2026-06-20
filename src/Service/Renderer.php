@@ -117,15 +117,25 @@ final class Renderer implements HasHooks
      * Build the scene list (featured image first), then allow PRO to append more.
      *
      * @param array<int, array{x: float, y: float, product_id: int, product: \WC_Product}> $featuredHotspots
-     * @return array<int, array{image_id: int, label: string, hotspots: array<int, array{x: float, y: float, product_id: int, product: \WC_Product}>}>
+     * @return array<int, array{
+     *     media_type: string,
+     *     image_id: int,
+     *     video_url: string,
+     *     video_id: int,
+     *     label: string,
+     *     hotspots: array<int, array{x: float, y: float, product_id: int, product: \WC_Product}>
+     * }>
      */
     private function resolveScenes(int $lookbookId, \WP_Post $post, int $featuredImageId, array $featuredHotspots): array
     {
         $default = [
             [
-                'image_id' => $featuredImageId,
-                'label'    => '',
-                'hotspots' => $featuredHotspots,
+                'media_type' => 'image',
+                'image_id'   => $featuredImageId,
+                'video_url'  => '',
+                'video_id'   => 0,
+                'label'      => '',
+                'hotspots'   => $featuredHotspots,
             ],
         ];
 
@@ -139,8 +149,25 @@ final class Renderer implements HasHooks
                 continue;
             }
 
-            $imageId = isset($scene['image_id']) ? (int) $scene['image_id'] : 0;
-            if ($imageId <= 0) {
+            $mediaType = isset($scene['media_type']) ? sanitize_key((string) $scene['media_type']) : 'image';
+            if ($mediaType !== 'video') {
+                $mediaType = 'image';
+            }
+
+            $imageId  = isset($scene['image_id']) ? (int) $scene['image_id'] : 0;
+            $videoUrl = isset($scene['video_url']) ? esc_url_raw((string) $scene['video_url']) : '';
+            $videoId  = isset($scene['video_id']) ? absint($scene['video_id']) : 0;
+
+            if ($mediaType === 'video') {
+                if ($videoUrl === '' && $videoId > 0) {
+                    $attachmentUrl = wp_get_attachment_url($videoId);
+                    $videoUrl      = is_string($attachmentUrl) ? esc_url_raw($attachmentUrl) : '';
+                }
+
+                if ($videoUrl === '') {
+                    continue;
+                }
+            } elseif ($imageId <= 0) {
                 continue;
             }
 
@@ -150,9 +177,12 @@ final class Renderer implements HasHooks
             }
 
             $scenes[] = [
-                'image_id' => $imageId,
-                'label'    => isset($scene['label']) ? (string) $scene['label'] : '',
-                'hotspots' => $spots,
+                'media_type' => $mediaType,
+                'image_id'   => $imageId,
+                'video_url'  => $videoUrl,
+                'video_id'   => $videoId,
+                'label'      => isset($scene['label']) ? (string) $scene['label'] : '',
+                'hotspots'   => $spots,
             ];
         }
 
@@ -182,15 +212,40 @@ final class Renderer implements HasHooks
                 continue;
             }
 
-            $resolved[] = [
-                'x'          => $hotspot['x'],
-                'y'          => $hotspot['y'],
-                'product_id' => $hotspot['product_id'],
-                'product'    => $product,
-            ];
+            $resolved[] = array_merge(
+                [
+                    'x'          => $hotspot['x'],
+                    'y'          => $hotspot['y'],
+                    'product_id' => $hotspot['product_id'],
+                    'product'    => $product,
+                ],
+                $this->extraHotspotFields($hotspot),
+            );
         }
 
         return $resolved;
+    }
+
+    /**
+     * Preserve optional hotspot fields registered by add-ons (e.g. video_url).
+     *
+     * @param array<string, mixed> $hotspot
+     * @return array<string, mixed>
+     */
+    private function extraHotspotFields(array $hotspot): array
+    {
+        $extra = [];
+
+        if (isset($hotspot['video_url']) && is_string($hotspot['video_url']) && $hotspot['video_url'] !== '') {
+            $extra['video_url'] = esc_url_raw($hotspot['video_url']);
+        }
+
+        if (isset($hotspot['video_id']) && absint($hotspot['video_id']) > 0) {
+            $extra['video_id'] = absint($hotspot['video_id']);
+        }
+
+        /** @var array<string, mixed> $extra */
+        return apply_filters('lookbook/hotspot_fields', $extra, $hotspot);
     }
 
     private function isEnabled(): bool

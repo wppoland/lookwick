@@ -28,6 +28,7 @@ defined('ABSPATH') || exit;
                         <th scope="col"><?php esc_html_e('X %', 'lookbook'); ?></th>
                         <th scope="col"><?php esc_html_e('Y %', 'lookbook'); ?></th>
                         <th scope="col"><?php esc_html_e('Product ID', 'lookbook'); ?></th>
+                        <?php do_action('lookbook/admin_hotspot_row_header'); ?>
                         <th scope="col" class="lookbook-editor__col-actions"><span class="screen-reader-text"><?php esc_html_e('Actions', 'lookbook'); ?></span></th>
                     </tr>
                 </thead>
@@ -79,6 +80,7 @@ defined('ABSPATH') || exit;
                                     data-lookbook-pid
                                 />
                             </td>
+                            <?php do_action('lookbook/admin_hotspot_row_cells', $i, $row); ?>
                             <td class="lookbook-editor__col-actions">
                                 <button type="button" class="button-link lookbook-editor__remove" data-lookbook-remove>
                                     <?php esc_html_e('Remove', 'lookbook'); ?>

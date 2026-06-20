@@ -6,7 +6,7 @@
  *
  * @var int   $lookbookId Lookbook post id.
  * @var string $title     Lookbook title.
- * @var array<int, array{image_id: int, label: string, hotspots: array<int, array{x: float, y: float, product_id: int, product: \WC_Product}>}> $scenes
+ * @var array<int, array{media_type: string, image_id: int, video_url: string, video_id: int, label: string, hotspots: array<int, array{x: float, y: float, product_id: int, product: \WC_Product}>}> $scenes
  * @var array<string, mixed> $settings Resolved plugin settings.
  */
 
@@ -64,11 +64,18 @@ $rootId = 'lookbook-' . $lookbookId;
                 continue;
             }
 
+            $mediaType  = isset($scene['media_type']) ? sanitize_key((string) $scene['media_type']) : 'image';
             $imageId    = (int) ($scene['image_id'] ?? 0);
+            $videoUrl   = isset($scene['video_url']) ? (string) $scene['video_url'] : '';
+            $videoId    = (int) ($scene['video_id'] ?? 0);
             $sceneLabel = trim((string) ($scene['label'] ?? ''));
             $hotspots   = is_array($scene['hotspots'] ?? null) ? $scene['hotspots'] : [];
 
-            if ($imageId <= 0) {
+            if ($mediaType === 'video') {
+                if ($videoUrl === '') {
+                    continue;
+                }
+            } elseif ($imageId <= 0) {
                 continue;
             }
 
