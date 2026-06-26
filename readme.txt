@@ -16,7 +16,7 @@ Turn any image into a shoppable lookbook: pin WooCommerce products as hotspots t
 Lookbook turns a single image into a shoppable scene. Upload a photo, pin your
 WooCommerce products to it as hotspots, and embed the result anywhere with a
 shortcode. When a shopper activates a hotspot, a small product card appears with
-the thumbnail, title, price and an add-to-cart link — so they can buy straight
+the thumbnail, title, price and an add-to-cart link, so they can buy straight
 from the image.
 
 It is built for stores that sell the look: fashion outfits, room sets, gift
@@ -45,11 +45,11 @@ https://github.com/wppoland/lookbook.
 = Features =
 
 * Shoppable image: pin any number of products as hotspots on one image.
-* Simple hotspot editor — position each product by X/Y percentage.
+* Simple hotspot editor: position each product by X/Y percentage.
 * Accessible hotspot markers: real buttons, keyboard operable, with screen-reader labels.
 * Product card popover with thumbnail, title, live price and an add-to-cart link.
 * `[lookbook id="N"]` shortcode.
-* Reads product data live from WooCommerce — prices and stock are always current.
+* Reads product data live from WooCommerce, so prices and stock are always current.
 * Degrades cleanly: a lookbook with no image, no hotspots, or only deleted products renders nothing or just the image, never broken markup.
 * CSS adapts to light and dark colour schemes and honours prefers-reduced-motion.
 * No layout shift, no jQuery, assets load only where a lookbook appears.
