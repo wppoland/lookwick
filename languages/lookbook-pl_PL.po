@@ -62,8 +62,8 @@ msgid "Remove this hotspot?"
 msgstr "Usunąć ten punkt aktywny?"
 
 #: src/Admin/Settings.php:50
-msgid "Lookbook — Shoppable Image Gallery"
-msgstr "Lookbook — Galeria zdjęć z zakupami"
+msgid "Lookbook: Shoppable Image Gallery"
+msgstr "Lookbook: Galeria zdjęć z zakupami"
 
 #: src/Admin/Settings.php:51
 msgid "Lookbook"
@@ -109,7 +109,7 @@ msgstr ""
 
 #: src/Admin/Settings.php:127
 msgid ""
-"Turn this off to hide every lookbook at once without deleting anything — the "
+"Turn this off to hide every lookbook at once without deleting anything, the "
 "shortcode outputs nothing and Lookbook loads no CSS or JavaScript on the "
 "page. Useful while you are still setting up. On by default."
 msgstr ""
@@ -160,7 +160,7 @@ msgstr "np. Dodaj do koszyka"
 
 #: src/Admin/Settings.php:172
 msgid ""
-"Overrides the wording on the add-to-cart link for every product — for "
+"Overrides the wording on the add-to-cart link for every product, for "
 "example “Add to cart”, “Shop the look”, or “Add to bag”. Leave blank to keep "
 "each product’s own WooCommerce button text. Only used when the add-to-cart "
 "link above is on."

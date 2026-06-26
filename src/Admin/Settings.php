@@ -47,7 +47,7 @@ final class Settings implements HasHooks
     {
         add_submenu_page(
             'woocommerce',
-            __('Lookbook — Shoppable Image Gallery', 'lookbook'),
+            __('Lookbook: Shoppable Image Gallery', 'lookbook'),
             __('Lookbook', 'lookbook'),
             'manage_woocommerce',
             self::PAGE,
@@ -124,7 +124,7 @@ final class Settings implements HasHooks
                                         <?php esc_html_e('Render your lookbooks where the shortcode appears.', 'lookbook'); ?>
                                     </label>
                                     <p class="description">
-                                        <?php esc_html_e('Turn this off to hide every lookbook at once without deleting anything — the shortcode outputs nothing and Lookbook loads no CSS or JavaScript on the page. Useful while you are still setting up. On by default.', 'lookbook'); ?>
+                                        <?php esc_html_e('Turn this off to hide every lookbook at once without deleting anything, the shortcode outputs nothing and Lookbook loads no CSS or JavaScript on the page. Useful while you are still setting up. On by default.', 'lookbook'); ?>
                                     </p>
                                 </td>
                             </tr>
@@ -169,7 +169,7 @@ final class Settings implements HasHooks
                                         placeholder="<?php esc_attr_e('e.g. Add to cart', 'lookbook'); ?>"
                                     />
                                     <p class="description">
-                                        <?php esc_html_e('Overrides the wording on the add-to-cart link for every product — for example “Add to cart”, “Shop the look”, or “Add to bag”. Leave blank to keep each product’s own WooCommerce button text. Only used when the add-to-cart link above is on.', 'lookbook'); ?>
+                                        <?php esc_html_e('Overrides the wording on the add-to-cart link for every product, for example “Add to cart”, “Shop the look”, or “Add to bag”. Leave blank to keep each product’s own WooCommerce button text. Only used when the add-to-cart link above is on.', 'lookbook'); ?>
                                     </p>
                                 </td>
                             </tr>
