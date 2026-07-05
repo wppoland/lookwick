@@ -14,6 +14,7 @@ declare(strict_types=1);
 use Lookbook\Admin\MetaBox;
 use Lookbook\Admin\Settings;
 use Lookbook\PostType;
+use Lookbook\Service\ElementorWidgets;
 use Lookbook\Service\Renderer;
 
 defined('ABSPATH') || exit;
@@ -22,10 +23,12 @@ return is_admin()
     ? [
         PostType::class,
         Renderer::class,
+        ElementorWidgets::class,
         MetaBox::class,
         Settings::class,
     ]
     : [
         PostType::class,
         Renderer::class,
+        ElementorWidgets::class,
     ];
