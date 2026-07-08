@@ -1,0 +1,310 @@
+# Copyright (C) 2026 WPPoland
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Lookbook - Shoppable Image Gallery for WooCommerce 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/lookbook\n"
+"POT-Creation-Date: 2026-06-16T20:23:31+00:00\n"
+"PO-Revision-Date: 2026-06-16T20:23:31+00:00\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: plogins-lookbook\n"
+"X-Generator: WP-CLI 2.12.0\n"
+
+#. Plugin Name of the plugin
+#: lookbook.php
+msgid "Lookbook - Shoppable Image Gallery for WooCommerce"
+msgstr "Lookbook - Galería de imágenes que se pueden comprar para WooCommerce"
+
+#. Plugin URI of the plugin
+#: lookbook.php
+msgid "https://plogins.com/lookbook/"
+msgstr "https://plogins.com/es/lookbook/"
+
+#. Description of the plugin
+#: lookbook.php
+msgid "Create shoppable lookbooks: pin products as hotspots on an image."
+msgstr ""
+"Cree lookbooks que se puedan comprar: fije productos como puntos de acceso "
+"en una imagen."
+
+#. Author of the plugin
+#: lookbook.php
+msgid "WPPoland"
+msgstr "WPPoland"
+
+#. Author URI of the plugin
+#: lookbook.php
+msgid "https://plogins.com/"
+msgstr "https://plogins.com/"
+
+#: lookbook.php:47
+msgid ""
+"Lookbook - Shoppable Image Gallery for WooCommerce requires WooCommerce to "
+"be active."
+msgstr ""
+"Lookbook: galería de imágenes que se pueden comprar para WooCommerce "
+"requiere que WooCommerce esté activo."
+
+#: src/Admin/MetaBox.php:44
+msgid "Shoppable hotspots"
+msgstr "Puntos de acceso para comprar"
+
+#: src/Admin/MetaBox.php:81
+msgid "Remove this hotspot?"
+msgstr "¿Eliminar este punto de acceso?"
+
+#: src/Admin/Settings.php:50
+msgid "Lookbook: Shoppable Image Gallery"
+msgstr "Lookbook: Galería de imágenes que se pueden comprar"
+
+#: src/Admin/Settings.php:51
+msgid "Lookbook"
+msgstr "lookbook"
+
+#: src/Admin/Settings.php:88
+msgid ""
+"Lookbook turns an image into a shoppable scene: pin products as hotspots, "
+"then embed the lookbook anywhere with a shortcode. Create and edit lookbooks"
+" under the Lookbooks menu; these settings control how every lookbook looks "
+"and behaves on the storefront."
+msgstr ""
+"Lookbook convierte una imagen en una escena en la que se puede comprar: fije"
+" productos como puntos de acceso y luego incruste el lookbook en cualquier "
+"lugar con un código corto. Cree y edite lookbooks en el menú Lookbooks; "
+"Estas configuraciones controlan cómo se ve y se comporta cada lookbook en el"
+" escaparate."
+
+#. translators: %s: the shortcode example.
+#: src/Admin/Settings.php:94
+#, php-format
+msgid ""
+"Embed a lookbook with %s (replace 123 with the lookbook ID shown in the "
+"Lookbooks list)."
+msgstr ""
+"Incruste un lookbook con %s (reemplace 123 con el ID del lookbook que se "
+"muestra en la lista de Lookbooks)."
+
+#: src/Admin/Settings.php:105
+msgid "General"
+msgstr "General"
+
+#: src/Admin/Settings.php:107
+msgid "The master switch for everything Lookbook puts on your storefront."
+msgstr "El interruptor maestro para todo lo que Lookbook pone en tu tienda."
+
+#: src/Admin/Settings.php:113
+msgid "Show lookbooks on the storefront"
+msgstr "Mostrar lookbooks en el escaparate"
+
+#: src/Admin/Settings.php:124
+msgid "Render your lookbooks where the shortcode appears."
+msgstr "Representa tus lookbooks donde aparece el shortcode."
+
+#: src/Admin/Settings.php:127
+msgid ""
+"Turn this off to hide every lookbook at once without deleting anything, the "
+"shortcode outputs nothing and Lookbook loads no CSS or JavaScript on the "
+"page. Useful while you are still setting up. On by default."
+msgstr ""
+"Desactive esto para ocultar todos los lookbook a la vez sin eliminar nada, "
+"el código abreviado no genera nada y Lookbook no carga CSS ni JavaScript en "
+"la página. Útil mientras aún estás configurando. Activado de forma "
+"predeterminada."
+
+#: src/Admin/Settings.php:136
+msgid "Product card"
+msgstr "Tarjeta de producto"
+
+#: src/Admin/Settings.php:138
+msgid ""
+"What a shopper sees in the little card that pops up when they tap a hotspot."
+" These apply to every lookbook; the product name and image always show."
+msgstr ""
+"Lo que un comprador ve en la pequeña tarjeta que aparece cuando toca un "
+"punto de acceso. Estos se aplican a todos los lookbook; El nombre del "
+"producto y la imagen siempre se muestran."
+
+#: src/Admin/Settings.php:145
+msgid "Price"
+msgstr "Precio"
+
+#: src/Admin/Settings.php:146
+msgid "Show the product price in the pop-up card."
+msgstr "Muestra el precio del producto en la tarjeta emergente."
+
+#: src/Admin/Settings.php:147
+msgid "Lets shoppers see the cost before they leave the image. On by default."
+msgstr ""
+"Permite a los compradores ver el costo antes de abandonar la imagen. "
+"Activado de forma predeterminada."
+
+#: src/Admin/Settings.php:152
+msgid "Add to cart link"
+msgstr "Añadir al enlace del carrito"
+
+#: src/Admin/Settings.php:153
+msgid "Show an add-to-cart link in the pop-up card."
+msgstr "Muestre un enlace para añadir al carrito en la tarjeta emergente."
+
+#: src/Admin/Settings.php:154
+msgid ""
+"Lets shoppers buy straight from the image without opening the product page. "
+"On by default."
+msgstr ""
+"Permite a los compradores comprar directamente desde la imagen sin abrir la "
+"página del producto. Activado de forma predeterminada."
+
+#: src/Admin/Settings.php:160
+msgid "Add to cart label"
+msgstr "Añadir a la etiqueta del carrito"
+
+#: src/Admin/Settings.php:169
+msgid "e.g. Add to cart"
+msgstr "p.ej. Añadir al carrito"
+
+#: src/Admin/Settings.php:172
+msgid ""
+"Overrides the wording on the add-to-cart link for every product, for example"
+" “Add to cart”, “Shop the look”, or “Add to bag”. Leave blank to keep each "
+"product’s own WooCommerce button text. Only used when the add-to-cart link "
+"above is on."
+msgstr ""
+"Anula el texto del enlace Añadir al carrito para cada producto, por ejemplo,"
+" \"Añadir al carrito\", \"Comprar el look\" o \"Añadir a la bolsa\". Déjelo "
+"en blanco para conservar el texto del botón WooCommerce propio de cada "
+"producto. Solo se usa cuando el enlace de añadir al carrito de arriba está "
+"activado."
+
+#: src/PostType.php:34
+msgctxt "post type general name"
+msgid "Lookbooks"
+msgstr "Lookbooks"
+
+#: src/PostType.php:35
+msgctxt "post type singular name"
+msgid "Lookbook"
+msgstr "lookbook"
+
+#: src/PostType.php:36
+msgctxt "admin menu"
+msgid "Lookbooks"
+msgstr "Lookbooks"
+
+#: src/PostType.php:37
+msgid "Add New"
+msgstr "Añadir nuevo"
+
+#: src/PostType.php:38
+msgid "Add New Lookbook"
+msgstr "Añadir nuevo lookbook"
+
+#: src/PostType.php:39
+msgid "Edit Lookbook"
+msgstr "Editar lookbook"
+
+#: src/PostType.php:40
+msgid "New Lookbook"
+msgstr "Nuevo lookbook"
+
+#: src/PostType.php:41
+msgid "View Lookbook"
+msgstr "Ver lookbook"
+
+#: src/PostType.php:42
+msgid "Search Lookbooks"
+msgstr "Buscar lookbooks"
+
+#: src/PostType.php:43
+msgid "No lookbooks found."
+msgstr "No se encontraron lookbooks."
+
+#: src/PostType.php:44
+msgid "No lookbooks found in Trash."
+msgstr "No se encontraron lookbooks en la Papelera."
+
+#: src/PostType.php:45
+msgid "All Lookbooks"
+msgstr "Todos los lookbooks"
+
+#: src/PostType.php:46
+msgid "Lookbook image"
+msgstr "imagen del lookbook"
+
+#: src/PostType.php:47
+msgid "Set lookbook image"
+msgstr "Establecer imagen del lookbook"
+
+#: src/PostType.php:48
+msgid "Remove lookbook image"
+msgstr "Eliminar imagen del lookbook"
+
+#: src/PostType.php:49
+msgid "Use as lookbook image"
+msgstr "Usar como imagen del lookbook"
+
+#: templates/admin/hotspot-editor.php:20
+msgid ""
+"Set the lookbook image using the Featured image box, then add a hotspot for "
+"each product. Position each one with X and Y as a percentage from the top-"
+"left of the image (0–100), and enter the product ID to link."
+msgstr ""
+"Configure la imagen del lookbook usando el cuadro Imagen destacada, luego "
+"añade un punto de acceso para cada producto. Coloque cada uno con X e Y como"
+" porcentaje desde la parte superior izquierda de la imagen (0–100) e ingrese"
+" la ID del producto para vincular."
+
+#: templates/admin/hotspot-editor.php:27
+msgid "#"
+msgstr "#"
+
+#: templates/admin/hotspot-editor.php:28
+msgid "X %"
+msgstr "X %"
+
+#: templates/admin/hotspot-editor.php:29
+msgid "Y %"
+msgstr "Y %"
+
+#: templates/admin/hotspot-editor.php:30 templates/admin/hotspot-editor.php:70
+msgid "Product ID"
+msgstr "ID del producto"
+
+#: templates/admin/hotspot-editor.php:31
+msgid "Actions"
+msgstr "Acciones"
+
+#: templates/admin/hotspot-editor.php:42
+msgid "X percentage"
+msgstr "X porcentaje"
+
+#: templates/admin/hotspot-editor.php:56
+msgid "Y percentage"
+msgstr "Porcentaje Y"
+
+#: templates/admin/hotspot-editor.php:84
+msgid "Remove"
+msgstr "Eliminar"
+
+#: templates/admin/hotspot-editor.php:94
+msgid "+ Add hotspot"
+msgstr "+ Añadir punto de acceso"
+
+#: templates/lookbook.php:38
+msgid "Shoppable lookbook"
+msgstr "Lookbook comprable"
+
+#. translators: %s: product name.
+#: templates/lookbook.php:76
+#, php-format
+msgid "View %s"
+msgstr "Ver %s"
+
+#: templates/lookbook.php:126
+msgid "View product"
+msgstr "Ver producto"

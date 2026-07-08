@@ -1,0 +1,85 @@
+# wp.org Stable Readme translation (es_ES)
+msgid ""
+msgstr ""
+"Project-Id-Version: lookbook Stable Readme\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: plogins-i18n\n"
+
+msgid "Requires Plugins: woocommerce"
+msgstr "Requiere complementos: woocommerce"
+
+msgid "Turn any image into a shoppable lookbook: pin WooCommerce products as hotspots that reveal a product card with price and add to cart."
+msgstr "Convierta cualquier imagen en un lookbook que se pueda comprar: fije los productos WooCommerce como puntos de acceso que revelan una tarjeta de producto con el precio y los añade al carrito."
+
+msgid "Lookbook turns a single image into a shoppable scene. Upload a photo, pin your\nWooCommerce products to it as hotspots, and embed the result anywhere with a\nshortcode. When a shopper activates a hotspot, a small product card appears with\nthe thumbnail, title, price and an add-to-cart link, so they can buy straight\nfrom the image."
+msgstr "Lookbook convierte una sola imagen en una escena que se puede comprar. Sube una foto, fija tu\nproductos WooCommerce como puntos de acceso e incruste el resultado en cualquier lugar con un\ncódigo corto. Cuando un comprador activa un punto de acceso, aparece una pequeña tarjeta de producto con\nla miniatura, el título, el precio y un enlace para añadir al carrito, para que puedan comprar directamente\nde la imagen."
+
+msgid "It is built for stores that sell the look: fashion outfits, room sets, gift\nguides, recipe ingredient shots, anywhere several products live in one picture."
+msgstr "Está diseñado para tiendas que venden el look: conjuntos de moda, juegos de habitación, regalos.\nguías, fotografías de ingredientes de recetas, en cualquier lugar donde varios productos convivan en una imagen."
+
+msgid "The code is developed in the open. Browse it or report a bug at"
+msgstr "El código se desarrolla al aire libre. Explorarlo o informar un error en"
+
+msgid "* <strong>Documentation</strong> - https://plogins.com/plogins-lookbook/docs/\n* <strong>Plugin page</strong> - https://plogins.com/plogins-lookbook/\n* <strong>Source code</strong> - https://github.com/wppoland/plogins-lookbook\n* <strong>Bug reports and feature requests</strong> - https://github.com/wppoland/plogins-lookbook/issues"
+msgstr "* <strong>Documentación</strong> - https://plogins.com/es/plogins-lookbook/docs/\n* <strong>Página de complementos</strong> - https://plogins.com/es/plogins-lookbook/\n* <strong>Código fuente</strong> - https://github.com/wppoland/plogins-lookbook\n* <strong>Informes de errores y solicitudes de funciones</strong> - https://github.com/wppoland/plogins-lookbook/issues"
+
+msgid "1. Create a lookbook under the <strong>Lookbooks</strong> menu and set its image with the\n   Featured image box.\n2. Add a hotspot for each product: position it with an X and Y percentage and\n   enter the product ID.\n3. Embed it with `[lookbook id=\"123\"]`."
+msgstr "1. Cree un lookbook en el menú <strong>Lookbooks</strong> y configure su imagen con el\n   Cuadro de imagen destacada.\n2. Añade un hotspot para cada producto: colócalo con un porcentaje X e Y y\n   ingrese el ID del producto.\n3. Incrustarlo con `[lookbook id=\"123\"]`."
+
+msgid "* Shoppable image: pin any number of products as hotspots on one image.\n* Simple hotspot editor: position each product by X/Y percentage.\n* Accessible hotspot markers: real buttons, keyboard operable, with screen-reader labels.\n* Product card popover with thumbnail, title, live price and an add-to-cart link.\n* `[lookbook id=\"N\"]` shortcode.\n* Reads product data live from WooCommerce, so prices and stock are always current.\n* Degrades cleanly: a lookbook with no image, no hotspots, or only deleted products renders nothing or just the image, never broken markup.\n* CSS adapts to light and dark colour schemes and honours prefers-reduced-motion.\n* No layout shift, no jQuery, assets load only where a lookbook appears.\n* Translation ready (POT included) and clean uninstall.\n* HPOS and cart/checkout blocks compatible."
+msgstr "* Imagen que se puede comprar: fije cualquier cantidad de productos como puntos de acceso en una imagen.\n* Editor de puntos de acceso simple: posicione cada producto por porcentaje X/Y.\n* Marcadores de puntos de acceso accesibles: botones reales, operables por teclado, con etiquetas de lector de pantalla.\n* Ventana emergente de tarjeta de producto con miniatura, título, precio en vivo y un enlace para añadir al carrito.\n* Código corto `[lookbook id=\"N\"]`.\n* Lee datos de productos en vivo desde WooCommerce, por lo que los precios y el stock están siempre actualizados.\n* Se degrada limpiamente: un lookbook sin imagen, sin puntos de acceso o solo productos eliminados no muestra nada o solo la imagen, nunca el marcado roto.\n* CSS se adapta a esquemas de colores claros y oscuros y respeta el movimiento reducido.\n* Sin cambio de diseño, sin jQuery, los activos se cargan solo donde aparece un lookbook.\n* Traducción lista (POT incluida) y desinstalación limpia.\n* Compatible con HPOS y bloques de carrito/pago."
+
+msgid "1. Upload the plugin to `/wp-content/plugins/lookbook`, or install via Plugins → Add New.\n2. Activate it. WooCommerce must be installed and active.\n3. Create your first lookbook under <strong>Lookbooks → Add New<strong>: set the Featured image, then add product hotspots. 4. Adjust global presentation under </strong>WooCommerce → Lookbook</strong>.\n5. Embed a lookbook with `[lookbook id=\"123\"]`."
+msgstr "1. Cargue el complemento en `/wp-content/plugins/lookbook`, o instálelo a través de Complementos → Añadir nuevo.\n2. Actívalo. WooCommerce debe estar instalado y activo.\n3. Cree su primer lookbook en <strong>Lookbooks → Añadir nuevo<strong>: configure la imagen destacada y luego añade puntos destacados del producto. 4. Ajuste la presentación global en </strong>WooCommerce → Lookbook</strong>.\n5. Incruste un lookbook con `[lookbook id=\"123\"]`."
+
+msgid "Yes. Lookbook only runs when WooCommerce is active, and hotspots link to\nWooCommerce products."
+msgstr "Sí. Lookbook solo se ejecuta cuando WooCommerce está activo y los puntos de acceso se vinculan a\nProductos WooCommerce."
+
+msgid "Open the Lookbooks list under the Lookbooks menu; the ID is shown when editing\n(post=123 in the URL). Use it in the shortcode."
+msgstr "Abra la lista Lookbooks en el menú Lookbooks; el ID se muestra al editar\n(publicación = 123 en la URL). Úselo en el código corto."
+
+msgid "Each hotspot has an X and a Y value, both percentages from the top-left of the\nimage (0–100), so you can line markers up with the products in the photo."
+msgstr "Cada punto de acceso tiene un valor X e Y, ambos porcentajes desde la parte superior izquierda del\nimagen (0–100), para que pueda alinear los marcadores con los productos de la foto."
+
+msgid "That hotspot is simply skipped. Lookbook never renders a marker for a product\nthat is gone or unpublished."
+msgstr "Ese punto de acceso simplemente se omite. Lookbook nunca muestra un marcador para un producto\nque ya no existe o no está publicado."
+
+msgid "Yes. Both are toggles under <strong>WooCommerce → Lookbook</strong>, and you can customise the\nadd-to-cart label."
+msgstr "Sí. Ambos se alternan en <strong>WooCommerce → Lookbook</strong> y puedes personalizar el\netiqueta de añadir al carrito."
+
+msgid "No. The stylesheet and script load only on pages that actually render a lookbook,\nthe script is deferred, and the image reserves its space, so there is no\nCumulative Layout Shift."
+msgstr "No. La hoja de estilo y el script se cargan sólo en páginas que realmente representan un lookbook.\nel guión se aplaza y la imagen reserva su espacio, por lo que no hay\nCambio de diseño acumulativo."
+
+msgid "Yes. This plugin is compatible with WordPress Multisite. Network activate it or activate it on individual sites; each site keeps its own settings and data."
+msgstr "Sí. Este complemento es compatible con WordPress Multisite. Activarlo en red o activarlo en sitios individuales; Cada sitio mantiene su propia configuración y datos."
+
+msgid "1. A shoppable lookbook on the storefront with product hotspots and an open product card.\n2. The hotspot editor on the Edit Lookbook screen.\n3. The Lookbook settings screen under WooCommerce."
+msgstr "1. Un lookbook que se puede comprar en el escaparate con puntos de acceso a productos y una tarjeta de producto abierta.\n2. El editor de puntos de acceso en la pantalla Editar Lookbook.\n3. La pantalla de configuración de Lookbook en WooCommerce."
+
+msgid "Lookbook does not connect to any external service. It builds the shoppable image from data already on your site: the lookbook post itself (a `lookbook` custom post type), its Featured image from your Media Library, the hotspots stored in the `_lookbook_hotspots` post meta, and the presentation options saved in the `lookbook_settings` option. Product titles, prices, thumbnails and add-to-cart links are read live from your own WooCommerce store. Nothing about your products, shoppers or orders is sent off-site, and the plugin loads no third-party fonts, scripts or analytics."
+msgstr "Lookbook no se conecta a ningún servicio externo. Crea la imagen que se puede comprar a partir de los datos que ya están en tu sitio: la publicación del lookbook en sí (un tipo de publicación personalizada `lookbook`), su imagen destacada de su biblioteca multimedia, los puntos de acceso almacenados en el meta de la publicación `_lookbook_hotspots` y las opciones de presentación guardadas en la opción `lookbook_settings`. Los títulos de productos, precios, miniaturas y enlaces para añadir al carrito se leen en vivo desde su propia tienda WooCommerce. Nada sobre sus productos, compradores o pedidos se envía fuera del sitio y el complemento no carga fuentes, scripts ni análisis de terceros."
+
+msgid "* First stable release."
+msgstr "* Primera versión estable."
+
+msgid "* Renamed to Plogins Lookbook for WooCommerce for a more distinctive plugin name."
+msgstr "* Renombrado a Plogins Lookbook para WooCommerce para obtener un nombre de complemento más distintivo."
+
+msgid "* Fire `lookbook/rendered` after a lookbook template renders and expose `data-lookbook-id` on the root element for add-on analytics."
+msgstr "* Active `lookbook/rendered` después de que se renderice una plantilla de lookbook y exponga `data-lookbook-id` en el elemento raíz para análisis complementarios."
+
+msgid "* Add hotspot data attributes and a `lookbook:hotspot-opened` front-end event for privacy-safe add-on analytics."
+msgstr "* Añade atributos de datos de hotspot y un evento de front-end `lookbook:hotspot-opened` para análisis complementarios seguros para la privacidad."
+
+msgid "* Add `lookbook/scene_media_html` filter and video scene support (`media_type`, `video_url`, `video_id`) via `lookbook/scenes`.\n* Add `lookbook/sanitize_hotspot` filter and pass hotspot context to `lookbook/card_image_html` for add-on video markers.\n* Add `lookbook/admin_hotspot_row_*` actions so Pro can extend the hotspot editor."
+msgstr "* Añade el filtro `lookbook/scene_media_html` y compatibilidad con escenas de video (`media_type`, `video_url`, `video_id`) a través de `lookbook/scenes`.\n* Añade el filtro `lookbook/sanitize_hotspot` y pase el contexto del punto de acceso a `lookbook/card_image_html` para marcadores de video adicionales.\n* Añade acciones `lookbook/admin_hotspot_row_*` para que Pro pueda ampliar el editor de puntos de acceso."
+
+msgid "* Add `lookbook/card_image_html` filter to allow add-ons to customize product card gallery/thumbnail output.\n* Add `lookbook/scenes` filter so add-ons can append additional shoppable images to a lookbook."
+msgstr "* Añade el filtro `lookbook/card_image_html` para permitir que los complementos personalicen la galería de tarjetas de productos/la salida de miniaturas.\n* Añade el filtro `lookbook/escenas` para que los complementos puedan añadir imágenes adicionales que se pueden comprar a un lookbook."
+
+msgid "* Initial release: shoppable lookbooks with an image, product hotspots positioned by percentage, an accessible product-card popover, and a `[lookbook]` shortcode."
+msgstr "* Lanzamiento inicial: lookbooks que se pueden comprar con una imagen, puntos de interés de productos posicionados por porcentaje, una ventana emergente de tarjeta de producto accesible y un código corto `[lookbook]`."
+
