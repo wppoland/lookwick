@@ -78,36 +78,3 @@
 .lookbook-editor__remove:hover {
 	color: #8a2424;
 }
-
-@media ( prefers-color-scheme: dark ) {
-	.lookbook-admin {
-		--lookbook-card-bg: #1e1e1e;
-		--lookbook-card-fg: #f0f0f1;
-		--lookbook-card-border: #3c434a;
-		/* Brighter brass on the dark card: 6.4:1 on #1e1e1e — exceeds AA. */
-		--lookbook-accent: #d6a45c;
-		--lookbook-accent-text: #e6c188;
-	}
-
-	.lookbook-card__desc {
-		color: #c3c4c7;
-	}
-
-	/* The dark card forces a dark background even when wp-admin uses a light
-	   colour scheme, so make its own text follow the card foreground rather
-	   than wp-admin's dark defaults (which would be unreadable here). */
-	.lookbook-card .form-table th,
-	.lookbook-card label {
-		color: var( --lookbook-card-fg );
-	}
-
-	.lookbook-card .description {
-		color: #c3c4c7; /* 9.56:1 on #1e1e1e */
-	}
-
-	.lookbook-card input[type="text"] {
-		background: #2c3338;
-		border-color: #4f5b66;
-		color: #f0f0f1;
-	}
-}
