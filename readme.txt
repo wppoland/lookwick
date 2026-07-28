@@ -5,7 +5,7 @@ Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
 Requires Plugins: woocommerce
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -78,7 +78,7 @@ Open the Lookbooks list under the Lookbooks menu; the ID is shown when editing
 = How do I position a hotspot? =
 
 Each hotspot has an X and a Y value, both percentages from the top-left of the
-image (0–100), so you can line markers up with the products in the photo.
+image (0-100), so you can line markers up with the products in the photo.
 
 = What happens if a pinned product is deleted? =
 

@@ -11,7 +11,7 @@ defined('ABSPATH') || exit;
  *
  * Hotspots are stored as a single post-meta array under `_lookbook_hotspots`.
  * Each hotspot is `['x' => float, 'y' => float, 'product_id' => int]`, where
- * x/y are percentages (0–100) of the image's width/height. The repository is
+ * x/y are percentages (0-100) of the image's width/height. The repository is
  * the single source of truth for shape and sanitisation, so the editor and the
  * front-end renderer never disagree about the data.
  */
@@ -119,7 +119,7 @@ final class Repository
     }
 
     /**
-     * Clamp an arbitrary value to a 0–100 percentage with one decimal place.
+     * Clamp an arbitrary value to a 0-100 percentage with one decimal place.
      *
      * @param mixed $value
      */

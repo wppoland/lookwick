@@ -20,7 +20,7 @@ Miniaturbild, Titel, Preis und einem Link zum Hinzufügen zum Warenkorb, sodass 
 dem Bild gekauft werden kann.
 
 Es ist für Shops gemacht, die den ganzen Look verkaufen: Mode-Outfits, Raum-Sets,
-Geschenkeguides, Aufnahmen von Rezeptzutaten – überall dort, wo mehrere Produkte auf einem Bild sind.
+Geschenkeguides, Aufnahmen von Rezeptzutaten, überall dort, wo mehrere Produkte auf einem Bild sind.
 
 Der Code wird quelloffen entwickelt. Durchstöbere ihn oder melde einen Fehler unter
 https://github.com/wppoland/plogins-lookbook.
@@ -78,7 +78,7 @@ WooCommerce-Produkte.
 = How do I position a hotspot? =
 
 Jeder Hotspot hat einen X- und einen Y-Wert, beide als Prozentwert von der oberen linken Ecke des
-Bildes (0–100), sodass du die Markierungen an den Produkten im Foto ausrichten kannst.
+Bildes (0-100), sodass du die Markierungen an den Produkten im Foto ausrichten kannst.
 
 = What happens if a pinned product is deleted? =
 

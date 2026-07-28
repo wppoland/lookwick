@@ -20,7 +20,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #: lookbook.php
 msgid "Lookbook - Shoppable Image Gallery for WooCommerce"
-msgstr "Lookbook – Shoppbare Bildergalerie für WooCommerce"
+msgstr "Lookbook, Shoppbare Bildergalerie für WooCommerce"
 
 #. Plugin URI of the plugin
 #: lookbook.php
@@ -48,7 +48,7 @@ msgid ""
 "Lookbook - Shoppable Image Gallery for WooCommerce requires WooCommerce to "
 "be active."
 msgstr ""
-"Für Lookbook – Shoppable Image Gallery für WooCommerce muss WooCommerce "
+"Für Lookbook, Shoppable Image Gallery für WooCommerce muss WooCommerce "
 "aktiv sein."
 
 #: src/Admin/MetaBox.php:44
@@ -251,11 +251,11 @@ msgstr "Als Lookbook-Bild verwenden"
 msgid ""
 "Set the lookbook image using the Featured image box, then add a hotspot for "
 "each product. Position each one with X and Y as a percentage from the top-"
-"left of the image (0–100), and enter the product ID to link."
+"left of the image (0-100), and enter the product ID to link."
 msgstr ""
 "Lege das Lookbook-Bild mithilfe des Felds „Empfohlenes Bild“ fest und füge "
 "dann für jedes Produkt einen Hotspot hinzu. Positioniere jedes einzelne mit "
-"X und Y als Prozentsatz vom oberen linken Rand des Bildes (0–100) und gib "
+"X und Y als Prozentsatz vom oberen linken Rand des Bildes (0-100) und gib "
 "die zu verknüpfende Produkt-ID ein."
 
 #: templates/admin/hotspot-editor.php:27

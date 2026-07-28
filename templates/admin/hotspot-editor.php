@@ -17,7 +17,7 @@ defined('ABSPATH') || exit;
 ?>
 <div class="lookbook-editor" data-lookbook-editor>
     <p class="lookbook-editor__intro">
-        <?php esc_html_e('Set the lookbook image using the Featured image box, then add a hotspot for each product. Position each one with X and Y as a percentage from the top-left of the image (0–100), and enter the product ID to link.', 'plogins-lookbook'); ?>
+        <?php esc_html_e('Set the lookbook image using the Featured image box, then add a hotspot for each product. Position each one with X and Y as a percentage from the top-left of the image (0-100), and enter the product ID to link.', 'plogins-lookbook'); ?>
     </p>
 
     <div class="lookbook-editor__rows-wrap">

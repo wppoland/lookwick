@@ -1,9 +1,9 @@
 /**
- * Lookbook — hotspot editor (meta box) enhancements.
+ * Lookbook, hotspot editor (meta box) enhancements.
  *
  * Progressive, dependency-free. Adds/removes repeater rows and keeps the input
  * names contiguous after each change. With JS disabled the rows printed by PHP
- * still save normally — this only improves the authoring experience.
+ * still save normally, this only improves the authoring experience.
  */
 ( function () {
 	'use strict';

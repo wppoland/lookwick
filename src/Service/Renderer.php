@@ -15,7 +15,7 @@ defined('ABSPATH') || exit;
  * that reveal a small product card (thumbnail, title, price, add-to-cart link).
  *
  * Powers the [lookbook] shortcode. It is defensive
- * by design — a disabled plugin, a missing lookbook, a lookbook with no image,
+ * by design, a disabled plugin, a missing lookbook, a lookbook with no image,
  * or hotspots that point at gone products all degrade to rendering nothing (or
  * just the image) rather than producing broken markup. All output is escaped.
  */

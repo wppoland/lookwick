@@ -252,11 +252,11 @@ msgstr "Użyj jako obrazu lookbooka"
 msgid ""
 "Set the lookbook image using the Featured image box, then add a hotspot for "
 "each product. Position each one with X and Y as a percentage from the top-"
-"left of the image (0–100), and enter the product ID to link."
+"left of the image (0-100), and enter the product ID to link."
 msgstr ""
 "Ustaw obraz lookbooka za pomocą pola Obrazek wyróżniający, a następnie dodaj "
 "punkt aktywny dla każdego produktu. Ustaw pozycję każdego z nich za pomocą X "
-"i Y jako procentu od lewego górnego rogu obrazu (0–100) i wpisz "
+"i Y jako procentu od lewego górnego rogu obrazu (0-100) i wpisz "
 "identyfikator produktu do powiązania."
 
 #: templates/admin/hotspot-editor.php:27

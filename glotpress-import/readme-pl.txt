@@ -20,7 +20,7 @@ miniaturą, tytułem, ceną i linkiem dodania do koszyka, dzięki czemu może ku
 z obrazu.
 
 Powstał z myślą o sklepach, które sprzedają cały wygląd: stylizacje modowe, aranżacje wnętrz,
-przewodniki prezentowe, zdjęcia składników przepisów — wszędzie tam, gdzie na jednym zdjęciu jest kilka produktów.
+przewodniki prezentowe, zdjęcia składników przepisów, wszędzie tam, gdzie na jednym zdjęciu jest kilka produktów.
 
 Kod jest rozwijany otwarcie (open source). Przeglądaj go lub zgłoś błąd na
 https://github.com/wppoland/plogins-lookbook.
@@ -49,7 +49,7 @@ https://github.com/wppoland/plogins-lookbook.
 * Wyskakująca karta produktu z miniaturą, tytułem, aktualną ceną i linkiem dodania do koszyka.
 * Shortcode `[lookbook id="N"]`.
 * Odczytuje dane produktów na żywo z WooCommerce, więc ceny i stany magazynowe są zawsze aktualne.
-* Płynne obniżanie funkcjonalności: lookbook bez obrazu, bez punktów aktywnych lub z samymi usuniętymi produktami nie renderuje niczego albo tylko obraz — nigdy uszkodzonego kodu.
+* Płynne obniżanie funkcjonalności: lookbook bez obrazu, bez punktów aktywnych lub z samymi usuniętymi produktami nie renderuje niczego albo tylko obraz, nigdy uszkodzonego kodu.
 * CSS dostosowuje się do jasnych i ciemnych schematów kolorów oraz respektuje prefers-reduced-motion.
 * Bez przeskoków układu, bez jQuery; zasoby ładują się tylko tam, gdzie pojawia się lookbook.
 * Gotowe do tłumaczenia (POT w zestawie) i czysta dezinstalacja.
@@ -78,7 +78,7 @@ Otwórz listę lookbooków w menu Lookbooks; identyfikator jest widoczny podczas
 = How do I position a hotspot? =
 
 Każdy punkt aktywny ma wartość X i Y, obie w procentach od lewego górnego rogu
-obrazu (0–100), dzięki czemu dopasujesz znaczniki do produktów na zdjęciu.
+obrazu (0-100), dzięki czemu dopasujesz znaczniki do produktów na zdjęciu.
 
 = What happens if a pinned product is deleted? =
 

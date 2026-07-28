@@ -1,5 +1,5 @@
 /**
- * Lookbook — front-end styles.
+ * Lookbook, front-end styles.
  *
  * The photo is a styled flat-lay; each marker is a brass push-pin pressed into
  * the scene, and its product card is the styling tag the pin holds. The image is
@@ -9,20 +9,20 @@
  * palette is dark-mode aware.
  *
  * Tokens are themeable: override --lookbook-* on the .lookbook element (or an
- * ancestor) and everything — pin, tag, type — follows. Defaults inherit the
+ * ancestor) and everything, pin, tag, type, follows. Defaults inherit the
  * theme's own font stack and fall back to an editorial ink + brass palette.
  */
 
 .lookbook {
 	/* The pin. */
 	--lookbook-marker-size: 30px;
-	--lookbook-accent: #b8843f; /* warm brass — the pin head */
+	--lookbook-accent: #b8843f; /* warm brass, the pin head */
 	--lookbook-accent-deep: #8a5e26; /* shadowed underside of the pin */
 	--lookbook-accent-sheen: #f3d9a8; /* light catching the brass */
 	--lookbook-pin-ring: rgba( 255, 255, 255, 0.92 );
 
 	/* The tag. */
-	--lookbook-card-bg: #14110f; /* ink — a darkroom mat behind the product */
+	--lookbook-card-bg: #14110f; /* ink, a darkroom mat behind the product */
 	--lookbook-card-fg: #f6f1e8;
 	--lookbook-card-muted: #b7ab97;
 	--lookbook-card-border: rgba( 184, 132, 63, 0.72 ); /* brass hairline, WCAG AA 3:1 on ink */
@@ -126,7 +126,7 @@
  * THE BOLD MOVE: the marker is not a flat blue dot but a brass push-pin
  * pressed into the photo. A metallic radial highlight reads as a domed pin
  * head; a soft cast shadow sits it ON the image. On hover/focus the pin lifts
- * a touch and its shadow spreads — like a pin you could pluck back out.
+ * a touch and its shadow spreads, like a pin you could pluck back out.
  */
 .lookbook__marker {
 	position: relative;

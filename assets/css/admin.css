@@ -1,5 +1,5 @@
 /**
- * Lookbook — admin styles for the settings screen and the hotspot editor meta
+ * Lookbook, admin styles for the settings screen and the hotspot editor meta
  * box. Card layout and a dark-mode-aware palette that follows the OS preference.
  */
 
@@ -8,7 +8,7 @@
 	--lookbook-card-fg: #1e1e1e;
 	--lookbook-card-border: #dcdcde;
 	/* Warm brass, matching the storefront pin. Used only as a 3px heading
-	   rule (a UI element): 3.28:1 on the white card — meets WCAG AA 3:1.
+	   rule (a UI element): 3.28:1 on the white card, meets WCAG AA 3:1.
 	   The deep brass below is reserved for any text (5.66:1 on white). */
 	--lookbook-accent: #b8843f;
 	--lookbook-accent-text: #8a5e26;
@@ -80,7 +80,7 @@
 }
 
 /* ------------------------------------------------------------------ *
- * PRO upsell — dismissible banner + "what PRO adds" locked cards.
+ * PRO upsell, dismissible banner + "what PRO adds" locked cards.
  * Pure advertising (no disabled inputs), scoped to .lookbook-admin.
  * Reuses the brass accent (--lookbook-accent decorative, 3.28:1 non-text;
  * --lookbook-accent-text 5.66:1 on white, so white-on-accent CTAs clear AA).

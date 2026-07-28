@@ -1,5 +1,5 @@
 /**
- * Lookbook — front-end behaviour (progressive, dependency-free).
+ * Lookbook, front-end behaviour (progressive, dependency-free).
  *
  * The product cards use the native Popover API, so the browser handles open,
  * close, light-dismiss and Escape for free. This script only:

@@ -78,7 +78,7 @@ Abre la lista de Lookbooks en el menú Lookbooks; el ID se muestra al editar
 = How do I position a hotspot? =
 
 Cada punto de acceso tiene un valor X y un valor Y, ambos porcentajes desde la esquina superior izquierda de la
-imagen (0–100), para que puedas alinear los marcadores con los productos de la foto.
+imagen (0-100), para que puedas alinear los marcadores con los productos de la foto.
 
 = What happens if a pinned product is deleted? =
 

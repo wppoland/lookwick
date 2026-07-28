@@ -120,10 +120,10 @@ msgstr ""
 
 msgid ""
 "Each hotspot has an X and a Y value, both percentages from the top-left of the\n"
-"image (0–100), so you can line markers up with the products in the photo."
+"image (0-100), so you can line markers up with the products in the photo."
 msgstr ""
 "Cada punto de acceso tiene un valor X y un valor Y, ambos porcentajes desde la esquina superior izquierda de la\n"
-"imagen (0–100), para que puedas alinear los marcadores con los productos de la foto."
+"imagen (0-100), para que puedas alinear los marcadores con los productos de la foto."
 
 msgid ""
 "That hotspot is simply skipped. Lookbook never renders a marker for a product\n"
