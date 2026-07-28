@@ -2,7 +2,8 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Lookbook - Shoppable Image Gallery for WooCommerce 0.1.0\n"
+"Project-Id-Version: Lookbook - Shoppable Image Gallery for WooCommerce "
+"0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/lookbook\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,7 +41,9 @@ msgid "https://plogins.com/"
 msgstr ""
 
 #: lookbook.php:47
-msgid "Lookbook - Shoppable Image Gallery for WooCommerce requires WooCommerce to be active."
+msgid ""
+"Lookbook - Shoppable Image Gallery for WooCommerce requires WooCommerce to "
+"be active."
 msgstr ""
 
 #: src/Admin/MetaBox.php:44
@@ -60,13 +63,19 @@ msgid "Lookbook"
 msgstr ""
 
 #: src/Admin/Settings.php:88
-msgid "Lookbook turns an image into a shoppable scene: pin products as hotspots, then embed the lookbook anywhere with a shortcode. Create and edit lookbooks under the Lookbooks menu; these settings control how every lookbook looks and behaves on the storefront."
+msgid ""
+"Lookbook turns an image into a shoppable scene: pin products as hotspots, "
+"then embed the lookbook anywhere with a shortcode. Create and edit lookbooks "
+"under the Lookbooks menu; these settings control how every lookbook looks "
+"and behaves on the storefront."
 msgstr ""
 
 #. translators: %s: the shortcode example.
 #: src/Admin/Settings.php:94
 #, php-format
-msgid "Embed a lookbook with %s (replace 123 with the lookbook ID shown in the Lookbooks list)."
+msgid ""
+"Embed a lookbook with %s (replace 123 with the lookbook ID shown in the "
+"Lookbooks list)."
 msgstr ""
 
 #: src/Admin/Settings.php:105
@@ -86,7 +95,10 @@ msgid "Render your lookbooks where the shortcode appears."
 msgstr ""
 
 #: src/Admin/Settings.php:127
-msgid "Turn this off to hide every lookbook at once without deleting anything, the shortcode outputs nothing and Lookbook loads no CSS or JavaScript on the page. Useful while you are still setting up. On by default."
+msgid ""
+"Turn this off to hide every lookbook at once without deleting anything, the "
+"shortcode outputs nothing and Lookbook loads no CSS or JavaScript on the "
+"page. Useful while you are still setting up. On by default."
 msgstr ""
 
 #: src/Admin/Settings.php:136
@@ -94,7 +106,9 @@ msgid "Product card"
 msgstr ""
 
 #: src/Admin/Settings.php:138
-msgid "What a shopper sees in the little card that pops up when they tap a hotspot. These apply to every lookbook; the product name and image always show."
+msgid ""
+"What a shopper sees in the little card that pops up when they tap a hotspot. "
+"These apply to every lookbook; the product name and image always show."
 msgstr ""
 
 #: src/Admin/Settings.php:145
@@ -118,7 +132,9 @@ msgid "Show an add-to-cart link in the pop-up card."
 msgstr ""
 
 #: src/Admin/Settings.php:154
-msgid "Lets shoppers buy straight from the image without opening the product page. On by default."
+msgid ""
+"Lets shoppers buy straight from the image without opening the product page. "
+"On by default."
 msgstr ""
 
 #: src/Admin/Settings.php:160
@@ -130,7 +146,11 @@ msgid "e.g. Add to cart"
 msgstr ""
 
 #: src/Admin/Settings.php:172
-msgid "Overrides the wording on the add-to-cart link for every product, for example “Add to cart”, “Shop the look”, or “Add to bag”. Leave blank to keep each product’s own WooCommerce button text. Only used when the add-to-cart link above is on."
+msgid ""
+"Overrides the wording on the add-to-cart link for every product, for example "
+"“Add to cart”, “Shop the look”, or “Add to bag”. Leave blank to keep each "
+"product’s own WooCommerce button text. Only used when the add-to-cart link "
+"above is on."
 msgstr ""
 
 #: src/PostType.php:34
@@ -201,7 +221,10 @@ msgid "Use as lookbook image"
 msgstr ""
 
 #: templates/admin/hotspot-editor.php:20
-msgid "Set the lookbook image using the Featured image box, then add a hotspot for each product. Position each one with X and Y as a percentage from the top-left of the image (0–100), and enter the product ID to link."
+msgid ""
+"Set the lookbook image using the Featured image box, then add a hotspot for "
+"each product. Position each one with X and Y as a percentage from the top-"
+"left of the image (0–100), and enter the product ID to link."
 msgstr ""
 
 #: templates/admin/hotspot-editor.php:27
@@ -216,8 +239,7 @@ msgstr ""
 msgid "Y %"
 msgstr ""
 
-#: templates/admin/hotspot-editor.php:30
-#: templates/admin/hotspot-editor.php:70
+#: templates/admin/hotspot-editor.php:30 templates/admin/hotspot-editor.php:70
 msgid "Product ID"
 msgstr ""
 
@@ -253,4 +275,64 @@ msgstr ""
 
 #: templates/lookbook.php:126
 msgid "View product"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr ""
+
+#. translators: %d: yearly price in PLN
+#: src/Admin/ProUpsell.php:83
+#, php-format
+msgid "od %d zł/rok"
+msgstr ""
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:88
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:97
+msgid "Upgrade to PRO"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:98
+msgid "Powiadom mnie"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:98
+msgid "Get notified"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:128
+msgid "Permission denied."
+msgstr ""
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:158
+#, php-format
+msgid "Do more with %s"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:165
+msgid "Dismiss this notice"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:182
+msgid "Unlock every PRO feature"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:195
+msgid "one licence, every PRO feature"
+msgstr ""
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:214
+#, php-format
+msgid "What %s adds"
 msgstr ""
