@@ -1,5 +1,5 @@
 /**
- * Lookbook — admin styles for the settings screen and the hotspot editor meta
+ * Lookbook, admin styles for the settings screen and the hotspot editor meta
  * box. Card layout and a dark-mode-aware palette that follows the OS preference.
  */
 
@@ -8,7 +8,7 @@
 	--lookbook-card-fg: #1e1e1e;
 	--lookbook-card-border: #dcdcde;
 	/* Warm brass, matching the storefront pin. Used only as a 3px heading
-	   rule (a UI element): 3.28:1 on the white card — meets WCAG AA 3:1.
+	   rule (a UI element): 3.28:1 on the white card, meets WCAG AA 3:1.
 	   The deep brass below is reserved for any text (5.66:1 on white). */
 	--lookbook-accent: #b8843f;
 	--lookbook-accent-text: #8a5e26;
@@ -79,46 +79,13 @@
 	color: #8a2424;
 }
 
-@media ( prefers-color-scheme: dark ) {
-	.lookbook-admin {
-		--lookbook-card-bg: #1e1e1e;
-		--lookbook-card-fg: #f0f0f1;
-		--lookbook-card-border: #3c434a;
-		/* Brighter brass on the dark card: 6.4:1 on #1e1e1e — exceeds AA. */
-		--lookbook-accent: #d6a45c;
-		--lookbook-accent-text: #e6c188;
-	}
-
-	.lookbook-card__desc {
-		color: #c3c4c7;
-	}
-
-	/* The dark card forces a dark background even when wp-admin uses a light
-	   colour scheme, so make its own text follow the card foreground rather
-	   than wp-admin's dark defaults (which would be unreadable here). */
-	.lookbook-card .form-table th,
-	.lookbook-card label {
-		color: var( --lookbook-card-fg );
-	}
-
-	.lookbook-card .description {
-		color: #c3c4c7; /* 9.56:1 on #1e1e1e */
-	}
-
-	.lookbook-card input[type="text"] {
-		background: #2c3338;
-		border-color: #4f5b66;
-		color: #f0f0f1;
-	}
-}
-
 /* ------------------------------------------------------------------ *
- * PRO upsell — dismissible banner, sidebar promo, "what PRO adds"
- * locked cards. Pure advertising (no disabled inputs), scoped to
- * .lookbook-admin, using the plugin's own brass accent. The buttons
- * use the darker --lookbook-accent-text (#8a5e26) so white text clears
- * WCAG AA (5.66:1); the lighter brass accent is decorative only.
+ * PRO upsell, dismissible banner + "what PRO adds" locked cards.
+ * Pure advertising (no disabled inputs), scoped to .lookbook-admin.
+ * Reuses the brass accent (--lookbook-accent decorative, 3.28:1 non-text;
+ * --lookbook-accent-text 5.66:1 on white, so white-on-accent CTAs clear AA).
  * ------------------------------------------------------------------ */
+
 .lookbook-admin {
 	--lookbook-pro-muted: #646970;
 	--lookbook-pro-radius: 8px;
@@ -126,18 +93,12 @@
 	--lookbook-pro-gap: 20px;
 }
 
-/* Two-column wrapper (form + promo aside); single column on narrow screens. */
-.lookbook-admin .lookbook-cols { display: grid; gap: var(--lookbook-pro-gap); grid-template-columns: 1fr; align-items: start; }
-@media (min-width: 1100px) {
-	.lookbook-admin .lookbook-cols { grid-template-columns: minmax(0, 1fr) 300px; }
-}
-
 /* Top banner */
 .lookbook-admin .lookbook-pro-banner {
 	display: flex;
 	align-items: center;
 	gap: 14px;
-	margin: 0 0 var(--lookbook-pro-gap);
+	margin: 1em 0 var(--lookbook-pro-gap);
 	padding: 12px 16px;
 	border: 1px solid color-mix(in srgb, var(--lookbook-accent) 30%, #dcdcde);
 	border-inline-start: 4px solid var(--lookbook-accent);
@@ -156,7 +117,7 @@
 .lookbook-admin .lookbook-pro-banner__dismiss { flex: 0 0 auto; font-size: 18px; line-height: 1; text-decoration: none; color: var(--lookbook-pro-muted); padding: 4px; border-radius: 4px; }
 .lookbook-admin .lookbook-pro-banner__dismiss:hover { color: #1d2327; background: rgba(0, 0, 0, .05); }
 
-/* Accent CTA buttons (override WP blue with the readable dark-brass accent) */
+/* Accent CTA buttons (override WP blue with the readable brass accent) */
 .lookbook-admin .lookbook-pro-banner__cta.button-primary,
 .lookbook-admin .lookbook-pro-aside__cta.button-primary {
 	background: var(--lookbook-accent-text); border-color: color-mix(in srgb, var(--lookbook-accent-text) 80%, #000); color: #fff; text-shadow: none; box-shadow: none;
@@ -169,7 +130,7 @@
 	background: #fff; border: 1px solid #dcdcde; border-top: 3px solid var(--lookbook-accent); border-radius: var(--lookbook-pro-radius); padding: 18px 20px; position: sticky; top: 40px;
 }
 .lookbook-admin .lookbook-pro-aside__eyebrow { margin: 0 0 4px; color: var(--lookbook-accent-text); }
-.lookbook-admin .lookbook-pro-aside__heading { margin: 0 0 12px; font-size: 16px; line-height: 1.3; padding-left: 0; border-left: 0; }
+.lookbook-admin .lookbook-pro-aside__heading { margin: 0 0 12px; font-size: 16px; line-height: 1.3; }
 .lookbook-admin .lookbook-pro-aside__list { margin: 0 0 16px; padding: 0; list-style: none; }
 .lookbook-admin .lookbook-pro-aside__list li { display: flex; align-items: flex-start; gap: 8px; padding: 5px 0; color: #1d2327; font-size: 13px; }
 .lookbook-admin .lookbook-pro-aside__lock::before,
@@ -178,8 +139,8 @@
 .lookbook-admin .lookbook-pro-aside__price { margin: 10px 0 0; font-size: 12px; color: var(--lookbook-pro-muted); text-align: center; }
 
 /* "What PRO adds" locked cards */
-.lookbook-admin .lookbook-pro-cards { max-width: 60rem; margin: var(--lookbook-pro-gap) 0 0; }
-.lookbook-admin .lookbook-pro-cards__title { font-size: 15px; margin: 0 0 12px; padding-left: 0; border-left: 0; }
+.lookbook-admin .lookbook-pro-cards { margin: var(--lookbook-pro-gap) 0 0; }
+.lookbook-admin .lookbook-pro-cards__title { font-size: 15px; margin: 0 0 12px; }
 .lookbook-admin .lookbook-pro-cards__grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
 .lookbook-admin .lookbook-pro-card { position: relative; padding: 16px; border: 1px solid #dcdcde; border-radius: var(--lookbook-pro-radius-sm); background: color-mix(in srgb, var(--lookbook-accent) 3%, #fff); }
 .lookbook-admin .lookbook-pro-card__badge { position: absolute; top: 12px; inset-inline-end: 12px; padding: 1px 7px; border-radius: 999px; color: var(--lookbook-accent-text); border: 1px solid color-mix(in srgb, var(--lookbook-accent) 40%, #fff); }

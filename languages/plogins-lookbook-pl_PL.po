@@ -7,7 +7,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/lookbook\n"
 "POT-Creation-Date: 2026-06-16T20:23:31+00:00\n"
 "PO-Revision-Date: 2026-06-15 12:00+0000\n"
-"Last-Translator: WPPoland <kontakt@wppoland.com>\n"
+"Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "Language: pl_PL\n"
 "MIME-Version: 1.0\n"
@@ -15,8 +15,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
 "|| n%100>14) ? 1 : 2);\n"
-"X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: plogins-lookbook\n"
+"X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
 #: lookbook.php
@@ -98,14 +98,15 @@ msgstr "Ogólne"
 #: src/Admin/Settings.php:107
 msgid "The master switch for everything Lookbook puts on your storefront."
 msgstr ""
+"Główny przełącznik do wszystkiego, co Lookbook umieszcza w Twoim sklepie."
 
 #: src/Admin/Settings.php:113
 msgid "Show lookbooks on the storefront"
-msgstr ""
+msgstr "Pokaż lookbooki na witrynie sklepu"
 
 #: src/Admin/Settings.php:124
 msgid "Render your lookbooks where the shortcode appears."
-msgstr ""
+msgstr "Renderuj swoje lookbooki, w których pojawia się krótki kod."
 
 #: src/Admin/Settings.php:127
 msgid ""
@@ -113,6 +114,10 @@ msgid ""
 "shortcode outputs nothing and Lookbook loads no CSS or JavaScript on the "
 "page. Useful while you are still setting up. On by default."
 msgstr ""
+"Wyłącz tę opcję, aby ukryć każdy lookbook na raz, bez usuwania czegokolwiek. "
+"Krótki kod nie wyświetla żadnych wyników, a Lookbook nie ładuje na stronie "
+"żadnych CSS ani JavaScript. Przydatne podczas konfiguracji. Domyślnie "
+"włączone."
 
 #: src/Admin/Settings.php:136
 msgid "Product card"
@@ -123,6 +128,8 @@ msgid ""
 "What a shopper sees in the little card that pops up when they tap a hotspot. "
 "These apply to every lookbook; the product name and image always show."
 msgstr ""
+"Co kupujący widzi na małej karcie, która pojawia się po dotknięciu hotspotu. "
+"Dotyczy to każdego lookbooka; nazwa produktu i zdjęcie są zawsze widoczne."
 
 #: src/Admin/Settings.php:145
 msgid "Price"
@@ -130,11 +137,13 @@ msgstr "Cena"
 
 #: src/Admin/Settings.php:146
 msgid "Show the product price in the pop-up card."
-msgstr ""
+msgstr "Pokaż cenę produktu na wyskakującej karcie."
 
 #: src/Admin/Settings.php:147
 msgid "Lets shoppers see the cost before they leave the image. On by default."
 msgstr ""
+"Umożliwia kupującym sprawdzenie kosztów, zanim opuszczą obraz. Domyślnie "
+"włączone."
 
 #: src/Admin/Settings.php:152
 msgid "Add to cart link"
@@ -142,13 +151,15 @@ msgstr "Link dodawania do koszyka"
 
 #: src/Admin/Settings.php:153
 msgid "Show an add-to-cart link in the pop-up card."
-msgstr ""
+msgstr "Pokaż link do dodania do koszyka na wyskakującej karcie."
 
 #: src/Admin/Settings.php:154
 msgid ""
 "Lets shoppers buy straight from the image without opening the product page. "
 "On by default."
 msgstr ""
+"Umożliwia kupującym kupowanie bezpośrednio ze zdjęcia, bez konieczności "
+"otwierania strony produktu. Domyślnie włączone."
 
 #: src/Admin/Settings.php:160
 msgid "Add to cart label"
@@ -160,11 +171,15 @@ msgstr "np. Dodaj do koszyka"
 
 #: src/Admin/Settings.php:172
 msgid ""
-"Overrides the wording on the add-to-cart link for every product, for "
-"example “Add to cart”, “Shop the look”, or “Add to bag”. Leave blank to keep "
-"each product’s own WooCommerce button text. Only used when the add-to-cart "
-"link above is on."
+"Overrides the wording on the add-to-cart link for every product, for example "
+"“Add to cart”, “Shop the look”, or “Add to bag”. Leave blank to keep each "
+"product’s own WooCommerce button text. Only used when the add-to-cart link "
+"above is on."
 msgstr ""
+"Zastępuje treść linku dodawania do koszyka dla każdego produktu, na przykład "
+"„Dodaj do koszyka”, „Kupuj wygląd” lub „Dodaj do koszyka”. Pozostaw puste, "
+"aby zachować własny tekst przycisku WooCommerce dla każdego produktu. "
+"Używane tylko wtedy, gdy powyższy link dodawania do koszyka jest włączony."
 
 #: src/PostType.php:34
 msgctxt "post type general name"
@@ -237,11 +252,11 @@ msgstr "Użyj jako obrazu lookbooka"
 msgid ""
 "Set the lookbook image using the Featured image box, then add a hotspot for "
 "each product. Position each one with X and Y as a percentage from the top-"
-"left of the image (0–100), and enter the product ID to link."
+"left of the image (0-100), and enter the product ID to link."
 msgstr ""
 "Ustaw obraz lookbooka za pomocą pola Obrazek wyróżniający, a następnie dodaj "
 "punkt aktywny dla każdego produktu. Ustaw pozycję każdego z nich za pomocą X "
-"i Y jako procentu od lewego górnego rogu obrazu (0–100) i wpisz "
+"i Y jako procentu od lewego górnego rogu obrazu (0-100) i wpisz "
 "identyfikator produktu do powiązania."
 
 #: templates/admin/hotspot-editor.php:27
@@ -293,6 +308,66 @@ msgstr "Zobacz %s"
 #: templates/lookbook.php:126
 msgid "View product"
 msgstr "Zobacz produkt"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Wkrótce"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Wkrótce"
+
+#. translators: %d: yearly price in PLN
+#: src/Admin/ProUpsell.php:83
+#, php-format
+msgid "od %d zł/rok"
+msgstr "od %d zł/rok"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:88
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "od %1$s%2$d/rok"
+
+#: src/Admin/ProUpsell.php:97
+msgid "Upgrade to PRO"
+msgstr "Przejdź na PRO"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Powiadom mnie"
+msgstr "Powiadom mnie"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Get notified"
+msgstr "Powiadom mnie"
+
+#: src/Admin/ProUpsell.php:128
+msgid "Permission denied."
+msgstr "Brak uprawnień."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:158
+#, php-format
+msgid "Do more with %s"
+msgstr "Zrób więcej dzięki %s"
+
+#: src/Admin/ProUpsell.php:165
+msgid "Dismiss this notice"
+msgstr "Odrzuć to powiadomienie"
+
+#: src/Admin/ProUpsell.php:182
+msgid "Unlock every PRO feature"
+msgstr "Odblokuj wszystkie funkcje PRO"
+
+#: src/Admin/ProUpsell.php:195
+msgid "one licence, every PRO feature"
+msgstr "jedna licencja, wszystkie funkcje PRO"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:214
+#, php-format
+msgid "What %s adds"
+msgstr "Co dodaje %s"
 
 #~ msgid "Enable Lookbook"
 #~ msgstr "Włącz Lookbook"

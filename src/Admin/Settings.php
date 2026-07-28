@@ -108,7 +108,6 @@ final class Settings implements HasHooks
                 </p>
             </div>
 
-            <div class="lookbook-cols">
             <form method="post" action="options.php">
                 <?php settings_fields(self::PAGE); ?>
 
@@ -203,9 +202,6 @@ final class Settings implements HasHooks
 
                 <?php submit_button(); ?>
             </form>
-
-                <?php $this->proUpsell()->aside(); ?>
-            </div>
 
             <?php $this->proUpsell()->cards(); ?>
         </div>

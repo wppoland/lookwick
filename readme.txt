@@ -1,11 +1,11 @@
-=== Plogins Lookbook - Shoppable Lookbook for WooCommerce ===
+=== Lookbook - Shoppable Lookbook for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, shoppable, hotspot, lookbook, product image
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
 Requires Plugins: woocommerce
-Stable tag: 0.1.5
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -78,7 +78,7 @@ Open the Lookbooks list under the Lookbooks menu; the ID is shown when editing
 = How do I position a hotspot? =
 
 Each hotspot has an X and a Y value, both percentages from the top-left of the
-image (0–100), so you can line markers up with the products in the photo.
+image (0-100), so you can line markers up with the products in the photo.
 
 = What happens if a pinned product is deleted? =
 
@@ -111,7 +111,23 @@ Yes. This plugin is compatible with WordPress Multisite. Network activate it or 
 
 Lookbook does not connect to any external service. It builds the shoppable image from data already on your site: the lookbook post itself (a `lookbook` custom post type), its Featured image from your Media Library, the hotspots stored in the `_lookbook_hotspots` post meta, and the presentation options saved in the `lookbook_settings` option. Product titles, prices, thumbnails and add-to-cart links are read live from your own WooCommerce store. Nothing about your products, shoppers or orders is sent off-site, and the plugin loads no third-party fonts, scripts or analytics.
 
+== Translations ==
+
+Plogins Lookbook includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-lookbook`, so WordPress.org language packs can also override or extend these bundled translations.
+
 == Changelog ==
+
+= 1.0.4 =
+* Translations: completed Polish, German and Spanish for the PRO upgrade panel.
+
+= 1.0.3 =
+* Fixed low-contrast admin headings under an OS dark-mode preference.
+
+= 1.0.2 =
+* Added bundled Polish, German and Spanish translations for the plugin interface.
+
+= 1.0.1 =
+* First stable release.
 
 = 0.1.5 =
 * Renamed to Plogins Lookbook for WooCommerce for a more distinctive plugin name.
