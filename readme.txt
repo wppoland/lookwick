@@ -23,14 +23,14 @@ It is built for stores that sell the look: fashion outfits, room sets, gift
 guides, recipe ingredient shots, anywhere several products live in one picture.
 
 The code is developed in the open. Browse it or report a bug at
-https://github.com/wppoland/plogins-lookbook.
+[github.com/wppoland/plogins-lookbook](https://github.com/wppoland/plogins-lookbook).
 
 = Documentation and links =
 
-* **Documentation** - https://plogins.com/plogins-lookbook/docs/
-* **Plugin page** - https://plogins.com/plogins-lookbook/
-* **Source code** - https://github.com/wppoland/plogins-lookbook
-* **Bug reports and feature requests** - https://github.com/wppoland/plogins-lookbook/issues
+* **Documentation**: [plogins.com/plogins-lookbook/docs/](https://plogins.com/plogins-lookbook/docs/)
+* **Plugin page**: [plogins.com/plogins-lookbook/](https://plogins.com/plogins-lookbook/)
+* **Source code**: [github.com/wppoland/plogins-lookbook](https://github.com/wppoland/plogins-lookbook)
+* **Bug reports and feature requests**: [github.com/wppoland/plogins-lookbook/issues](https://github.com/wppoland/plogins-lookbook/issues)
 
 
 = How it works =
