@@ -9,7 +9,7 @@ defined('ABSPATH') || exit;
 use Lookbook\Contract\HasHooks;
 
 /**
- * Admin settings page registered as a WooCommerce submenu ("WooCommerce →
+ * Admin settings page registered as a WooCommerce submenu ("WooCommerce >
  * Lookbook"). Stores global presentation defaults in the `lookbook_settings`
  * option (array): the master toggle, whether the card shows the price /
  * add-to-cart link, and the add-to-cart label.

@@ -57,10 +57,10 @@ https://github.com/wppoland/plogins-lookbook.
 
 == Installation ==
 
-1. Lade das Plugin nach `/wp-content/plugins/lookbook` hoch oder installiere es über Plugins → Installieren.
+1. Lade das Plugin nach `/wp-content/plugins/lookbook` hoch oder installiere es über Plugins > Installieren.
 2. Aktiviere es. WooCommerce muss installiert und aktiv sein.
-3. Erstelle dein erstes Lookbook unter <strong>Lookbooks → Neu hinzufügen</strong>: Lege das Beitragsbild fest und füge dann Produkt-Hotspots hinzu.
-4. Passe die globale Darstellung unter <strong>WooCommerce → Lookbook</strong> an.
+3. Erstelle dein erstes Lookbook unter <strong>Lookbooks > Neu hinzufügen</strong>: Lege das Beitragsbild fest und füge dann Produkt-Hotspots hinzu.
+4. Passe die globale Darstellung unter <strong>WooCommerce > Lookbook</strong> an.
 5. Bette ein Lookbook mit `[lookbook id="123"]` ein.
 
 == Frequently Asked Questions ==
@@ -87,7 +87,7 @@ das gelöscht oder nicht veröffentlicht ist.
 
 = Can I show the price and an add-to-cart button? =
 
-Ja. Beides sind Schalter unter <strong>WooCommerce → Lookbook</strong>, und du kannst die
+Ja. Beides sind Schalter unter <strong>WooCommerce > Lookbook</strong>, und du kannst die
 Beschriftung des Warenkorb-Buttons anpassen.
 
 = Will it slow my pages down or shift the layout? =
