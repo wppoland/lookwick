@@ -153,8 +153,31 @@ $active = $sceneIndex === 0;
                                     'woocommerce_thumbnail',
                                     ['class' => 'lookbook__card-thumb', 'loading' => 'lazy', 'decoding' => 'async'],
                                 );
-                                // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Default is sanitized above; custom HTML from filter is safe.
-                                echo apply_filters('lookbook/card_image_html', wp_kses_post($thumb), $product, $hotspot);
+                                $lookbook_card_html = apply_filters('lookbook/card_image_html', $thumb, $product, $hotspot);
+
+                                // Escaped once, after the filter: the default was escaped before it,
+                                // so what a callback returned reached the page unchecked. The core
+                                // post allowlist has no srcset, sizes or decoding on img, which is
+                                // why escaping the default was also dropping responsive images.
+                                $lookbook_card_allowed = wp_kses_allowed_html('post');
+                                $lookbook_card_allowed['img'] += [
+                                    'srcset'   => true,
+                                    'sizes'    => true,
+                                    'decoding' => true,
+                                ];
+                                $lookbook_card_allowed['video'] = ($lookbook_card_allowed['video'] ?? []) + [
+                                    'src'         => true,
+                                    'class'       => true,
+                                    'poster'      => true,
+                                    'preload'     => true,
+                                    'playsinline' => true,
+                                    'muted'       => true,
+                                    'loop'        => true,
+                                    'autoplay'    => true,
+                                    'controls'    => true,
+                                ];
+
+                                echo wp_kses($lookbook_card_html, $lookbook_card_allowed);
                                 ?>
                                 <span class="lookbook__card-title"><?php echo esc_html($productName); ?></span>
                             </a>

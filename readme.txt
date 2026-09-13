@@ -5,7 +5,7 @@ Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
 Requires Plugins: woocommerce
-Stable tag: 1.0.11
+Stable tag: 1.0.12
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -116,6 +116,10 @@ Lookbook does not connect to any external service. It builds the shoppable image
 Plogins Lookbook is fully translatable and ships the `plogins-lookbook.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.12 =
+* Security: the lookbook card image is escaped after the `lookbook/card_image_html` filter rather than before it. The default image was sanitised on the way into the filter, so whatever a callback returned went to the page unchecked.
+* Fixed: escaping the image through the core post allowlist was stripping `srcset`, `sizes` and `decoding`, so the card served one fixed image size instead of the responsive set WooCommerce built. The allowlist now keeps them, and keeps the `video` attributes the paid edition's video hotspots use.
 
 = 1.0.11 =
 * Fixed: the PRO upgrade promo kept selling to people who had already bought the paid edition. Only the banner could be dismissed, so the sidebar promo and the locked feature cards followed a paying customer around for good. The promo now checks whether the paid edition is active and steps aside when it is.
