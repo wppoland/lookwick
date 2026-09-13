@@ -118,7 +118,7 @@ Plogins Lookbook is fully translatable and ships the `plogins-lookbook.pot` temp
 == Changelog ==
 
 = 1.0.12 =
-* Security: the lookbook card image is escaped after the `lookbook/card_image_html` filter rather than before it. The default image was sanitised on the way into the filter, so whatever a callback returned went to the page unchecked.
+* Security (low): the lookbook card image is escaped after the `lookbook/card_image_html` filter rather than before it. The default image was sanitised on the way into the filter, so whatever a callback returned went to the page unchecked.
 * Fixed: escaping the image through the core post allowlist was stripping `srcset`, `sizes` and `decoding`, so the card served one fixed image size instead of the responsive set WooCommerce built. The allowlist now keeps them, and keeps the `video` attributes the paid edition's video hotspots use.
 
 = 1.0.11 =
@@ -172,3 +172,8 @@ Plogins Lookbook is fully translatable and ships the `plogins-lookbook.pot` temp
 
 = 0.1.0 =
 * Initial release: shoppable lookbooks with an image, product hotspots positioned by percentage, an accessible product-card popover, and a `[lookbook]` shortcode.
+
+== Upgrade Notice ==
+
+= 1.0.12 =
+Security release. A default installation is not exposed: the image only becomes unsafe if another plugin hooks lookbook/card_image_html and returns unescaped HTML. Update, nothing else to do.
