@@ -55,8 +55,8 @@ final class Settings implements HasHooks
     {
         add_submenu_page(
             'woocommerce',
-            __('Lookbook: Shoppable Image Gallery', 'plogins-lookbook'),
-            __('Lookbook', 'plogins-lookbook'),
+            __('Bildaro: shoppable lookbook', 'bildaro'),
+            __('Bildaro', 'bildaro'),
             'manage_woocommerce',
             self::PAGE,
             [$this, 'renderPage'],
@@ -95,13 +95,13 @@ final class Settings implements HasHooks
 
             <div class="lookbook-intro">
                 <p>
-                    <?php esc_html_e('Lookbook turns an image into a shoppable scene: pin products as hotspots, then embed the lookbook anywhere with a shortcode. Create and edit lookbooks under the Lookbooks menu; these settings control how every lookbook looks and behaves on the storefront.', 'plogins-lookbook'); ?>
+                    <?php esc_html_e('Bildaro turns an image into a shoppable scene: pin products as hotspots, then embed the lookbook anywhere with a shortcode. Create and edit lookbooks under the Lookbooks menu; these settings control how every lookbook looks and behaves on the storefront.', 'bildaro'); ?>
                 </p>
                 <p class="lookbook-intro__embed">
                     <?php
                     printf(
                         /* translators: %s: the shortcode example. */
-                        esc_html__('Embed a lookbook with %s (replace 123 with the lookbook ID shown in the Lookbooks list).', 'plogins-lookbook'),
+                        esc_html__('Embed a lookbook with %s (replace 123 with the lookbook ID shown in the Lookbooks list).', 'bildaro'),
                         '<code>[lookbook id="123"]</code>',
                     );
                     ?>
@@ -112,15 +112,15 @@ final class Settings implements HasHooks
                 <?php settings_fields(self::PAGE); ?>
 
                 <div class="lookbook-card">
-                    <h2><?php esc_html_e('General', 'plogins-lookbook'); ?></h2>
+                    <h2><?php esc_html_e('General', 'bildaro'); ?></h2>
                     <p class="lookbook-card__desc">
-                        <?php esc_html_e('The master switch for everything Lookbook puts on your storefront.', 'plogins-lookbook'); ?>
+                        <?php esc_html_e('The master switch for everything Bildaro puts on your storefront.', 'bildaro'); ?>
                     </p>
                     <table class="form-table" role="presentation">
                         <tbody>
                             <tr>
                                 <th scope="row">
-                                    <?php esc_html_e('Show lookbooks on the storefront', 'plogins-lookbook'); ?>
+                                    <?php esc_html_e('Show lookbooks on the storefront', 'bildaro'); ?>
                                 </th>
                                 <td>
                                     <label for="lookbook_enabled">
@@ -131,10 +131,10 @@ final class Settings implements HasHooks
                                             value="1"
                                             <?php checked((bool) ($settings['enabled'] ?? false), true); ?>
                                         />
-                                        <?php esc_html_e('Render your lookbooks where the shortcode appears.', 'plogins-lookbook'); ?>
+                                        <?php esc_html_e('Render your lookbooks where the shortcode appears.', 'bildaro'); ?>
                                     </label>
                                     <p class="description">
-                                        <?php esc_html_e('Turn this off to hide every lookbook at once without deleting anything, the shortcode outputs nothing and Lookbook loads no CSS or JavaScript on the page. Useful while you are still setting up. On by default.', 'plogins-lookbook'); ?>
+                                        <?php esc_html_e('Turn this off to hide every lookbook at once without deleting anything, the shortcode outputs nothing and Bildaro loads no CSS or JavaScript on the page. Useful while you are still setting up. On by default.', 'bildaro'); ?>
                                     </p>
                                 </td>
                             </tr>
@@ -143,31 +143,31 @@ final class Settings implements HasHooks
                 </div>
 
                 <div class="lookbook-card">
-                    <h2><?php esc_html_e('Product card', 'plogins-lookbook'); ?></h2>
+                    <h2><?php esc_html_e('Product card', 'bildaro'); ?></h2>
                     <p class="lookbook-card__desc">
-                        <?php esc_html_e('What a shopper sees in the little card that pops up when they tap a hotspot. These apply to every lookbook; the product name and image always show.', 'plogins-lookbook'); ?>
+                        <?php esc_html_e('What a shopper sees in the little card that pops up when they tap a hotspot. These apply to every lookbook; the product name and image always show.', 'bildaro'); ?>
                     </p>
                     <table class="form-table" role="presentation">
                         <tbody>
                             <?php
                             $this->checkboxRow(
                                 'show_price',
-                                __('Price', 'plogins-lookbook'),
-                                __('Show the product price in the pop-up card.', 'plogins-lookbook'),
-                                __('Lets shoppers see the cost before they leave the image. On by default.', 'plogins-lookbook'),
+                                __('Price', 'bildaro'),
+                                __('Show the product price in the pop-up card.', 'bildaro'),
+                                __('Lets shoppers see the cost before they leave the image. On by default.', 'bildaro'),
                                 $settings,
                             );
                             $this->checkboxRow(
                                 'show_add_to_cart',
-                                __('Add to cart link', 'plogins-lookbook'),
-                                __('Show an add-to-cart link in the pop-up card.', 'plogins-lookbook'),
-                                __('Lets shoppers buy straight from the image without opening the product page. On by default.', 'plogins-lookbook'),
+                                __('Add to cart link', 'bildaro'),
+                                __('Show an add-to-cart link in the pop-up card.', 'bildaro'),
+                                __('Lets shoppers buy straight from the image without opening the product page. On by default.', 'bildaro'),
                                 $settings,
                             );
                             ?>
                             <tr>
                                 <th scope="row">
-                                    <label for="lookbook_add_to_cart_text"><?php esc_html_e('Add to cart label', 'plogins-lookbook'); ?></label>
+                                    <label for="lookbook_add_to_cart_text"><?php esc_html_e('Add to cart label', 'bildaro'); ?></label>
                                 </th>
                                 <td>
                                     <input
@@ -176,10 +176,10 @@ final class Settings implements HasHooks
                                         name="<?php echo esc_attr(self::OPTION); ?>[add_to_cart_text]"
                                         value="<?php echo esc_attr((string) ($settings['add_to_cart_text'] ?? '')); ?>"
                                         class="regular-text"
-                                        placeholder="<?php esc_attr_e('e.g. Add to cart', 'plogins-lookbook'); ?>"
+                                        placeholder="<?php esc_attr_e('e.g. Add to cart', 'bildaro'); ?>"
                                     />
                                     <p class="description">
-                                        <?php esc_html_e('Overrides the wording on the add-to-cart link for every product, for example “Add to cart”, “Shop the look”, or “Add to bag”. Leave blank to keep each product’s own WooCommerce button text. Only used when the add-to-cart link above is on.', 'plogins-lookbook'); ?>
+                                        <?php esc_html_e('Overrides the wording on the add-to-cart link for every product, for example “Add to cart”, “Shop the look”, or “Add to bag”. Leave blank to keep each product’s own WooCommerce button text. Only used when the add-to-cart link above is on.', 'bildaro'); ?>
                                     </p>
                                 </td>
                             </tr>
@@ -190,7 +190,7 @@ final class Settings implements HasHooks
                 <?php
                 /**
                  * Fires inside the settings form after the core setting cards,
-                 * before the submit button. Add-ons (e.g. Lookbook Pro) hook
+                 * before the submit button. Add-ons (e.g. Bildaro Pro) hook
                  * this to render their own cards within the same form so their
                  * fields are submitted under the shared option.
                  *
@@ -264,7 +264,7 @@ final class Settings implements HasHooks
 
         /**
          * Filters the sanitised settings before they are stored. Add-ons (e.g.
-         * Lookbook Pro) hook this to sanitise and re-attach their own keys,
+         * Bildaro Pro) hook this to sanitise and re-attach their own keys,
          * which the core sanitiser would otherwise drop on save.
          *
          * @param array<string, mixed> $sanitized The core plugin's clean settings.

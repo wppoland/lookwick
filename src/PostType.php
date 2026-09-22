@@ -31,22 +31,22 @@ final class PostType implements HasHooks
     public function register(): void
     {
         $labels = [
-            'name'                  => _x('Lookbooks', 'post type general name', 'plogins-lookbook'),
-            'singular_name'         => _x('Lookbook', 'post type singular name', 'plogins-lookbook'),
-            'menu_name'             => _x('Lookbooks', 'admin menu', 'plogins-lookbook'),
-            'add_new'               => __('Add New', 'plogins-lookbook'),
-            'add_new_item'          => __('Add New Lookbook', 'plogins-lookbook'),
-            'edit_item'             => __('Edit Lookbook', 'plogins-lookbook'),
-            'new_item'              => __('New Lookbook', 'plogins-lookbook'),
-            'view_item'             => __('View Lookbook', 'plogins-lookbook'),
-            'search_items'          => __('Search Lookbooks', 'plogins-lookbook'),
-            'not_found'             => __('No lookbooks found.', 'plogins-lookbook'),
-            'not_found_in_trash'    => __('No lookbooks found in Trash.', 'plogins-lookbook'),
-            'all_items'             => __('All Lookbooks', 'plogins-lookbook'),
-            'featured_image'        => __('Lookbook image', 'plogins-lookbook'),
-            'set_featured_image'    => __('Set lookbook image', 'plogins-lookbook'),
-            'remove_featured_image' => __('Remove lookbook image', 'plogins-lookbook'),
-            'use_featured_image'    => __('Use as lookbook image', 'plogins-lookbook'),
+            'name'                  => _x('Lookbooks', 'post type general name', 'bildaro'),
+            'singular_name'         => _x('Lookbook', 'post type singular name', 'bildaro'),
+            'menu_name'             => _x('Lookbooks', 'admin menu', 'bildaro'),
+            'add_new'               => __('Add New', 'bildaro'),
+            'add_new_item'          => __('Add New Lookbook', 'bildaro'),
+            'edit_item'             => __('Edit Lookbook', 'bildaro'),
+            'new_item'              => __('New Lookbook', 'bildaro'),
+            'view_item'             => __('View Lookbook', 'bildaro'),
+            'search_items'          => __('Search Lookbooks', 'bildaro'),
+            'not_found'             => __('No lookbooks found.', 'bildaro'),
+            'not_found_in_trash'    => __('No lookbooks found in Trash.', 'bildaro'),
+            'all_items'             => __('All Lookbooks', 'bildaro'),
+            'featured_image'        => __('Lookbook image', 'bildaro'),
+            'set_featured_image'    => __('Set lookbook image', 'bildaro'),
+            'remove_featured_image' => __('Remove lookbook image', 'bildaro'),
+            'use_featured_image'    => __('Use as lookbook image', 'bildaro'),
         ];
 
         register_post_type(self::POST_TYPE, [

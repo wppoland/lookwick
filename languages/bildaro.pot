@@ -2,8 +2,8 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Plogins Lookbook - Shoppable Lookbook for WooCommerce 1.0.9\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plogins-lookbook\n"
+"Project-Id-Version: Bildaro - Shoppable Lookbook for WooCommerce 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bildaro\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -12,35 +12,35 @@ msgstr ""
 "POT-Creation-Date: 2026-09-09T14:37:52+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
-"X-Domain: plogins-lookbook\n"
+"X-Domain: bildaro\n"
 
 #. Plugin Name of the plugin
-#: plogins-lookbook.php
-msgid "Plogins Lookbook - Shoppable Lookbook for WooCommerce"
+#: bildaro.php
+msgid "Bildaro - Shoppable Lookbook for WooCommerce"
 msgstr ""
 
 #. Plugin URI of the plugin
-#: plogins-lookbook.php
+#: bildaro.php
 msgid "https://plogins.com/plogins-lookbook/"
 msgstr ""
 
 #. Description of the plugin
-#: plogins-lookbook.php
+#: bildaro.php
 msgid "Create shoppable lookbooks: pin products as hotspots on an image."
 msgstr ""
 
 #. Author of the plugin
-#: plogins-lookbook.php
+#: bildaro.php
 msgid "WPPoland.com"
 msgstr ""
 
 #. Author URI of the plugin
-#: plogins-lookbook.php
+#: bildaro.php
 msgid "https://wppoland.com"
 msgstr ""
 
-#: plogins-lookbook.php:48
-msgid "Lookbook - Shoppable Image Gallery for WooCommerce requires WooCommerce to be active."
+#: bildaro.php:48
+msgid "Bildaro - Shoppable Lookbook for WooCommerce requires WooCommerce to be active."
 msgstr ""
 
 #: src/Admin/MetaBox.php:44
@@ -106,15 +106,15 @@ msgid "What %s adds"
 msgstr ""
 
 #: src/Admin/Settings.php:58
-msgid "Lookbook: Shoppable Image Gallery"
+msgid "Bildaro: shoppable lookbook"
 msgstr ""
 
 #: src/Admin/Settings.php:59
-msgid "Lookbook"
+msgid "Bildaro"
 msgstr ""
 
 #: src/Admin/Settings.php:98
-msgid "Lookbook turns an image into a shoppable scene: pin products as hotspots, then embed the lookbook anywhere with a shortcode. Create and edit lookbooks under the Lookbooks menu; these settings control how every lookbook looks and behaves on the storefront."
+msgid "Bildaro turns an image into a shoppable scene: pin products as hotspots, then embed the lookbook anywhere with a shortcode. Create and edit lookbooks under the Lookbooks menu; these settings control how every lookbook looks and behaves on the storefront."
 msgstr ""
 
 #. translators: %s: the shortcode example.
@@ -128,7 +128,7 @@ msgid "General"
 msgstr ""
 
 #: src/Admin/Settings.php:117
-msgid "The master switch for everything Lookbook puts on your storefront."
+msgid "The master switch for everything Bildaro puts on your storefront."
 msgstr ""
 
 #: src/Admin/Settings.php:123
@@ -140,7 +140,7 @@ msgid "Render your lookbooks where the shortcode appears."
 msgstr ""
 
 #: src/Admin/Settings.php:137
-msgid "Turn this off to hide every lookbook at once without deleting anything, the shortcode outputs nothing and Lookbook loads no CSS or JavaScript on the page. Useful while you are still setting up. On by default."
+msgid "Turn this off to hide every lookbook at once without deleting anything, the shortcode outputs nothing and Bildaro loads no CSS or JavaScript on the page. Useful while you are still setting up. On by default."
 msgstr ""
 
 #: src/Admin/Settings.php:146

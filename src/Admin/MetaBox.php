@@ -41,7 +41,7 @@ final class MetaBox implements HasHooks
     {
         add_meta_box(
             'lookbook-hotspots',
-            __('Shoppable hotspots', 'plogins-lookbook'),
+            __('Shoppable hotspots', 'bildaro'),
             [$this, 'render'],
             PostType::POST_TYPE,
             'normal',
@@ -78,7 +78,7 @@ final class MetaBox implements HasHooks
 
         wp_localize_script('lookbook-editor', 'lookbookEditor', [
             'i18n' => [
-                'confirmRemove' => __('Remove this hotspot?', 'plogins-lookbook'),
+                'confirmRemove' => __('Remove this hotspot?', 'bildaro'),
             ],
         ]);
     }

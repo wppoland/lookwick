@@ -10,7 +10,7 @@
 defined('ABSPATH') || exit;
 
 return [
-    'name'       => 'Lookbook Pro',
+    'name'       => 'Bildaro Pro',
     'url'        => 'https://plogins.com/plogins-lookbook-pro/pricing/',
     'sellable'   => true,
     'price_from' => 19,
