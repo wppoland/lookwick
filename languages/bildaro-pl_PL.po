@@ -21,12 +21,12 @@ msgstr ""
 #. Plugin Name of the plugin
 #: bildaro.php
 msgid "Bildaro - Shoppable Lookbook for WooCommerce"
-msgstr ""
+msgstr "Bildaro - zakupowy lookbook dla WooCommerce"
 
 #. Plugin URI of the plugin
 #: bildaro.php
 msgid "https://plogins.com/plogins-lookbook/"
-msgstr ""
+msgstr "https://plogins.com/plogins-lookbook/"
 
 #. Description of the plugin
 #: bildaro.php
@@ -38,18 +38,18 @@ msgstr ""
 #. Author of the plugin
 #: bildaro.php
 msgid "WPPoland.com"
-msgstr ""
+msgstr "WPPoland.com"
 
 #. Author URI of the plugin
 #: bildaro.php
 msgid "https://wppoland.com"
-msgstr ""
+msgstr "https://wppoland.com"
 
 #: bildaro.php:48
 msgid ""
 "Bildaro - Shoppable Lookbook for WooCommerce requires WooCommerce to be "
 "active."
-msgstr ""
+msgstr "Bildaro - zakupowy lookbook dla WooCommerce wymaga aktywnego WooCommerce."
 
 #: src/Admin/MetaBox.php:44
 msgid "Shoppable hotspots"
@@ -115,11 +115,11 @@ msgstr "Co dodaje %s"
 
 #: src/Admin/Settings.php:58
 msgid "Bildaro: shoppable lookbook"
-msgstr ""
+msgstr "Bildaro: zakupowy lookbook"
 
 #: src/Admin/Settings.php:59
 msgid "Bildaro"
-msgstr ""
+msgstr "Bildaro"
 
 #: src/Admin/Settings.php:98
 msgid ""
@@ -127,7 +127,7 @@ msgid ""
 "then embed the lookbook anywhere with a shortcode. Create and edit lookbooks "
 "under the Lookbooks menu; these settings control how every lookbook looks "
 "and behaves on the storefront."
-msgstr ""
+msgstr "Bildaro zamienia obraz w zakupową scenę: przypnij produkty jako punkty aktywne, a potem osadź lookbook w dowolnym miejscu krótkim kodem. Twórz i edytuj lookbooki w menu Lookbooki; te ustawienia decydują o tym, jak każdy lookbook wygląda i zachowuje się w sklepie."
 
 #. translators: %s: the shortcode example.
 #: src/Admin/Settings.php:104
@@ -145,7 +145,7 @@ msgstr "Ogólne"
 
 #: src/Admin/Settings.php:117
 msgid "The master switch for everything Bildaro puts on your storefront."
-msgstr ""
+msgstr "Główny przełącznik wszystkiego, co Bildaro wyświetla w Twoim sklepie."
 
 #: src/Admin/Settings.php:123
 msgid "Show lookbooks on the storefront"
@@ -160,7 +160,7 @@ msgid ""
 "Turn this off to hide every lookbook at once without deleting anything, the "
 "shortcode outputs nothing and Bildaro loads no CSS or JavaScript on the "
 "page. Useful while you are still setting up. On by default."
-msgstr ""
+msgstr "Wyłącz to, aby ukryć wszystkie lookbooki naraz bez usuwania czegokolwiek, krótki kod nic nie wyświetla, a Bildaro nie ładuje na stronie żadnego CSS ani JavaScriptu. Przydatne, gdy dopiero konfigurujesz. Domyślnie włączone."
 
 #: src/Admin/Settings.php:146
 msgid "Product card"
@@ -340,13 +340,13 @@ msgstr "+ Dodaj punkt aktywny"
 
 #: templates/lookbook.php:33
 msgid "Lookbook images"
-msgstr ""
+msgstr "Obrazy lookbooka"
 
 #. translators: %d: image number
 #: templates/lookbook.php:39 templates/partials/lookbook-stage.php:100
 #, php-format
 msgid "Image %d"
-msgstr ""
+msgstr "Obraz %d"
 
 #: templates/partials/lookbook-stage.php:79
 msgid "Shoppable lookbook"
