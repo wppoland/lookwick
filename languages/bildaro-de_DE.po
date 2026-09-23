@@ -103,7 +103,7 @@ msgstr "Zeige Lookbooks im Schaufenster an"
 
 #: src/Admin/Settings.php:124
 msgid "Render your lookbooks where the shortcode appears."
-msgstr "Rendern Sie deine Lookbooks dort, wo der Shortcode erscheint."
+msgstr "Rendere deine Lookbooks dort, wo der Shortcode erscheint."
 
 #: src/Admin/Settings.php:127
 msgid ""
