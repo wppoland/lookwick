@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Lookbook - Shoppable Image Gallery for WooCommerce "
 "0.1.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/lookbook\n"
-"POT-Creation-Date: 2026-06-16T20:23:31+00:00\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bildaro\n"
+"POT-Creation-Date: 2026-09-09T14:37:52+00:00\n"
 "PO-Revision-Date: 2026-06-16T20:23:31+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -18,39 +18,37 @@ msgstr ""
 "X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
-#: lookbook.php
-msgid "Lookbook - Shoppable Image Gallery for WooCommerce"
-msgstr "Lookbook - Galería de imágenes que se pueden comprar para WooCommerce"
+#: bildaro.php
+msgid "Bildaro - Shoppable Lookbook for WooCommerce"
+msgstr ""
 
 #. Plugin URI of the plugin
-#: lookbook.php
-msgid "https://plogins.com/lookbook/"
-msgstr "https://plogins.com/es/lookbook/"
+#: bildaro.php
+msgid "https://plogins.com/plogins-lookbook/"
+msgstr ""
 
 #. Description of the plugin
-#: lookbook.php
+#: bildaro.php
 msgid "Create shoppable lookbooks: pin products as hotspots on an image."
 msgstr ""
 "Cree lookbooks que se puedan comprar: fije productos como puntos de acceso "
 "en una imagen."
 
 #. Author of the plugin
-#: lookbook.php
-msgid "WPPoland"
-msgstr "WPPoland"
+#: bildaro.php
+msgid "WPPoland.com"
+msgstr ""
 
 #. Author URI of the plugin
-#: lookbook.php
-msgid "https://plogins.com/"
-msgstr "https://plogins.com/"
-
-#: lookbook.php:47
-msgid ""
-"Lookbook - Shoppable Image Gallery for WooCommerce requires WooCommerce to "
-"be active."
+#: bildaro.php
+msgid "https://wppoland.com"
 msgstr ""
-"Lookbook: galería de imágenes que se pueden comprar para WooCommerce "
-"requiere que WooCommerce esté activo."
+
+#: bildaro.php:48
+msgid ""
+"Bildaro - Shoppable Lookbook for WooCommerce requires WooCommerce to be "
+"active."
+msgstr ""
 
 #: src/Admin/MetaBox.php:44
 msgid "Shoppable hotspots"
@@ -60,29 +58,78 @@ msgstr "Puntos de acceso para comprar"
 msgid "Remove this hotspot?"
 msgstr "¿Eliminar este punto de acceso?"
 
-#: src/Admin/Settings.php:50
-msgid "Lookbook: Shoppable Image Gallery"
-msgstr "Lookbook: Galería de imágenes que se pueden comprar"
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Próximamente"
 
-#: src/Admin/Settings.php:51
-msgid "Lookbook"
-msgstr "lookbook"
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Próximamente"
 
-#: src/Admin/Settings.php:88
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:84
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "desde %1$s%2$d/año"
+
+#: src/Admin/ProUpsell.php:93
+msgid "Upgrade to PRO"
+msgstr "Mejora a PRO"
+
+#: src/Admin/ProUpsell.php:94
+msgid "Powiadom mnie"
+msgstr "Avísame"
+
+#: src/Admin/ProUpsell.php:94
+msgid "Get notified"
+msgstr "Avísame"
+
+#: src/Admin/ProUpsell.php:124
+msgid "Permission denied."
+msgstr "Permiso denegado."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:154
+#, php-format
+msgid "Do more with %s"
+msgstr "Haz más con %s"
+
+#: src/Admin/ProUpsell.php:161
+msgid "Dismiss this notice"
+msgstr "Descartar este aviso"
+
+#: src/Admin/ProUpsell.php:178
+msgid "Unlock every PRO feature"
+msgstr "Desbloquea todas las funciones PRO"
+
+#: src/Admin/ProUpsell.php:191
+msgid "one licence, every PRO feature"
+msgstr "una licencia, todas las funciones PRO"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:210
+#, php-format
+msgid "What %s adds"
+msgstr "Lo que añade %s"
+
+#: src/Admin/Settings.php:58
+msgid "Bildaro: shoppable lookbook"
+msgstr ""
+
+#: src/Admin/Settings.php:59
+msgid "Bildaro"
+msgstr ""
+
+#: src/Admin/Settings.php:98
 msgid ""
-"Lookbook turns an image into a shoppable scene: pin products as hotspots, "
+"Bildaro turns an image into a shoppable scene: pin products as hotspots, "
 "then embed the lookbook anywhere with a shortcode. Create and edit lookbooks "
 "under the Lookbooks menu; these settings control how every lookbook looks "
 "and behaves on the storefront."
 msgstr ""
-"Lookbook convierte una imagen en una escena en la que se puede comprar: fije "
-"productos como puntos de acceso y luego incruste el lookbook en cualquier "
-"lugar con un código corto. Cree y edite lookbooks en el menú Lookbooks; "
-"Estas configuraciones controlan cómo se ve y se comporta cada lookbook en el "
-"escaparate."
 
 #. translators: %s: the shortcode example.
-#: src/Admin/Settings.php:94
+#: src/Admin/Settings.php:104
 #, php-format
 msgid ""
 "Embed a lookbook with %s (replace 123 with the lookbook ID shown in the "
@@ -91,38 +138,34 @@ msgstr ""
 "Incruste un lookbook con %s (reemplace 123 con el ID del lookbook que se "
 "muestra en la lista de Lookbooks)."
 
-#: src/Admin/Settings.php:105
+#: src/Admin/Settings.php:115
 msgid "General"
 msgstr "General"
 
-#: src/Admin/Settings.php:107
-msgid "The master switch for everything Lookbook puts on your storefront."
-msgstr "El interruptor maestro para todo lo que Lookbook pone en tu tienda."
+#: src/Admin/Settings.php:117
+msgid "The master switch for everything Bildaro puts on your storefront."
+msgstr ""
 
-#: src/Admin/Settings.php:113
+#: src/Admin/Settings.php:123
 msgid "Show lookbooks on the storefront"
 msgstr "Mostrar lookbooks en el escaparate"
 
-#: src/Admin/Settings.php:124
+#: src/Admin/Settings.php:134
 msgid "Render your lookbooks where the shortcode appears."
 msgstr "Representa tus lookbooks donde aparece el shortcode."
 
-#: src/Admin/Settings.php:127
+#: src/Admin/Settings.php:137
 msgid ""
 "Turn this off to hide every lookbook at once without deleting anything, the "
-"shortcode outputs nothing and Lookbook loads no CSS or JavaScript on the "
+"shortcode outputs nothing and Bildaro loads no CSS or JavaScript on the "
 "page. Useful while you are still setting up. On by default."
 msgstr ""
-"Desactive esto para ocultar todos los lookbook a la vez sin eliminar nada, "
-"el código abreviado no genera nada y Lookbook no carga CSS ni JavaScript en "
-"la página. Útil mientras aún estás configurando. Activado de forma "
-"predeterminada."
 
-#: src/Admin/Settings.php:136
+#: src/Admin/Settings.php:146
 msgid "Product card"
 msgstr "Tarjeta de producto"
 
-#: src/Admin/Settings.php:138
+#: src/Admin/Settings.php:148
 msgid ""
 "What a shopper sees in the little card that pops up when they tap a hotspot. "
 "These apply to every lookbook; the product name and image always show."
@@ -131,29 +174,29 @@ msgstr ""
 "punto de acceso. Estos se aplican a todos los lookbook; El nombre del "
 "producto y la imagen siempre se muestran."
 
-#: src/Admin/Settings.php:145
+#: src/Admin/Settings.php:155
 msgid "Price"
 msgstr "Precio"
 
-#: src/Admin/Settings.php:146
+#: src/Admin/Settings.php:156
 msgid "Show the product price in the pop-up card."
 msgstr "Muestra el precio del producto en la tarjeta emergente."
 
-#: src/Admin/Settings.php:147
+#: src/Admin/Settings.php:157
 msgid "Lets shoppers see the cost before they leave the image. On by default."
 msgstr ""
 "Permite a los compradores ver el costo antes de abandonar la imagen. "
 "Activado de forma predeterminada."
 
-#: src/Admin/Settings.php:152
+#: src/Admin/Settings.php:162
 msgid "Add to cart link"
 msgstr "Añadir al enlace del carrito"
 
-#: src/Admin/Settings.php:153
+#: src/Admin/Settings.php:163
 msgid "Show an add-to-cart link in the pop-up card."
 msgstr "Muestre un enlace para añadir al carrito en la tarjeta emergente."
 
-#: src/Admin/Settings.php:154
+#: src/Admin/Settings.php:164
 msgid ""
 "Lets shoppers buy straight from the image without opening the product page. "
 "On by default."
@@ -161,15 +204,15 @@ msgstr ""
 "Permite a los compradores comprar directamente desde la imagen sin abrir la "
 "página del producto. Activado de forma predeterminada."
 
-#: src/Admin/Settings.php:160
+#: src/Admin/Settings.php:170
 msgid "Add to cart label"
 msgstr "Añadir a la etiqueta del carrito"
 
-#: src/Admin/Settings.php:169
+#: src/Admin/Settings.php:179
 msgid "e.g. Add to cart"
 msgstr "p.ej. Añadir al carrito"
 
-#: src/Admin/Settings.php:172
+#: src/Admin/Settings.php:182
 msgid ""
 "Overrides the wording on the add-to-cart link for every product, for example "
 "“Add to cart”, “Shop the look”, or “Add to bag”. Leave blank to keep each "
@@ -272,100 +315,105 @@ msgstr "X %"
 msgid "Y %"
 msgstr "Y %"
 
-#: templates/admin/hotspot-editor.php:30 templates/admin/hotspot-editor.php:70
+#: templates/admin/hotspot-editor.php:30 templates/admin/hotspot-editor.php:71
 msgid "Product ID"
 msgstr "ID del producto"
 
-#: templates/admin/hotspot-editor.php:31
+#: templates/admin/hotspot-editor.php:32
 msgid "Actions"
 msgstr "Acciones"
 
-#: templates/admin/hotspot-editor.php:42
+#: templates/admin/hotspot-editor.php:43
 msgid "X percentage"
 msgstr "X porcentaje"
 
-#: templates/admin/hotspot-editor.php:56
+#: templates/admin/hotspot-editor.php:57
 msgid "Y percentage"
 msgstr "Porcentaje Y"
 
-#: templates/admin/hotspot-editor.php:84
+#: templates/admin/hotspot-editor.php:86
 msgid "Remove"
 msgstr "Eliminar"
 
-#: templates/admin/hotspot-editor.php:94
+#: templates/admin/hotspot-editor.php:96
 msgid "+ Add hotspot"
 msgstr "+ Añadir punto de acceso"
 
-#: templates/lookbook.php:38
+#: templates/lookbook.php:33
+msgid "Lookbook images"
+msgstr ""
+
+#. translators: %d: image number
+#: templates/lookbook.php:39 templates/partials/lookbook-stage.php:100
+#, php-format
+msgid "Image %d"
+msgstr ""
+
+#: templates/partials/lookbook-stage.php:79
 msgid "Shoppable lookbook"
 msgstr "Lookbook comprable"
 
 #. translators: %s: product name.
-#: templates/lookbook.php:76
+#: templates/partials/lookbook-stage.php:121
 #, php-format
 msgid "View %s"
 msgstr "Ver %s"
 
-#: templates/lookbook.php:126
+#: templates/partials/lookbook-stage.php:177
 msgid "View product"
 msgstr "Ver producto"
 
-#: src/Admin/ProUpsell.php:78
-msgid "Wkrótce"
-msgstr "Próximamente"
+#~ msgid "Lookbook - Shoppable Image Gallery for WooCommerce"
+#~ msgstr ""
+#~ "Lookbook - Galería de imágenes que se pueden comprar para WooCommerce"
 
-#: src/Admin/ProUpsell.php:78
-msgid "Coming soon"
-msgstr "Próximamente"
+#~ msgid "https://plogins.com/lookbook/"
+#~ msgstr "https://plogins.com/es/lookbook/"
 
-#. translators: %d: yearly price in PLN
-#: src/Admin/ProUpsell.php:83
+#~ msgid "WPPoland"
+#~ msgstr "WPPoland"
+
+#~ msgid "https://plogins.com/"
+#~ msgstr "https://plogins.com/"
+
+#~ msgid ""
+#~ "Lookbook - Shoppable Image Gallery for WooCommerce requires WooCommerce "
+#~ "to be active."
+#~ msgstr ""
+#~ "Lookbook: galería de imágenes que se pueden comprar para WooCommerce "
+#~ "requiere que WooCommerce esté activo."
+
+#~ msgid "Lookbook: Shoppable Image Gallery"
+#~ msgstr "Lookbook: Galería de imágenes que se pueden comprar"
+
+#~ msgid "Lookbook"
+#~ msgstr "lookbook"
+
+#~ msgid ""
+#~ "Lookbook turns an image into a shoppable scene: pin products as hotspots, "
+#~ "then embed the lookbook anywhere with a shortcode. Create and edit "
+#~ "lookbooks under the Lookbooks menu; these settings control how every "
+#~ "lookbook looks and behaves on the storefront."
+#~ msgstr ""
+#~ "Lookbook convierte una imagen en una escena en la que se puede comprar: "
+#~ "fije productos como puntos de acceso y luego incruste el lookbook en "
+#~ "cualquier lugar con un código corto. Cree y edite lookbooks en el menú "
+#~ "Lookbooks; Estas configuraciones controlan cómo se ve y se comporta cada "
+#~ "lookbook en el escaparate."
+
+#~ msgid "The master switch for everything Lookbook puts on your storefront."
+#~ msgstr "El interruptor maestro para todo lo que Lookbook pone en tu tienda."
+
+#~ msgid ""
+#~ "Turn this off to hide every lookbook at once without deleting anything, "
+#~ "the shortcode outputs nothing and Lookbook loads no CSS or JavaScript on "
+#~ "the page. Useful while you are still setting up. On by default."
+#~ msgstr ""
+#~ "Desactive esto para ocultar todos los lookbook a la vez sin eliminar "
+#~ "nada, el código abreviado no genera nada y Lookbook no carga CSS ni "
+#~ "JavaScript en la página. Útil mientras aún estás configurando. Activado "
+#~ "de forma predeterminada."
+
 #, php-format
-msgid "od %d zł/rok"
-msgstr "desde %d zł/año"
-
-#. translators: 1: currency symbol, 2: yearly price
-#: src/Admin/ProUpsell.php:88
-#, php-format
-msgid "from %1$s%2$d/yr"
-msgstr "desde %1$s%2$d/año"
-
-#: src/Admin/ProUpsell.php:97
-msgid "Upgrade to PRO"
-msgstr "Mejora a PRO"
-
-#: src/Admin/ProUpsell.php:98
-msgid "Powiadom mnie"
-msgstr "Avísame"
-
-#: src/Admin/ProUpsell.php:98
-msgid "Get notified"
-msgstr "Avísame"
-
-#: src/Admin/ProUpsell.php:128
-msgid "Permission denied."
-msgstr "Permiso denegado."
-
-#. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:158
-#, php-format
-msgid "Do more with %s"
-msgstr "Haz más con %s"
-
-#: src/Admin/ProUpsell.php:165
-msgid "Dismiss this notice"
-msgstr "Descartar este aviso"
-
-#: src/Admin/ProUpsell.php:182
-msgid "Unlock every PRO feature"
-msgstr "Desbloquea todas las funciones PRO"
-
-#: src/Admin/ProUpsell.php:195
-msgid "one licence, every PRO feature"
-msgstr "una licencia, todas las funciones PRO"
-
-#. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:214
-#, php-format
-msgid "What %s adds"
-msgstr "Lo que añade %s"
+#~ msgid "od %d zł/rok"
+#~ msgstr "desde %d zł/año"
