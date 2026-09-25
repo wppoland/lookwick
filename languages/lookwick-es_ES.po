@@ -4,130 +4,129 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Lookbook - Shoppable Image Gallery for WooCommerce "
 "0.1.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bildaro\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/lookwick\n"
 "POT-Creation-Date: 2026-09-09T14:37:52+00:00\n"
-"PO-Revision-Date: 2026-06-15 12:00+0000\n"
+"PO-Revision-Date: 2026-06-16T20:23:31+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
-"Language-Team: Polish <pl@li.org>\n"
-"Language: pl_PL\n"
+"Language-Team: Spanish <es@li.org>\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
-"|| n%100>14) ? 1 : 2);\n"
-"X-Domain: bildaro\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: lookwick\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
-#: bildaro.php
-msgid "Bildaro - Shoppable Lookbook for WooCommerce"
-msgstr "Bildaro - zakupowy lookbook dla WooCommerce"
+#: lookwick.php
+msgid "Lookwick - Shoppable Lookbook for WooCommerce"
+msgstr ""
 
 #. Plugin URI of the plugin
-#: bildaro.php
+#: lookwick.php
 msgid "https://plogins.com/plogins-lookbook/"
-msgstr "https://plogins.com/plogins-lookbook/"
+msgstr ""
 
 #. Description of the plugin
-#: bildaro.php
+#: lookwick.php
 msgid "Create shoppable lookbooks: pin products as hotspots on an image."
 msgstr ""
-"Twórz lookbooki z zakupami: przypinaj produkty jako punkty aktywne na "
-"zdjęciu."
+"Cree lookbooks que se puedan comprar: fije productos como puntos de acceso "
+"en una imagen."
 
 #. Author of the plugin
-#: bildaro.php
+#: lookwick.php
 msgid "WPPoland.com"
-msgstr "WPPoland.com"
+msgstr ""
 
 #. Author URI of the plugin
-#: bildaro.php
+#: lookwick.php
 msgid "https://wppoland.com"
-msgstr "https://wppoland.com"
+msgstr ""
 
-#: bildaro.php:48
+#: lookwick.php:48
 msgid ""
-"Bildaro - Shoppable Lookbook for WooCommerce requires WooCommerce to be "
+"Lookwick - Shoppable Lookbook for WooCommerce requires WooCommerce to be "
 "active."
-msgstr "Bildaro - zakupowy lookbook dla WooCommerce wymaga aktywnego WooCommerce."
+msgstr ""
 
 #: src/Admin/MetaBox.php:44
 msgid "Shoppable hotspots"
-msgstr "Punkty aktywne z zakupami"
+msgstr "Puntos de acceso para comprar"
 
 #: src/Admin/MetaBox.php:81
 msgid "Remove this hotspot?"
-msgstr "Usunąć ten punkt aktywny?"
+msgstr "¿Eliminar este punto de acceso?"
 
 #: src/Admin/ProUpsell.php:78
 msgid "Wkrótce"
-msgstr "Wkrótce"
+msgstr "Próximamente"
 
 #: src/Admin/ProUpsell.php:78
 msgid "Coming soon"
-msgstr "Wkrótce"
+msgstr "Próximamente"
 
 #. translators: 1: currency symbol, 2: yearly price
 #: src/Admin/ProUpsell.php:84
 #, php-format
 msgid "from %1$s%2$d/yr"
-msgstr "od %1$s%2$d/rok"
+msgstr "desde %1$s%2$d/año"
 
 #: src/Admin/ProUpsell.php:93
 msgid "Upgrade to PRO"
-msgstr "Przejdź na PRO"
+msgstr "Mejora a PRO"
 
 #: src/Admin/ProUpsell.php:94
 msgid "Powiadom mnie"
-msgstr "Powiadom mnie"
+msgstr "Avísame"
 
 #: src/Admin/ProUpsell.php:94
 msgid "Get notified"
-msgstr "Powiadom mnie"
+msgstr "Avísame"
 
 #: src/Admin/ProUpsell.php:124
 msgid "Permission denied."
-msgstr "Brak uprawnień."
+msgstr "Permiso denegado."
 
 #. translators: %s: PRO edition name
 #: src/Admin/ProUpsell.php:154
 #, php-format
 msgid "Do more with %s"
-msgstr "Zrób więcej dzięki %s"
+msgstr "Haz más con %s"
 
 #: src/Admin/ProUpsell.php:161
 msgid "Dismiss this notice"
-msgstr "Odrzuć to powiadomienie"
+msgstr "Descartar este aviso"
 
 #: src/Admin/ProUpsell.php:178
 msgid "Unlock every PRO feature"
-msgstr "Odblokuj wszystkie funkcje PRO"
+msgstr "Desbloquea todas las funciones PRO"
 
 #: src/Admin/ProUpsell.php:191
 msgid "one licence, every PRO feature"
-msgstr "jedna licencja, wszystkie funkcje PRO"
+msgstr "una licencia, todas las funciones PRO"
 
 #. translators: %s: PRO edition name
 #: src/Admin/ProUpsell.php:210
 #, php-format
 msgid "What %s adds"
-msgstr "Co dodaje %s"
+msgstr "Lo que añade %s"
 
 #: src/Admin/Settings.php:58
-msgid "Bildaro: shoppable lookbook"
-msgstr "Bildaro: zakupowy lookbook"
+msgid "Lookwick: shoppable lookbook"
+msgstr ""
 
 #: src/Admin/Settings.php:59
-msgid "Bildaro"
-msgstr "Bildaro"
+msgid "Lookwick"
+msgstr ""
 
 #: src/Admin/Settings.php:98
 msgid ""
-"Bildaro turns an image into a shoppable scene: pin products as hotspots, "
+"Lookwick turns an image into a shoppable scene: pin products as hotspots, "
 "then embed the lookbook anywhere with a shortcode. Create and edit lookbooks "
 "under the Lookbooks menu; these settings control how every lookbook looks "
 "and behaves on the storefront."
-msgstr "Bildaro zamienia obraz w zakupową scenę: przypnij produkty jako punkty aktywne, a potem osadź lookbook w dowolnym miejscu krótkim kodem. Twórz i edytuj lookbooki w menu Lookbooki; te ustawienia decydują o tym, jak każdy lookbook wygląda i zachowuje się w sklepie."
+msgstr ""
 
 #. translators: %s: the shortcode example.
 #: src/Admin/Settings.php:104
@@ -136,81 +135,82 @@ msgid ""
 "Embed a lookbook with %s (replace 123 with the lookbook ID shown in the "
 "Lookbooks list)."
 msgstr ""
-"Osadź lookbook za pomocą %s (zastąp 123 identyfikatorem lookbooka widocznym "
-"na liście Lookbooki)."
+"Incruste un lookbook con %s (reemplace 123 con el ID del lookbook que se "
+"muestra en la lista de Lookbooks)."
 
 #: src/Admin/Settings.php:115
 msgid "General"
-msgstr "Ogólne"
+msgstr "General"
 
 #: src/Admin/Settings.php:117
-msgid "The master switch for everything Bildaro puts on your storefront."
-msgstr "Główny przełącznik wszystkiego, co Bildaro wyświetla w Twoim sklepie."
+msgid "The master switch for everything Lookwick puts on your storefront."
+msgstr ""
 
 #: src/Admin/Settings.php:123
 msgid "Show lookbooks on the storefront"
-msgstr "Pokaż lookbooki na witrynie sklepu"
+msgstr "Mostrar lookbooks en el escaparate"
 
 #: src/Admin/Settings.php:134
 msgid "Render your lookbooks where the shortcode appears."
-msgstr "Renderuj swoje lookbooki, w których pojawia się krótki kod."
+msgstr "Representa tus lookbooks donde aparece el shortcode."
 
 #: src/Admin/Settings.php:137
 msgid ""
 "Turn this off to hide every lookbook at once without deleting anything, the "
-"shortcode outputs nothing and Bildaro loads no CSS or JavaScript on the "
+"shortcode outputs nothing and Lookwick loads no CSS or JavaScript on the "
 "page. Useful while you are still setting up. On by default."
-msgstr "Wyłącz to, aby ukryć wszystkie lookbooki naraz bez usuwania czegokolwiek, krótki kod nic nie wyświetla, a Bildaro nie ładuje na stronie żadnego CSS ani JavaScriptu. Przydatne, gdy dopiero konfigurujesz. Domyślnie włączone."
+msgstr ""
 
 #: src/Admin/Settings.php:146
 msgid "Product card"
-msgstr "Karta produktu"
+msgstr "Tarjeta de producto"
 
 #: src/Admin/Settings.php:148
 msgid ""
 "What a shopper sees in the little card that pops up when they tap a hotspot. "
 "These apply to every lookbook; the product name and image always show."
 msgstr ""
-"Co kupujący widzi na małej karcie, która pojawia się po dotknięciu hotspotu. "
-"Dotyczy to każdego lookbooka; nazwa produktu i zdjęcie są zawsze widoczne."
+"Lo que un comprador ve en la pequeña tarjeta que aparece cuando toca un "
+"punto de acceso. Estos se aplican a todos los lookbook; El nombre del "
+"producto y la imagen siempre se muestran."
 
 #: src/Admin/Settings.php:155
 msgid "Price"
-msgstr "Cena"
+msgstr "Precio"
 
 #: src/Admin/Settings.php:156
 msgid "Show the product price in the pop-up card."
-msgstr "Pokaż cenę produktu na wyskakującej karcie."
+msgstr "Muestra el precio del producto en la tarjeta emergente."
 
 #: src/Admin/Settings.php:157
 msgid "Lets shoppers see the cost before they leave the image. On by default."
 msgstr ""
-"Umożliwia kupującym sprawdzenie kosztów, zanim opuszczą obraz. Domyślnie "
-"włączone."
+"Permite a los compradores ver el costo antes de abandonar la imagen. "
+"Activado de forma predeterminada."
 
 #: src/Admin/Settings.php:162
 msgid "Add to cart link"
-msgstr "Link dodawania do koszyka"
+msgstr "Añadir al enlace del carrito"
 
 #: src/Admin/Settings.php:163
 msgid "Show an add-to-cart link in the pop-up card."
-msgstr "Pokaż link do dodania do koszyka na wyskakującej karcie."
+msgstr "Muestre un enlace para añadir al carrito en la tarjeta emergente."
 
 #: src/Admin/Settings.php:164
 msgid ""
 "Lets shoppers buy straight from the image without opening the product page. "
 "On by default."
 msgstr ""
-"Umożliwia kupującym kupowanie bezpośrednio ze zdjęcia, bez konieczności "
-"otwierania strony produktu. Domyślnie włączone."
+"Permite a los compradores comprar directamente desde la imagen sin abrir la "
+"página del producto. Activado de forma predeterminada."
 
 #: src/Admin/Settings.php:170
 msgid "Add to cart label"
-msgstr "Etykieta dodawania do koszyka"
+msgstr "Añadir a la etiqueta del carrito"
 
 #: src/Admin/Settings.php:179
 msgid "e.g. Add to cart"
-msgstr "np. Dodaj do koszyka"
+msgstr "p.ej. Añadir al carrito"
 
 #: src/Admin/Settings.php:182
 msgid ""
@@ -219,77 +219,78 @@ msgid ""
 "product’s own WooCommerce button text. Only used when the add-to-cart link "
 "above is on."
 msgstr ""
-"Zastępuje treść linku dodawania do koszyka dla każdego produktu, na przykład "
-"„Dodaj do koszyka”, „Kupuj wygląd” lub „Dodaj do koszyka”. Pozostaw puste, "
-"aby zachować własny tekst przycisku WooCommerce dla każdego produktu. "
-"Używane tylko wtedy, gdy powyższy link dodawania do koszyka jest włączony."
+"Anula el texto del enlace Añadir al carrito para cada producto, por ejemplo, "
+"\"Añadir al carrito\", \"Comprar el look\" o \"Añadir a la bolsa\". Déjelo "
+"en blanco para conservar el texto del botón WooCommerce propio de cada "
+"producto. Solo se usa cuando el enlace de añadir al carrito de arriba está "
+"activado."
 
 #: src/PostType.php:34
 msgctxt "post type general name"
 msgid "Lookbooks"
-msgstr "Lookbooki"
+msgstr "Lookbooks"
 
 #: src/PostType.php:35
 msgctxt "post type singular name"
 msgid "Lookbook"
-msgstr "Lookbook"
+msgstr "lookbook"
 
 #: src/PostType.php:36
 msgctxt "admin menu"
 msgid "Lookbooks"
-msgstr "Lookbooki"
+msgstr "Lookbooks"
 
 #: src/PostType.php:37
 msgid "Add New"
-msgstr "Dodaj nowy"
+msgstr "Añadir nuevo"
 
 #: src/PostType.php:38
 msgid "Add New Lookbook"
-msgstr "Dodaj nowy lookbook"
+msgstr "Añadir nuevo lookbook"
 
 #: src/PostType.php:39
 msgid "Edit Lookbook"
-msgstr "Edytuj lookbook"
+msgstr "Editar lookbook"
 
 #: src/PostType.php:40
 msgid "New Lookbook"
-msgstr "Nowy lookbook"
+msgstr "Nuevo lookbook"
 
 #: src/PostType.php:41
 msgid "View Lookbook"
-msgstr "Zobacz lookbook"
+msgstr "Ver lookbook"
 
 #: src/PostType.php:42
 msgid "Search Lookbooks"
-msgstr "Szukaj lookbooków"
+msgstr "Buscar lookbooks"
 
 #: src/PostType.php:43
 msgid "No lookbooks found."
-msgstr "Nie znaleziono lookbooków."
+msgstr "No se encontraron lookbooks."
 
 #: src/PostType.php:44
 msgid "No lookbooks found in Trash."
-msgstr "Nie znaleziono lookbooków w koszu."
+msgstr "No se encontraron lookbooks en la Papelera."
 
 #: src/PostType.php:45
 msgid "All Lookbooks"
-msgstr "Wszystkie lookbooki"
+msgstr "Todos los lookbooks"
 
 #: src/PostType.php:46
 msgid "Lookbook image"
-msgstr "Obraz lookbooka"
+msgstr "imagen del lookbook"
 
 #: src/PostType.php:47
 msgid "Set lookbook image"
-msgstr "Ustaw obraz lookbooka"
+msgstr "Establecer imagen del lookbook"
 
 #: src/PostType.php:48
 msgid "Remove lookbook image"
-msgstr "Usuń obraz lookbooka"
+msgstr "Eliminar imagen del lookbook"
 
 #: src/PostType.php:49
 msgid "Use as lookbook image"
-msgstr "Użyj jako obrazu lookbooka"
+msgstr "Usar como imagen del lookbook"
 
 #: templates/admin/hotspot-editor.php:20
 msgid ""
@@ -297,10 +298,10 @@ msgid ""
 "each product. Position each one with X and Y as a percentage from the top-"
 "left of the image (0-100), and enter the product ID to link."
 msgstr ""
-"Ustaw obraz lookbooka za pomocą pola Obrazek wyróżniający, a następnie dodaj "
-"punkt aktywny dla każdego produktu. Ustaw pozycję każdego z nich za pomocą X "
-"i Y jako procentu od lewego górnego rogu obrazu (0-100) i wpisz "
-"identyfikator produktu do powiązania."
+"Configure la imagen del lookbook usando el cuadro Imagen destacada, luego "
+"añade un punto de acceso para cada producto. Coloque cada uno con X e Y como "
+"porcentaje desde la parte superior izquierda de la imagen (0-100) e ingrese "
+"la ID del producto para vincular."
 
 #: templates/admin/hotspot-editor.php:27
 msgid "#"
@@ -316,57 +317,58 @@ msgstr "Y %"
 
 #: templates/admin/hotspot-editor.php:30 templates/admin/hotspot-editor.php:71
 msgid "Product ID"
-msgstr "Identyfikator produktu"
+msgstr "ID del producto"
 
 #: templates/admin/hotspot-editor.php:32
 msgid "Actions"
-msgstr "Akcje"
+msgstr "Acciones"
 
 #: templates/admin/hotspot-editor.php:43
 msgid "X percentage"
-msgstr "Procent X"
+msgstr "X porcentaje"
 
 #: templates/admin/hotspot-editor.php:57
 msgid "Y percentage"
-msgstr "Procent Y"
+msgstr "Porcentaje Y"
 
 #: templates/admin/hotspot-editor.php:86
 msgid "Remove"
-msgstr "Usuń"
+msgstr "Eliminar"
 
 #: templates/admin/hotspot-editor.php:96
 msgid "+ Add hotspot"
-msgstr "+ Dodaj punkt aktywny"
+msgstr "+ Añadir punto de acceso"
 
 #: templates/lookbook.php:33
 msgid "Lookbook images"
-msgstr "Obrazy lookbooka"
+msgstr ""
 
 #. translators: %d: image number
 #: templates/lookbook.php:39 templates/partials/lookbook-stage.php:100
 #, php-format
 msgid "Image %d"
-msgstr "Obraz %d"
+msgstr ""
 
 #: templates/partials/lookbook-stage.php:79
 msgid "Shoppable lookbook"
-msgstr "Lookbook z zakupami"
+msgstr "Lookbook comprable"
 
 #. translators: %s: product name.
 #: templates/partials/lookbook-stage.php:121
 #, php-format
 msgid "View %s"
-msgstr "Zobacz %s"
+msgstr "Ver %s"
 
 #: templates/partials/lookbook-stage.php:177
 msgid "View product"
-msgstr "Zobacz produkt"
+msgstr "Ver producto"
 
 #~ msgid "Lookbook - Shoppable Image Gallery for WooCommerce"
-#~ msgstr "Lookbook - Galeria zdjęć z zakupami dla WooCommerce"
+#~ msgstr ""
+#~ "Lookbook - Galería de imágenes que se pueden comprar para WooCommerce"
 
 #~ msgid "https://plogins.com/lookbook/"
-#~ msgstr "https://plogins.com/lookbook/"
+#~ msgstr "https://plogins.com/es/lookbook/"
 
 #~ msgid "WPPoland"
 #~ msgstr "WPPoland"
@@ -378,14 +380,14 @@ msgstr "Zobacz produkt"
 #~ "Lookbook - Shoppable Image Gallery for WooCommerce requires WooCommerce "
 #~ "to be active."
 #~ msgstr ""
-#~ "Lookbook - Galeria zdjęć z zakupami dla WooCommerce wymaga aktywnej "
-#~ "wtyczki WooCommerce."
+#~ "Lookbook: galería de imágenes que se pueden comprar para WooCommerce "
+#~ "requiere que WooCommerce esté activo."
 
 #~ msgid "Lookbook: Shoppable Image Gallery"
-#~ msgstr "Lookbook: Galeria zdjęć z zakupami"
+#~ msgstr "Lookbook: Galería de imágenes que se pueden comprar"
 
 #~ msgid "Lookbook"
-#~ msgstr "Lookbook"
+#~ msgstr "lookbook"
 
 #~ msgid ""
 #~ "Lookbook turns an image into a shoppable scene: pin products as hotspots, "
@@ -393,48 +395,25 @@ msgstr "Zobacz produkt"
 #~ "lookbooks under the Lookbooks menu; these settings control how every "
 #~ "lookbook looks and behaves on the storefront."
 #~ msgstr ""
-#~ "Lookbook zamienia zdjęcie w scenę z zakupami: przypnij produkty jako "
-#~ "punkty aktywne, a następnie osadź lookbook w dowolnym miejscu za pomocą "
-#~ "shortcode. Twórz i edytuj lookbooki w menu Lookbooki; te ustawienia "
-#~ "decydują o tym, jak każdy lookbook wygląda i działa w sklepie."
+#~ "Lookbook convierte una imagen en una escena en la que se puede comprar: "
+#~ "fije productos como puntos de acceso y luego incruste el lookbook en "
+#~ "cualquier lugar con un código corto. Cree y edite lookbooks en el menú "
+#~ "Lookbooks; Estas configuraciones controlan cómo se ve y se comporta cada "
+#~ "lookbook en el escaparate."
 
 #~ msgid "The master switch for everything Lookbook puts on your storefront."
-#~ msgstr ""
-#~ "Główny przełącznik do wszystkiego, co Lookbook umieszcza w Twoim sklepie."
+#~ msgstr "El interruptor maestro para todo lo que Lookbook pone en tu tienda."
 
 #~ msgid ""
 #~ "Turn this off to hide every lookbook at once without deleting anything, "
 #~ "the shortcode outputs nothing and Lookbook loads no CSS or JavaScript on "
 #~ "the page. Useful while you are still setting up. On by default."
 #~ msgstr ""
-#~ "Wyłącz tę opcję, aby ukryć każdy lookbook na raz, bez usuwania "
-#~ "czegokolwiek. Krótki kod nie wyświetla żadnych wyników, a Lookbook nie "
-#~ "ładuje na stronie żadnych CSS ani JavaScript. Przydatne podczas "
-#~ "konfiguracji. Domyślnie włączone."
+#~ "Desactive esto para ocultar todos los lookbook a la vez sin eliminar "
+#~ "nada, el código abreviado no genera nada y Lookbook no carga CSS ni "
+#~ "JavaScript en la página. Útil mientras aún estás configurando. Activado "
+#~ "de forma predeterminada."
 
 #, php-format
 #~ msgid "od %d zł/rok"
-#~ msgstr "od %d zł/rok"
-
-#~ msgid "Enable Lookbook"
-#~ msgstr "Włącz Lookbook"
-
-#~ msgid ""
-#~ "Render lookbooks on the storefront. When off, lookbooks render nothing "
-#~ "and no CSS/JS is loaded."
-#~ msgstr ""
-#~ "Renderuj lookbooki w sklepie. Po wyłączeniu lookbooki nie renderują "
-#~ "niczego, a pliki CSS/JS nie są ładowane."
-
-#~ msgid "Show the product price in the hotspot card."
-#~ msgstr "Wyświetlaj cenę produktu w karcie punktu aktywnego."
-
-#~ msgid "Show an add-to-cart link in the hotspot card."
-#~ msgstr "Wyświetlaj link dodawania do koszyka w karcie punktu aktywnego."
-
-#~ msgid ""
-#~ "The text used for the add-to-cart link inside the card. Leave blank to "
-#~ "use the WooCommerce default for each product."
-#~ msgstr ""
-#~ "Tekst używany dla linku dodawania do koszyka wewnątrz karty. Pozostaw "
-#~ "puste, aby użyć domyślnej wartości WooCommerce dla każdego produktu."
+#~ msgstr "desde %d zł/año"

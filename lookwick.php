@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name:       Bildaro - Shoppable Lookbook for WooCommerce
+ * Plugin Name:       Lookwick - Shoppable Lookbook for WooCommerce
  * Plugin URI:        https://plogins.com/plogins-lookbook/
  * Description:        Create shoppable lookbooks: pin products as hotspots on an image.
- * Version:           1.1.1
+ * Version:           1.1.2
  * Requires at least: 6.5
  * Requires PHP:      8.1
  * Requires Plugins:  woocommerce
@@ -11,7 +11,7 @@
  * Author URI:        https://wppoland.com
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       bildaro
+ * Text Domain:       lookwick
  * Domain Path:       /languages
  * WC requires at least: 8.0
  * WC tested up to: 11.0
@@ -25,7 +25,7 @@ namespace Lookbook;
 
 defined('ABSPATH') || exit;
 
-const VERSION     = '1.1.1';
+const VERSION     = '1.1.2';
 const PLUGIN_FILE = __FILE__;
 
 define('LOOKBOOK_DIR', plugin_dir_path(__FILE__));
@@ -45,7 +45,7 @@ add_action('plugins_loaded', static function (): void {
     if (! class_exists('WooCommerce')) {
         add_action('admin_notices', static function (): void {
             echo '<div class="notice notice-error"><p>';
-            echo esc_html__('Bildaro - Shoppable Lookbook for WooCommerce requires WooCommerce to be active.', 'bildaro');
+            echo esc_html__('Lookwick - Shoppable Lookbook for WooCommerce requires WooCommerce to be active.', 'lookwick');
             echo '</p></div>';
         });
         return;
