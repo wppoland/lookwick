@@ -39,7 +39,7 @@ final class LookbookWidget extends Widget_Base
      */
     public function get_title(): string
     {
-        return esc_html__('Shoppable Lookbook', 'plogins-lookbook');
+        return esc_html__('Shoppable Lookbook', 'lookwick');
     }
 
     /**
@@ -77,17 +77,17 @@ final class LookbookWidget extends Widget_Base
     {
         $this->start_controls_section(
             'content',
-            ['label' => esc_html__('Lookbook', 'plogins-lookbook')]
+            ['label' => esc_html__('Lookbook', 'lookwick')]
         );
 
         $this->add_control(
             'id',
             [
-                'label'       => esc_html__('Lookbook ID', 'plogins-lookbook'),
+                'label'       => esc_html__('Lookbook ID', 'lookwick'),
                 'type'        => Controls_Manager::NUMBER,
                 'default'     => 0,
                 'min'         => 0,
-                'description' => esc_html__('The ID of the lookbook to display.', 'plogins-lookbook'),
+                'description' => esc_html__('The ID of the lookbook to display.', 'lookwick'),
             ]
         );
 
