@@ -5,7 +5,7 @@
  * These are global presentation defaults applied to every lookbook on the
  * storefront. The per-lookbook image and hotspots are stored on the lookbook
  * post itself (see {@see \Lookbook\Repository}); merchants tune these shared
- * defaults from WooCommerce → Lookbook.
+ * defaults from WooCommerce > Lookbook.
  *
  * @package Lookbook
  *

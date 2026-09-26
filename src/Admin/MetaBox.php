@@ -41,7 +41,7 @@ final class MetaBox implements HasHooks
     {
         add_meta_box(
             'lookbook-hotspots',
-            __('Shoppable hotspots', 'plogins-lookbook'),
+            __('Shoppable hotspots', 'lookwick'),
             [$this, 'render'],
             PostType::POST_TYPE,
             'normal',
@@ -78,7 +78,7 @@ final class MetaBox implements HasHooks
 
         wp_localize_script('lookbook-editor', 'lookbookEditor', [
             'i18n' => [
-                'confirmRemove' => __('Remove this hotspot?', 'plogins-lookbook'),
+                'confirmRemove' => __('Remove this hotspot?', 'lookwick'),
             ],
         ]);
     }
@@ -114,10 +114,7 @@ final class MetaBox implements HasHooks
             return;
         }
 
-        // phpcs:ignore WordPress.Security.NonceVerification.Missing -- Verified on the next line.
-        $nonce = isset($_POST[self::NONCE_NAME]) ? sanitize_text_field(wp_unslash($_POST[self::NONCE_NAME])) : '';
-
-        if ($nonce === '' || ! wp_verify_nonce($nonce, self::NONCE_ACTION)) {
+        if (! isset($_POST[self::NONCE_NAME]) || ! wp_verify_nonce(sanitize_text_field(wp_unslash($_POST[self::NONCE_NAME])), self::NONCE_ACTION)) {
             return;
         }
 
@@ -125,11 +122,24 @@ final class MetaBox implements HasHooks
             return;
         }
 
-        // phpcs:ignore WordPress.Security.NonceVerification.Missing -- Nonce verified above.
+        // Sanitised on read, then validated and cast per field in the repository.
         $raw = isset($_POST['lookbook_hotspots']) && is_array($_POST['lookbook_hotspots'])
-            // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized, WordPress.Security.ValidatedSanitizedInput.MissingUnslash -- Sanitised field-by-field in the repository.
-            ? wp_unslash($_POST['lookbook_hotspots'])
+            ? map_deep(wp_unslash($_POST['lookbook_hotspots']), 'sanitize_text_field')
             : [];
+
+        // sanitize_text_field strips percent-encoding, so URL fields are read
+        // again through esc_url_raw.
+        foreach ($raw as $index => $row) {
+            if (! is_array($row)) {
+                continue;
+            }
+
+            foreach (array_keys($row) as $field) {
+                if (str_ends_with((string) $field, '_url') && isset($_POST['lookbook_hotspots'][$index][$field]) && is_string($_POST['lookbook_hotspots'][$index][$field])) {
+                    $raw[$index][$field] = esc_url_raw(wp_unslash($_POST['lookbook_hotspots'][$index][$field]));
+                }
+            }
+        }
 
         $this->repository->saveHotspots($postId, $this->repository->sanitizeHotspots($raw));
     }

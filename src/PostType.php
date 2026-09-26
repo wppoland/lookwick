@@ -31,22 +31,22 @@ final class PostType implements HasHooks
     public function register(): void
     {
         $labels = [
-            'name'                  => _x('Lookbooks', 'post type general name', 'plogins-lookbook'),
-            'singular_name'         => _x('Lookbook', 'post type singular name', 'plogins-lookbook'),
-            'menu_name'             => _x('Lookbooks', 'admin menu', 'plogins-lookbook'),
-            'add_new'               => __('Add New', 'plogins-lookbook'),
-            'add_new_item'          => __('Add New Lookbook', 'plogins-lookbook'),
-            'edit_item'             => __('Edit Lookbook', 'plogins-lookbook'),
-            'new_item'              => __('New Lookbook', 'plogins-lookbook'),
-            'view_item'             => __('View Lookbook', 'plogins-lookbook'),
-            'search_items'          => __('Search Lookbooks', 'plogins-lookbook'),
-            'not_found'             => __('No lookbooks found.', 'plogins-lookbook'),
-            'not_found_in_trash'    => __('No lookbooks found in Trash.', 'plogins-lookbook'),
-            'all_items'             => __('All Lookbooks', 'plogins-lookbook'),
-            'featured_image'        => __('Lookbook image', 'plogins-lookbook'),
-            'set_featured_image'    => __('Set lookbook image', 'plogins-lookbook'),
-            'remove_featured_image' => __('Remove lookbook image', 'plogins-lookbook'),
-            'use_featured_image'    => __('Use as lookbook image', 'plogins-lookbook'),
+            'name'                  => _x('Lookbooks', 'post type general name', 'lookwick'),
+            'singular_name'         => _x('Lookbook', 'post type singular name', 'lookwick'),
+            'menu_name'             => _x('Lookbooks', 'admin menu', 'lookwick'),
+            'add_new'               => __('Add New', 'lookwick'),
+            'add_new_item'          => __('Add New Lookbook', 'lookwick'),
+            'edit_item'             => __('Edit Lookbook', 'lookwick'),
+            'new_item'              => __('New Lookbook', 'lookwick'),
+            'view_item'             => __('View Lookbook', 'lookwick'),
+            'search_items'          => __('Search Lookbooks', 'lookwick'),
+            'not_found'             => __('No lookbooks found.', 'lookwick'),
+            'not_found_in_trash'    => __('No lookbooks found in Trash.', 'lookwick'),
+            'all_items'             => __('All Lookbooks', 'lookwick'),
+            'featured_image'        => __('Lookbook image', 'lookwick'),
+            'set_featured_image'    => __('Set lookbook image', 'lookwick'),
+            'remove_featured_image' => __('Remove lookbook image', 'lookwick'),
+            'use_featured_image'    => __('Use as lookbook image', 'lookwick'),
         ];
 
         register_post_type(self::POST_TYPE, [

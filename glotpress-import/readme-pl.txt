@@ -57,10 +57,10 @@ https://github.com/wppoland/plogins-lookbook.
 
 == Installation ==
 
-1. Prześlij wtyczkę do `/wp-content/plugins/lookbook` lub zainstaluj przez Wtyczki → Dodaj nową.
+1. Prześlij wtyczkę do `/wp-content/plugins/lookbook` lub zainstaluj przez Wtyczki > Dodaj nową.
 2. Włącz ją. WooCommerce musi być zainstalowane i aktywne.
-3. Utwórz swój pierwszy lookbook w <strong>Lookbooks → Dodaj nowy</strong>: ustaw obrazek wyróżniający, a następnie dodaj punkty aktywne produktów.
-4. Dostosuj globalną prezentację w <strong>WooCommerce → Lookbook</strong>.
+3. Utwórz swój pierwszy lookbook w <strong>Lookbooks > Dodaj nowy</strong>: ustaw obrazek wyróżniający, a następnie dodaj punkty aktywne produktów.
+4. Dostosuj globalną prezentację w <strong>WooCommerce > Lookbook</strong>.
 5. Osadź lookbook za pomocą `[lookbook id="123"]`.
 
 == Frequently Asked Questions ==
@@ -87,7 +87,7 @@ który został usunięty lub cofnięty z publikacji.
 
 = Can I show the price and an add-to-cart button? =
 
-Tak. Oba są przełącznikami w <strong>WooCommerce → Lookbook</strong>, a etykietę
+Tak. Oba są przełącznikami w <strong>WooCommerce > Lookbook</strong>, a etykietę
 przycisku dodania do koszyka możesz dostosować.
 
 = Will it slow my pages down or shift the layout? =

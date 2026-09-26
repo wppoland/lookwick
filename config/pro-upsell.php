@@ -10,12 +10,11 @@
 defined('ABSPATH') || exit;
 
 return [
-    'name'       => 'Lookbook Pro',
+    'name'       => 'Lookwick Pro',
     'url'        => 'https://plogins.com/plogins-lookbook-pro/pricing/',
     'sellable'   => true,
     'price_from' => 19,
     'currency'   => 'EUR',
-    'price_pln'  => 85,
     'lead'       => [
         'en' => 'Marker accent colour, gallery hotspots in cards, multiple scenes, video hotspots and click analytics are available now.',
         'pl' => 'Kolor akcentu, galeria w kartach, wiele scen, hotspoty wideo i analityka kliknięć są już dostępne.',

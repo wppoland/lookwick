@@ -52,7 +52,7 @@ final class Plugin
 
         /**
          * Fires after the plugin has fully booted and all services are
-         * registered. Add-ons (e.g. Lookbook Pro) hook this to extend the
+         * registered. Add-ons (e.g. Lookwick Pro) hook this to extend the
          * shared container and register their own hooks.
          *
          * @param Plugin $plugin The booted plugin instance.
