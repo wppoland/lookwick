@@ -16,6 +16,7 @@ use Lookbook\Container;
 use Lookbook\Migrator;
 use Lookbook\PostType;
 use Lookbook\Repository;
+use Lookbook\Service\ElementorWidgets;
 use Lookbook\Service\Renderer;
 
 defined('ABSPATH') || exit;
@@ -30,6 +31,9 @@ return static function (Container $c): void {
 
     // Front-end renderer (powers the [lookbook] shortcode).
     $c->singleton(Renderer::class, static fn (Container $c): Renderer => new Renderer($c->get(Repository::class)));
+
+    // Elementor integration (self-guards on the elementor/widgets/register hook).
+    $c->singleton(ElementorWidgets::class, static fn (): ElementorWidgets => new ElementorWidgets());
 
     // Admin (only needed in wp-admin context).
     if (is_admin()) {

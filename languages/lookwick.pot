@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-05T09:51:48+00:00\n"
+"POT-Creation-Date: 2026-10-05T12:54:44+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: lookwick\n"
@@ -177,6 +177,22 @@ msgstr ""
 
 #: src/Admin/Settings.php:182
 msgid "Overrides the wording on the add-to-cart link for every product, for example “Add to cart”, “Shop the look”, or “Add to bag”. Leave blank to keep each product’s own WooCommerce button text. Only used when the add-to-cart link above is on."
+msgstr ""
+
+#: src/Elementor/LookbookWidget.php:42
+msgid "Shoppable Lookbook"
+msgstr ""
+
+#: src/Elementor/LookbookWidget.php:80
+msgid "Lookbook"
+msgstr ""
+
+#: src/Elementor/LookbookWidget.php:86
+msgid "Lookbook ID"
+msgstr ""
+
+#: src/Elementor/LookbookWidget.php:90
+msgid "The ID of the lookbook to display."
 msgstr ""
 
 #: src/PostType.php:34
