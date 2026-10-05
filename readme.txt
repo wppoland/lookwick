@@ -5,7 +5,7 @@ Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
 Requires Plugins: woocommerce
-Stable tag: 1.1.4
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,7 +47,7 @@ The code is developed in the open. Browse it or report a bug at
 * Simple hotspot editor: position each product by X/Y percentage.
 * Accessible hotspot markers: real buttons, keyboard operable, with screen-reader labels.
 * Product card popover with thumbnail, title, live price and an add-to-cart link.
-* `[lookbook id="N"]` shortcode.
+* `[lookbook id="N"]` shortcode, plus a Shoppable Lookbook widget for Elementor that takes the lookbook ID.
 * Reads product data live from WooCommerce, so prices and stock are always current.
 * Degrades cleanly: a lookbook with no image, no hotspots, or only deleted products renders nothing or just the image, never broken markup.
 * CSS adapts to light and dark colour schemes and honours prefers-reduced-motion.
@@ -116,6 +116,9 @@ Lookwick does not connect to any external service. It builds the shoppable image
 Lookwick is fully translatable and ships the `lookwick.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.2.0 =
+* New: a Shoppable Lookbook widget for Elementor. Drop it on a page and enter the lookbook ID; it renders the same markup as the `[lookbook]` shortcode. The widget loads only when Elementor is active.
 
 = 1.1.4 =
 * The upgrade notice's "Coming soon" and "Get notified" labels are English source strings for every language; Polish sites used to get their own Polish source text, which translators in other languages then saw untranslated.

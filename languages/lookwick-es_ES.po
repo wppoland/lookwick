@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Lookbook - Shoppable Image Gallery for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/lookwick\n"
-"POT-Creation-Date: 2026-10-05T09:51:48+00:00\n"
+"POT-Creation-Date: 2026-10-05T12:54:44+00:00\n"
 "PO-Revision-Date: 2026-06-16T20:23:31+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -224,6 +224,22 @@ msgstr ""
 " blanco para conservar el texto del botón WooCommerce propio de cada "
 "producto. Solo se usa cuando el enlace de añadir al carrito de arriba está "
 "activado."
+
+#: src/Elementor/LookbookWidget.php:42
+msgid "Shoppable Lookbook"
+msgstr "Lookbook comprable"
+
+#: src/Elementor/LookbookWidget.php:80
+msgid "Lookbook"
+msgstr "Lookbook"
+
+#: src/Elementor/LookbookWidget.php:86
+msgid "Lookbook ID"
+msgstr "ID del lookbook"
+
+#: src/Elementor/LookbookWidget.php:90
+msgid "The ID of the lookbook to display."
+msgstr "El ID del lookbook que quieres mostrar."
 
 #: src/PostType.php:34
 msgctxt "post type general name"

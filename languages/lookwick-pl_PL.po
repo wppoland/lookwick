@@ -2,10 +2,9 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Lookbook - Shoppable Image Gallery for WooCommerce "
-"0.1.0\n"
+"Project-Id-Version: Lookbook - Shoppable Image Gallery for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/lookwick\n"
-"POT-Creation-Date: 2026-10-05T09:51:48+00:00\n"
+"POT-Creation-Date: 2026-10-05T12:54:44+00:00\n"
 "PO-Revision-Date: 2026-06-15 12:00+0000\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -13,8 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
-"|| n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Domain: lookwick\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
@@ -118,8 +116,8 @@ msgstr "Lookwick"
 msgid ""
 "Lookwick turns an image into a shoppable scene: pin products as hotspots, "
 "then embed the lookbook anywhere with a shortcode. Create and edit lookbooks "
-"under the Lookbooks menu; these settings control how every lookbook looks "
-"and behaves on the storefront."
+"under the Lookbooks menu; these settings control how every lookbook looks and"
+" behaves on the storefront."
 msgstr ""
 "Lookwick zamienia obraz w zakupową scenę: przypnij produkty jako punkty "
 "aktywne, a potem osadź lookbook w dowolnym miejscu krótkim kodem. Twórz i "
@@ -221,8 +219,24 @@ msgid ""
 msgstr ""
 "Zastępuje treść linku dodawania do koszyka dla każdego produktu, na przykład "
 "„Dodaj do koszyka”, „Kupuj wygląd” lub „Dodaj do koszyka”. Pozostaw puste, "
-"aby zachować własny tekst przycisku WooCommerce dla każdego produktu. "
-"Używane tylko wtedy, gdy powyższy link dodawania do koszyka jest włączony."
+"aby zachować własny tekst przycisku WooCommerce dla każdego produktu. Używane"
+" tylko wtedy, gdy powyższy link dodawania do koszyka jest włączony."
+
+#: src/Elementor/LookbookWidget.php:42
+msgid "Shoppable Lookbook"
+msgstr "Zakupowy lookbook"
+
+#: src/Elementor/LookbookWidget.php:80
+msgid "Lookbook"
+msgstr "Lookbook"
+
+#: src/Elementor/LookbookWidget.php:86
+msgid "Lookbook ID"
+msgstr "ID lookbooka"
+
+#: src/Elementor/LookbookWidget.php:90
+msgid "The ID of the lookbook to display."
+msgstr "ID lookbooka do wyświetlenia."
 
 #: src/PostType.php:34
 msgctxt "post type general name"
@@ -299,8 +313,8 @@ msgid ""
 msgstr ""
 "Ustaw obraz lookbooka za pomocą pola Obrazek wyróżniający, a następnie dodaj "
 "punkt aktywny dla każdego produktu. Ustaw pozycję każdego z nich za pomocą X "
-"i Y jako procentu od lewego górnego rogu obrazu (0-100) i wpisz "
-"identyfikator produktu do powiązania."
+"i Y jako procentu od lewego górnego rogu obrazu (0-100) i wpisz identyfikator"
+" produktu do powiązania."
 
 #: templates/admin/hotspot-editor.php:27
 msgid "#"
