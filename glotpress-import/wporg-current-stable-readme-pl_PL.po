@@ -1,4 +1,4 @@
-# wp.org Stable Readme translation (pl_PL)
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: lookwick Stable Readme\n"
@@ -10,318 +10,656 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: plogins-i18n\n"
 
+#. Short description.
+#, gp-priority: high
+msgid ""
+"Turn any image into a shoppable lookbook: pin WooCommerce products as "
+"hotspots that reveal a product card with price and add to cart."
+msgstr ""
+"Zamień dowolny obraz w zakupowy lookbook: przypnij produkty WooCommerce jako "
+"punkty aktywne, które otwierają kartę produktu z ceną i przyciskiem dodania "
+"do koszyka."
+
 #. Plugin name.
+#, gp-priority: high
 msgid "Lookwick - Shoppable Lookbook for WooCommerce"
 msgstr "Lookwick - zakupowy lookbook dla WooCommerce"
 
-#. Short description.
-msgid "Turn any image into a shoppable lookbook: pin WooCommerce products as hotspots that reveal a product card with price and add to cart."
-msgstr "Zamień dowolny obraz w zakupowy lookbook: przypnij produkty WooCommerce jako punkty aktywne, które otwierają kartę produktu z ceną i przyciskiem dodania do koszyka."
+#. Found in faq paragraph.
+msgid ""
+"Yes. This plugin is compatible with WordPress Multisite. Network activate it "
+"or activate it on individual sites; each site keeps its own settings and "
+"data."
+msgstr ""
+"Tak. Ta wtyczka jest zgodna z WordPress Multisite. Aktywuj ją dla całej sieci"
+" lub na poszczególnych witrynach; każda witryna zachowuje własne ustawienia i"
+" dane."
 
-#. Found in description paragraph.
-msgid "Lookwick turns a single image into a shoppable scene. Upload a photo, pin your WooCommerce products to it as hotspots, and embed the result anywhere with a shortcode. When a shopper activates a hotspot, a small product card appears with the thumbnail, title, price and an add-to-cart link, so they can buy straight from the image."
-msgstr "Lookwick zamienia pojedynczy obraz w scenę, z której można kupować. Wgraj zdjęcie, przypnij do niego produkty WooCommerce jako punkty aktywne (hotspoty) i osadź wynik w dowolnym miejscu za pomocą krótkiego kodu. Gdy klient aktywuje punkt, pojawia się mała karta produktu z miniaturką, nazwą, ceną i linkiem dodania do koszyka, więc może kupić prosto z obrazu."
+#. Found in faq paragraph.
+msgid ""
+"No. The stylesheet and script load only on pages that actually render a lookbook,\n"
+"the script is deferred, and the image reserves its space, so there is no\n"
+"Cumulative Layout Shift."
+msgstr ""
+"Nie. Arkusz stylów i skrypt ładują się tylko na stronach, które faktycznie "
+"wyświetlają lookbook, skrypt jest ładowany z opóźnieniem (defer), a obraz "
+"rezerwuje swoje miejsce, więc nie ma przesunięć układu (Cumulative Layout "
+"Shift)."
 
-#. Found in description paragraph.
-msgid "It is built for stores that sell the look: fashion outfits, room sets, gift guides, recipe ingredient shots, anywhere several products live in one picture."
-msgstr "Wtyczka powstała dla sklepów, które sprzedają cały look: stylizacje modowe, aranżacje wnętrz, poradniki prezentowe, zdjęcia składników przepisu, wszędzie tam, gdzie na jednym zdjęciu jest kilka produktów."
+#. Found in faq paragraph.
+msgid ""
+"Yes. Both are toggles under <strong>WooCommerce &gt; Lookwick</strong>, and you can customise the\n"
+"add-to-cart label."
+msgstr ""
+"Tak. Oba elementy włączysz w <strong>WooCommerce &gt; Lookwick</strong>, a "
+"etykietę dodania do koszyka możesz dostosować."
 
-#. Found in description paragraph.
-msgid "The code is developed in the open. Browse it or report a bug at <a href=\"https://github.com/wppoland/plogins-lookbook\">github.com/wppoland/plogins-lookbook</a>."
-msgstr "Kod jest rozwijany publicznie. Przeglądaj go lub zgłoś błąd na <a href=\"https://github.com/wppoland/plogins-lookbook\">github.com/wppoland/plogins-lookbook</a>."
+#. Found in faq paragraph.
+msgid ""
+"That hotspot is simply skipped. Lookwick never renders a marker for a product\n"
+"that is gone or unpublished."
+msgstr ""
+"Ten punkt aktywny zostanie po prostu pominięty. Lookwick nigdy nie wyświetla "
+"znacznika produktu, który został usunięty lub nie jest opublikowany."
 
-#. Found in description header.
-msgid "Documentation and links"
-msgstr "Dokumentacja i linki"
+#. Found in faq paragraph.
+msgid ""
+"Each hotspot has an X and a Y value, both percentages from the top-left of the\n"
+"image (0-100), so you can line markers up with the products in the photo."
+msgstr ""
+"Każdy punkt aktywny ma wartość X i Y, obie w procentach liczonych od lewego "
+"górnego rogu obrazu (0-100), więc możesz ustawić znaczniki dokładnie na "
+"produktach na zdjęciu."
 
-#. Found in description list item.
-msgid "<strong>Documentation</strong>: <a href=\"https://plogins.com/plogins-lookbook/docs/\">plogins.com/plogins-lookbook/docs/</a>"
-msgstr "<strong>Dokumentacja</strong>: <a href=\"https://plogins.com/plogins-lookbook/docs/\">plogins.com/plogins-lookbook/docs/</a>"
+#. Found in faq paragraph.
+msgid ""
+"Open the Lookbooks list under the Lookbooks menu; the ID is shown when editing\n"
+"(post=123 in the URL). Use it in the shortcode."
+msgstr ""
+"Otwórz listę lookbooków w menu Lookbooki; identyfikator widać podczas edycji "
+"(post=123 w adresie URL). Użyj go w krótkim kodzie."
 
-#. Found in description list item.
-msgid "<strong>Plugin page</strong>: <a href=\"https://plogins.com/plogins-lookbook/\">plogins.com/plogins-lookbook/</a>"
-msgstr "<strong>Strona wtyczki</strong>: <a href=\"https://plogins.com/plogins-lookbook/\">plogins.com/plogins-lookbook/</a>"
+#. Found in faq paragraph.
+msgid ""
+"Yes. Lookwick only runs when WooCommerce is active, and hotspots link to\n"
+"WooCommerce products."
+msgstr ""
+"Tak. Lookwick działa tylko przy aktywnym WooCommerce, a punkty aktywne "
+"prowadzą do produktów WooCommerce."
 
-#. Found in description list item.
-msgid "<strong>Source code</strong>: <a href=\"https://github.com/wppoland/plogins-lookbook\">github.com/wppoland/plogins-lookbook</a>"
-msgstr "<strong>Kod źródłowy</strong>: <a href=\"https://github.com/wppoland/plogins-lookbook\">github.com/wppoland/plogins-lookbook</a>"
+#. Found in faq header.
+msgid "Does this plugin work on WordPress Multisite?"
+msgstr "Czy ta wtyczka działa w WordPress Multisite?"
 
-#. Found in description list item.
-msgid "<strong>Bug reports and feature requests</strong>: <a href=\"https://github.com/wppoland/plogins-lookbook/issues\">github.com/wppoland/plogins-lookbook/issues</a>"
-msgstr "<strong>Zgłoszenia błędów i propozycje funkcji</strong>: <a href=\"https://github.com/wppoland/plogins-lookbook/issues\">github.com/wppoland/plogins-lookbook/issues</a>"
+#. Found in faq header.
+msgid "Will it slow my pages down or shift the layout?"
+msgstr "Czy wtyczka spowolni strony albo przesunie układ?"
 
-#. Found in description header.
-msgid "How it works"
-msgstr "Jak to działa"
+#. Found in faq header.
+msgid "Can I show the price and an add-to-cart button?"
+msgstr "Czy mogę pokazać cenę i przycisk dodania do koszyka?"
 
-#. Found in description list item.
-msgid "Create a lookbook under the <strong>Lookbooks</strong> menu and set its image with the Featured image box."
-msgstr "Utwórz lookbook w menu <strong>Lookbooki</strong> i ustaw jego obraz w polu Obraz lookbooka."
+#. Found in faq header.
+msgid "What happens if a pinned product is deleted?"
+msgstr "Co się stanie, jeśli przypięty produkt zostanie usunięty?"
 
-#. Found in description list item.
-msgid "Add a hotspot for each product: position it with an X and Y percentage and enter the product ID."
-msgstr "Dodaj punkt aktywny dla każdego produktu: ustaw jego położenie procentowo w osiach X i Y i wpisz identyfikator produktu."
+#. Found in faq header.
+msgid "How do I position a hotspot?"
+msgstr "Jak ustawić położenie punktu aktywnego?"
 
-#. Found in description list item.
-msgid "Embed it with <code>[lookbook id=\"123\"]</code>."
-msgstr "Osadź go za pomocą <code>[lookbook id=\"123\"]</code>."
+#. Found in faq header.
+msgid "How do I find a lookbook's ID?"
+msgstr "Jak znaleźć identyfikator lookbooka?"
 
-#. Found in description header.
-msgid "Features"
-msgstr "Funkcje"
-
-#. Found in description list item.
-msgid "Shoppable image: pin any number of products as hotspots on one image."
-msgstr "Obraz z zakupami: przypnij dowolną liczbę produktów jako punkty aktywne na jednym obrazie."
-
-#. Found in description list item.
-msgid "Simple hotspot editor: position each product by X/Y percentage."
-msgstr "Prosty edytor punktów aktywnych: ustaw położenie każdego produktu procentowo w osiach X/Y."
-
-#. Found in description list item.
-msgid "Accessible hotspot markers: real buttons, keyboard operable, with screen-reader labels."
-msgstr "Dostępne znaczniki punktów: prawdziwe przyciski, obsługa z klawiatury i etykiety dla czytników ekranu."
-
-#. Found in description list item.
-msgid "Product card popover with thumbnail, title, live price and an add-to-cart link."
-msgstr "Wyskakująca karta produktu z miniaturką, nazwą, aktualną ceną i linkiem dodania do koszyka."
-
-#. Found in description list item.
-msgid "<code>[lookbook id=\"N\"]</code> shortcode."
-msgstr "Krótki kod <code>[lookbook id=\"N\"]</code>."
-
-#. Found in description list item.
-msgid "Reads product data live from WooCommerce, so prices and stock are always current."
-msgstr "Dane produktów są odczytywane na bieżąco z WooCommerce, więc ceny i stany magazynowe są zawsze aktualne."
-
-#. Found in description list item.
-msgid "Degrades cleanly: a lookbook with no image, no hotspots, or only deleted products renders nothing or just the image, never broken markup."
-msgstr "Bezpieczne zachowanie w brakujących przypadkach: lookbook bez obrazu, bez punktów aktywnych lub tylko z usuniętymi produktami nie wyświetla nic albo sam obraz, nigdy uszkodzonego kodu HTML."
-
-#. Found in description list item.
-msgid "CSS adapts to light and dark colour schemes and honours prefers-reduced-motion."
-msgstr "CSS dopasowuje się do jasnego i ciemnego schematu kolorów oraz respektuje prefers-reduced-motion."
-
-#. Found in description list item.
-msgid "No layout shift, no jQuery, assets load only where a lookbook appears."
-msgstr "Bez przesunięć układu, bez jQuery, zasoby ładują się tylko tam, gdzie wyświetlany jest lookbook."
-
-#. Found in description list item.
-msgid "Translation ready (POT included) and clean uninstall."
-msgstr "Gotowa do tłumaczenia (zawiera plik POT) i czysta deinstalacja."
-
-#. Found in description list item.
-msgid "HPOS and cart/checkout blocks compatible."
-msgstr "Zgodna z HPOS oraz blokami koszyka i zamówienia."
+#. Found in faq header.
+msgid "Does it require WooCommerce?"
+msgstr "Czy wtyczka wymaga WooCommerce?"
 
 #. Found in installation list item.
-msgid "Upload the plugin to <code>/wp-content/plugins/lookwick</code>, or install via Plugins &gt; Add New."
-msgstr "Wgraj wtyczkę do <code>/wp-content/plugins/lookwick</code> lub zainstaluj ją przez Wtyczki &gt; Dodaj nową."
+msgid "Embed a lookbook with <code>[lookbook id=\"123\"]</code>."
+msgstr "Osadź lookbook za pomocą <code>[lookbook id=\"123\"]</code>."
+
+#. Found in installation list item.
+msgid ""
+"Adjust global presentation under <strong>WooCommerce &gt; Lookwick</strong>."
+msgstr "Ustaw ogólny wygląd w <strong>WooCommerce &gt; Lookwick</strong>."
+
+#. Found in installation list item.
+msgid ""
+"Create your first lookbook under <strong>Lookbooks &gt; Add New</strong>: set"
+" the Featured image, then add product hotspots."
+msgstr ""
+"Utwórz pierwszy lookbook w <strong>Lookbooki &gt; Dodaj nowy</strong>: ustaw "
+"Obraz lookbooka, a potem dodaj punkty aktywne produktów."
 
 #. Found in installation list item.
 msgid "Activate it. WooCommerce must be installed and active."
 msgstr "Aktywuj ją. WooCommerce musi być zainstalowany i aktywny."
 
 #. Found in installation list item.
-msgid "Create your first lookbook under <strong>Lookbooks &gt; Add New</strong>: set the Featured image, then add product hotspots."
-msgstr "Utwórz pierwszy lookbook w <strong>Lookbooki &gt; Dodaj nowy</strong>: ustaw Obraz lookbooka, a potem dodaj punkty aktywne produktów."
+msgid ""
+"Upload the plugin to <code>/wp-content/plugins/lookwick</code>, or install "
+"via Plugins &gt; Add New."
+msgstr ""
+"Wgraj wtyczkę do <code>/wp-content/plugins/lookwick</code> lub zainstaluj ją "
+"przez Wtyczki &gt; Dodaj nową."
 
-#. Found in installation list item.
-msgid "Adjust global presentation under <strong>WooCommerce &gt; Lookwick</strong>."
-msgstr "Ustaw ogólny wygląd w <strong>WooCommerce &gt; Lookwick</strong>."
+#. Found in description paragraph.
+msgid ""
+"Lookwick is fully translatable and ships the <code>lookwick.pot</code> "
+"template. Translations are delivered by WordPress.org language packs from "
+"translate.wordpress.org, which is where Polish, German and Spanish are being "
+"contributed; the package itself carries no compiled translation files."
+msgstr ""
+"Lookwick można w pełni przetłumaczyć i zawiera szablon "
+"<code>lookwick.pot</code>. Tłumaczenia są dostarczane w pakietach językowych "
+"WordPress.org z translate.wordpress.org, gdzie powstają tłumaczenia polskie, "
+"niemieckie i hiszpańskie; sama paczka nie zawiera skompilowanych plików "
+"tłumaczeń."
 
-#. Found in installation list item.
-msgid "Embed a lookbook with <code>[lookbook id=\"123\"]</code>."
-msgstr "Osadź lookbook za pomocą <code>[lookbook id=\"123\"]</code>."
+#. Found in description paragraph.
+msgid ""
+"Lookwick does not connect to any external service. It builds the shoppable "
+"image from data already on your site: the lookbook post itself (a "
+"<code>lookbook</code> custom post type), its Featured image from your Media "
+"Library, the hotspots stored in the <code>_lookbook_hotspots</code> post "
+"meta, and the presentation options saved in the "
+"<code>lookbook_settings</code> option. Product titles, prices, thumbnails and"
+" add-to-cart links are read live from your own WooCommerce store. Nothing "
+"about your products, shoppers or orders is sent off-site, and the plugin "
+"loads no third-party fonts, scripts or analytics."
+msgstr ""
+"Lookwick nie łączy się z żadną usługą zewnętrzną. Obraz z zakupami tworzy z "
+"danych, które już są w Twojej witrynie: samego wpisu lookbooka (własny typ "
+"treści <code>lookbook</code>), jego obrazka wyróżniającego z biblioteki "
+"mediów, punktów aktywnych zapisanych w metadanych wpisu "
+"<code>_lookbook_hotspots</code> oraz opcji wyglądu zapisanych w opcji "
+"<code>lookbook_settings</code>. Nazwy produktów, ceny, miniaturki i linki "
+"dodania do koszyka są odczytywane na bieżąco z Twojego sklepu WooCommerce. "
+"Żadne dane o produktach, klientach ani zamówieniach nie są wysyłane poza "
+"witrynę, a wtyczka nie ładuje zewnętrznych czcionek, skryptów ani narzędzi "
+"analitycznych."
 
-#. Found in faq header.
-msgid "Does it require WooCommerce?"
-msgstr "Czy wtyczka wymaga WooCommerce?"
+#. Found in description paragraph.
+msgid ""
+"The code is developed in the open. Browse it or report a bug at\n"
+"<a href=\"https://github.com/wppoland/plogins-lookbook\">github.com/wppoland/plogins-lookbook</a>."
+msgstr ""
+"Kod jest rozwijany publicznie. Przeglądaj go lub zgłoś błąd na <a "
+"href=\"https://github.com/wppoland/plogins-"
+"lookbook\">github.com/wppoland/plogins-lookbook</a>."
 
-#. Found in faq paragraph.
-msgid "Yes. Lookwick only runs when WooCommerce is active, and hotspots link to WooCommerce products."
-msgstr "Tak. Lookwick działa tylko przy aktywnym WooCommerce, a punkty aktywne prowadzą do produktów WooCommerce."
+#. Found in description paragraph.
+msgid ""
+"It is built for stores that sell the look: fashion outfits, room sets, gift\n"
+"guides, recipe ingredient shots, anywhere several products live in one picture."
+msgstr ""
+"Wtyczka powstała dla sklepów, które sprzedają cały look: stylizacje modowe, "
+"aranżacje wnętrz, poradniki prezentowe, zdjęcia składników przepisu, wszędzie"
+" tam, gdzie na jednym zdjęciu jest kilka produktów."
 
-#. Found in faq header.
-msgid "How do I find a lookbook's ID?"
-msgstr "Jak znaleźć identyfikator lookbooka?"
+#. Found in description paragraph.
+msgid ""
+"Lookwick turns a single image into a shoppable scene. Upload a photo, pin your\n"
+"WooCommerce products to it as hotspots, and embed the result anywhere with a\n"
+"shortcode. When a shopper activates a hotspot, a small product card appears with\n"
+"the thumbnail, title, price and an add-to-cart link, so they can buy straight\n"
+"from the image."
+msgstr ""
+"Lookwick zamienia pojedynczy obraz w scenę, z której można kupować. Wgraj "
+"zdjęcie, przypnij do niego produkty WooCommerce jako punkty aktywne "
+"(hotspoty) i osadź wynik w dowolnym miejscu za pomocą krótkiego kodu. Gdy "
+"klient aktywuje punkt, pojawia się mała karta produktu z miniaturką, nazwą, "
+"ceną i linkiem dodania do koszyka, więc może kupić prosto z obrazu."
 
-#. Found in faq paragraph.
-msgid "Open the Lookbooks list under the Lookbooks menu; the ID is shown when editing (post=123 in the URL). Use it in the shortcode."
-msgstr "Otwórz listę lookbooków w menu Lookbooki; identyfikator widać podczas edycji (post=123 w adresie URL). Użyj go w krótkim kodzie."
+#. Found in description list item.
+msgid "HPOS and cart/checkout blocks compatible."
+msgstr "Zgodna z HPOS oraz blokami koszyka i zamówienia."
 
-#. Found in faq header.
-msgid "How do I position a hotspot?"
-msgstr "Jak ustawić położenie punktu aktywnego?"
+#. Found in description list item.
+msgid "Translation ready (POT included) and clean uninstall."
+msgstr "Gotowa do tłumaczenia (zawiera plik POT) i czysta deinstalacja."
 
-#. Found in faq paragraph.
-msgid "Each hotspot has an X and a Y value, both percentages from the top-left of the image (0-100), so you can line markers up with the products in the photo."
-msgstr "Każdy punkt aktywny ma wartość X i Y, obie w procentach liczonych od lewego górnego rogu obrazu (0-100), więc możesz ustawić znaczniki dokładnie na produktach na zdjęciu."
+#. Found in description list item.
+msgid "No layout shift, no jQuery, assets load only where a lookbook appears."
+msgstr ""
+"Bez przesunięć układu, bez jQuery, zasoby ładują się tylko tam, gdzie "
+"wyświetlany jest lookbook."
 
-#. Found in faq header.
-msgid "What happens if a pinned product is deleted?"
-msgstr "Co się stanie, jeśli przypięty produkt zostanie usunięty?"
+#. Found in description list item.
+msgid ""
+"CSS adapts to light and dark colour schemes and honours prefers-reduced-"
+"motion."
+msgstr ""
+"CSS dopasowuje się do jasnego i ciemnego schematu kolorów oraz respektuje "
+"prefers-reduced-motion."
 
-#. Found in faq paragraph.
-msgid "That hotspot is simply skipped. Lookwick never renders a marker for a product that is gone or unpublished."
-msgstr "Ten punkt aktywny zostanie po prostu pominięty. Lookwick nigdy nie wyświetla znacznika produktu, który został usunięty lub nie jest opublikowany."
+#. Found in description list item.
+msgid ""
+"Degrades cleanly: a lookbook with no image, no hotspots, or only deleted "
+"products renders nothing or just the image, never broken markup."
+msgstr ""
+"Bezpieczne zachowanie w brakujących przypadkach: lookbook bez obrazu, bez "
+"punktów aktywnych lub tylko z usuniętymi produktami nie wyświetla nic albo "
+"sam obraz, nigdy uszkodzonego kodu HTML."
 
-#. Found in faq header.
-msgid "Can I show the price and an add-to-cart button?"
-msgstr "Czy mogę pokazać cenę i przycisk dodania do koszyka?"
+#. Found in description list item.
+msgid ""
+"Reads product data live from WooCommerce, so prices and stock are always "
+"current."
+msgstr ""
+"Dane produktów są odczytywane na bieżąco z WooCommerce, więc ceny i stany "
+"magazynowe są zawsze aktualne."
 
-#. Found in faq paragraph.
-msgid "Yes. Both are toggles under <strong>WooCommerce &gt; Lookwick</strong>, and you can customise the add-to-cart label."
-msgstr "Tak. Oba elementy włączysz w <strong>WooCommerce &gt; Lookwick</strong>, a etykietę dodania do koszyka możesz dostosować."
+#. Found in description list item.
+msgid "<code>[lookbook id=\"N\"]</code> shortcode."
+msgstr "Krótki kod <code>[lookbook id=\"N\"]</code>."
 
-#. Found in faq header.
-msgid "Will it slow my pages down or shift the layout?"
-msgstr "Czy wtyczka spowolni strony albo przesunie układ?"
+#. Found in description list item.
+msgid ""
+"Product card popover with thumbnail, title, live price and an add-to-cart "
+"link."
+msgstr ""
+"Wyskakująca karta produktu z miniaturką, nazwą, aktualną ceną i linkiem "
+"dodania do koszyka."
 
-#. Found in faq paragraph.
-msgid "No. The stylesheet and script load only on pages that actually render a lookbook, the script is deferred, and the image reserves its space, so there is no Cumulative Layout Shift."
-msgstr "Nie. Arkusz stylów i skrypt ładują się tylko na stronach, które faktycznie wyświetlają lookbook, skrypt jest ładowany z opóźnieniem (defer), a obraz rezerwuje swoje miejsce, więc nie ma przesunięć układu (Cumulative Layout Shift)."
+#. Found in description list item.
+msgid ""
+"Accessible hotspot markers: real buttons, keyboard operable, with screen-"
+"reader labels."
+msgstr ""
+"Dostępne znaczniki punktów: prawdziwe przyciski, obsługa z klawiatury i "
+"etykiety dla czytników ekranu."
 
-#. Found in faq header.
-msgid "Does this plugin work on WordPress Multisite?"
-msgstr "Czy ta wtyczka działa w WordPress Multisite?"
+#. Found in description list item.
+msgid "Simple hotspot editor: position each product by X/Y percentage."
+msgstr ""
+"Prosty edytor punktów aktywnych: ustaw położenie każdego produktu procentowo "
+"w osiach X/Y."
 
-#. Found in faq paragraph.
-msgid "Yes. This plugin is compatible with WordPress Multisite. Network activate it or activate it on individual sites; each site keeps its own settings and data."
-msgstr "Tak. Ta wtyczka jest zgodna z WordPress Multisite. Aktywuj ją dla całej sieci lub na poszczególnych witrynach; każda witryna zachowuje własne ustawienia i dane."
+#. Found in description list item.
+msgid "Shoppable image: pin any number of products as hotspots on one image."
+msgstr ""
+"Obraz z zakupami: przypnij dowolną liczbę produktów jako punkty aktywne na "
+"jednym obrazie."
+
+#. Found in description list item.
+msgid "Embed it with <code>[lookbook id=\"123\"]</code>."
+msgstr "Osadź go za pomocą <code>[lookbook id=\"123\"]</code>."
+
+#. Found in description list item.
+msgid ""
+"Add a hotspot for each product: position it with an X and Y percentage and\n"
+"enter the product ID."
+msgstr ""
+"Dodaj punkt aktywny dla każdego produktu: ustaw jego położenie procentowo w "
+"osiach X i Y i wpisz identyfikator produktu."
+
+#. Found in description list item.
+msgid ""
+"Create a lookbook under the <strong>Lookbooks</strong> menu and set its image with the\n"
+"Featured image box."
+msgstr ""
+"Utwórz lookbook w menu <strong>Lookbooki</strong> i ustaw jego obraz w polu "
+"Obraz lookbooka."
+
+#. Found in description list item.
+msgid ""
+"<strong>Bug reports and feature requests</strong>: <a "
+"href=\"https://github.com/wppoland/plogins-"
+"lookbook/issues\">github.com/wppoland/plogins-lookbook/issues</a>"
+msgstr ""
+"<strong>Zgłoszenia błędów i propozycje funkcji</strong>: <a "
+"href=\"https://github.com/wppoland/plogins-"
+"lookbook/issues\">github.com/wppoland/plogins-lookbook/issues</a>"
+
+#. Found in description list item.
+msgid ""
+"<strong>Source code</strong>: <a href=\"https://github.com/wppoland/plogins-"
+"lookbook\">github.com/wppoland/plogins-lookbook</a>"
+msgstr ""
+"<strong>Kod źródłowy</strong>: <a href=\"https://github.com/wppoland/plogins-"
+"lookbook\">github.com/wppoland/plogins-lookbook</a>"
+
+#. Found in description list item.
+msgid ""
+"<strong>Plugin page</strong>: <a href=\"https://plogins.com/plogins-"
+"lookbook/\">plogins.com/plogins-lookbook/</a>"
+msgstr ""
+"<strong>Strona wtyczki</strong>: <a href=\"https://plogins.com/plogins-"
+"lookbook/\">plogins.com/plogins-lookbook/</a>"
+
+#. Found in description list item.
+msgid ""
+"<strong>Documentation</strong>: <a href=\"https://plogins.com/plogins-"
+"lookbook/docs/\">plogins.com/plogins-lookbook/docs/</a>"
+msgstr ""
+"<strong>Dokumentacja</strong>: <a href=\"https://plogins.com/plogins-"
+"lookbook/docs/\">plogins.com/plogins-lookbook/docs/</a>"
+
+#. Found in description header.
+msgid "Translations"
+msgstr "Tłumaczenia"
+
+#. Found in description header.
+msgid "External Services"
+msgstr "Usługi zewnętrzne"
+
+#. Found in description header.
+msgid "Features"
+msgstr "Funkcje"
+
+#. Found in description header.
+msgid "How it works"
+msgstr "Jak to działa"
+
+#. Found in description header.
+msgid "Documentation and links"
+msgstr "Dokumentacja i linki"
 
 #. Screenshot description.
-msgid "A shoppable lookbook on the storefront with product hotspots and an open product card."
-msgstr "Zakupowy lookbook w sklepie z punktami aktywnymi produktów i otwartą kartą produktu."
+msgid "The Lookwick settings screen under WooCommerce."
+msgstr "Ekran ustawień Lookwick w menu WooCommerce."
 
 #. Screenshot description.
 msgid "The hotspot editor on the Edit Lookbook screen."
 msgstr "Edytor punktów aktywnych na ekranie Edytuj lookbook."
 
 #. Screenshot description.
-msgid "The Lookwick settings screen under WooCommerce."
-msgstr "Ekran ustawień Lookwick w menu WooCommerce."
-
-#. Found in description header.
-msgid "External Services"
-msgstr "Usługi zewnętrzne"
-
-#. Found in description paragraph.
-msgid "Lookwick does not connect to any external service. It builds the shoppable image from data already on your site: the lookbook post itself (a <code>lookbook</code> custom post type), its Featured image from your Media Library, the hotspots stored in the <code>_lookbook_hotspots</code> post meta, and the presentation options saved in the <code>lookbook_settings</code> option. Product titles, prices, thumbnails and add-to-cart links are read live from your own WooCommerce store. Nothing about your products, shoppers or orders is sent off-site, and the plugin loads no third-party fonts, scripts or analytics."
-msgstr "Lookwick nie łączy się z żadną usługą zewnętrzną. Obraz z zakupami tworzy z danych, które już są w Twojej witrynie: samego wpisu lookbooka (własny typ treści <code>lookbook</code>), jego obrazka wyróżniającego z biblioteki mediów, punktów aktywnych zapisanych w metadanych wpisu <code>_lookbook_hotspots</code> oraz opcji wyglądu zapisanych w opcji <code>lookbook_settings</code>. Nazwy produktów, ceny, miniaturki i linki dodania do koszyka są odczytywane na bieżąco z Twojego sklepu WooCommerce. Żadne dane o produktach, klientach ani zamówieniach nie są wysyłane poza witrynę, a wtyczka nie ładuje zewnętrznych czcionek, skryptów ani narzędzi analitycznych."
-
-#. Found in description header.
-msgid "Translations"
-msgstr "Tłumaczenia"
-
-#. Found in description paragraph.
-msgid "Lookwick is fully translatable and ships the <code>lookwick.pot</code> template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files."
-msgstr "Lookwick można w pełni przetłumaczyć i zawiera szablon <code>lookwick.pot</code>. Tłumaczenia są dostarczane w pakietach językowych WordPress.org z translate.wordpress.org, gdzie powstają tłumaczenia polskie, niemieckie i hiszpańskie; sama paczka nie zawiera skompilowanych plików tłumaczeń."
+msgid ""
+"A shoppable lookbook on the storefront with product hotspots and an open "
+"product card."
+msgstr ""
+"Zakupowy lookbook w sklepie z punktami aktywnymi produktów i otwartą kartą "
+"produktu."
 
 #. Found in changelog list item.
-msgid "The upgrade notice's \"Coming soon\" and \"Get notified\" labels are English source strings for every language; Polish sites used to get their own Polish source text, which translators in other languages then saw untranslated."
-msgstr "Etykiety \"Coming soon\" i \"Get notified\" w komunikacie o wersji PRO są angielskimi tekstami źródłowymi dla wszystkich języków; wcześniej polskie witryny dostawały własny polski tekst źródłowy, który tłumacze innych języków widzieli potem nieprzetłumaczony."
+#, gp-priority: low
+msgid ""
+"Initial release: shoppable lookbooks with an image, product hotspots "
+"positioned by percentage, an accessible product-card popover, and a "
+"<code>[lookbook]</code> shortcode."
+msgstr ""
+"Pierwsze wydanie: zakupowe lookbooki z obrazem, punktami aktywnymi produktów "
+"ustawianymi procentowo, dostępną wyskakującą kartą produktu i krótkim kodem "
+"<code>[lookbook]</code>."
 
 #. Found in changelog list item.
-msgid "Hotspot rows are sanitised the moment they are read from the lookbook editor, before each field is validated."
-msgstr "Wiersze punktów aktywnych są oczyszczane zaraz po odczytaniu z edytora lookbooka, przed walidacją każdego pola."
+#, gp-priority: low
+msgid ""
+"Add <code>lookbook/scenes</code> filter so add-ons can append additional "
+"shoppable images to a lookbook."
+msgstr ""
+"Dodano filtr <code>lookbook/scenes</code>, aby dodatki mogły dołączać do "
+"lookbooka kolejne obrazy z zakupami."
 
 #. Found in changelog list item.
-msgid "Renamed to Lookwick, a plain English name in place of the Esperanto one. The text domain and the plugin folder follow the name; the stored settings, options and every hook are unchanged."
-msgstr "Zmiana nazwy na Lookwick, prostą angielską nazwę w miejsce esperanckiej. Domena tłumaczeń i katalog wtyczki podążają za nazwą; zapisane ustawienia, opcje i wszystkie hooki pozostają bez zmian."
+#, gp-priority: low
+msgid ""
+"Add <code>lookbook/card_image_html</code> filter to allow add-ons to "
+"customize product card gallery/thumbnail output."
+msgstr ""
+"Dodano filtr <code>lookbook/card_image_html</code>, który pozwala dodatkom "
+"dostosować galerię lub miniaturkę na karcie produktu."
 
 #. Found in changelog list item.
-msgid "The sidebar upgrade promo now follows the same dismissal as the banner. Dismissing the banner used to leave a full-height advert on the settings screen for good, which is not what the WordPress.org guideline on upgrade prompts means by used with moderation."
-msgstr "Promocja PRO w panelu bocznym ukrywa się teraz tak samo jak baner. Wcześniej odrzucenie banera zostawiało na ekranie ustawień reklamę na całą wysokość na stałe, a to nie jest umiar, którego wytyczne WordPress.org wymagają od zachęt do zakupu."
+#, gp-priority: low
+msgid ""
+"Add <code>lookbook/admin_hotspot_row_*</code> actions so Pro can extend the "
+"hotspot editor."
+msgstr ""
+"Dodano akcje <code>lookbook/admin_hotspot_row_*</code>, aby wersja Pro mogła "
+"rozszerzać edytor punktów aktywnych."
 
 #. Found in changelog list item.
-msgid "Renamed to Bildaro. The WordPress.org review team asks a plugin name to lead with a distinctive, coined identifier rather than a generic descriptive word. Bildaro is Esperanto for a set of images. The text domain follows the name; the stored data, the settings and every hook are unchanged."
-msgstr "Zmiana nazwy na Bildaro. Zespół recenzentów WordPress.org wymaga, aby nazwa wtyczki zaczynała się od charakterystycznej, wymyślonej nazwy, a nie od ogólnego słowa opisowego. Bildaro to w esperanto zestaw obrazów. Domena tłumaczeń podąża za nazwą; zapisane dane, ustawienia i wszystkie hooki pozostają bez zmian."
+#, gp-priority: low
+msgid ""
+"Add <code>lookbook/sanitize_hotspot</code> filter and pass hotspot context to"
+" <code>lookbook/card_image_html</code> for add-on video markers."
+msgstr ""
+"Dodano filtr <code>lookbook/sanitize_hotspot</code> i przekazywanie kontekstu"
+" punktu aktywnego do <code>lookbook/card_image_html</code> na potrzeby "
+"znaczników wideo w dodatkach."
 
 #. Found in changelog list item.
-msgid "Security (low): the lookbook card image is escaped after the <code>lookbook/card_image_html</code> filter rather than before it. The default image was sanitised on the way into the filter, so whatever a callback returned went to the page unchecked."
-msgstr "Bezpieczeństwo (niskie): obraz na karcie lookbooka jest escapowany po filtrze <code>lookbook/card_image_html</code>, a nie przed nim. Domyślny obraz był oczyszczany przed wejściem do filtra, więc cokolwiek zwrócił callback, trafiało na stronę bez sprawdzenia."
+#, gp-priority: low
+msgid ""
+"Add <code>lookbook/scene_media_html</code> filter and video scene support "
+"(<code>media_type</code>, <code>video_url</code>, <code>video_id</code>) via "
+"<code>lookbook/scenes</code>."
+msgstr ""
+"Dodano filtr <code>lookbook/scene_media_html</code> i obsługę scen wideo "
+"(<code>media_type</code>, <code>video_url</code>, <code>video_id</code>) "
+"przez <code>lookbook/scenes</code>."
 
 #. Found in changelog list item.
-msgid "Fixed: escaping the image through the core post allowlist was stripping <code>srcset</code>, <code>sizes</code> and <code>decoding</code>, so the card served one fixed image size instead of the responsive set WooCommerce built. The allowlist now keeps them, and keeps the <code>video</code> attributes the paid edition's video hotspots use."
-msgstr "Poprawka: escapowanie obrazu przez listę dozwolonych elementów wpisu z rdzenia usuwało <code>srcset</code>, <code>sizes</code> i <code>decoding</code>, więc karta wyświetlała jeden stały rozmiar obrazu zamiast responsywnego zestawu przygotowanego przez WooCommerce. Lista dozwolonych zachowuje je teraz, a także atrybuty <code>video</code> używane przez punkty aktywne z wideo w płatnej wersji."
+#, gp-priority: low
+msgid ""
+"Add hotspot data attributes and a <code>lookbook:hotspot-opened</code> front-"
+"end event for privacy-safe add-on analytics."
+msgstr ""
+"Dodano atrybuty danych punktów aktywnych i zdarzenie front-endowe "
+"<code>lookbook:hotspot-opened</code> na potrzeby analityki w dodatkach, "
+"bezpiecznej dla prywatności."
 
 #. Found in changelog list item.
-msgid "Fixed: the PRO upgrade promo kept selling to people who had already bought the paid edition. Only the banner could be dismissed, so the sidebar promo and the locked feature cards followed a paying customer around for good. The promo now checks whether the paid edition is active and steps aside when it is."
-msgstr "Poprawka: promocja PRO wciąż zachęcała do zakupu osoby, które już kupiły płatną wersję. Odrzucić można było tylko baner, więc promocja w panelu bocznym i zablokowane karty funkcji towarzyszyły płacącemu klientowi na stałe. Promocja sprawdza teraz, czy płatna wersja jest aktywna, i wtedy się nie wyświetla."
+#, gp-priority: low
+msgid ""
+"Fire <code>lookbook/rendered</code> after a lookbook template renders and "
+"expose <code>data-lookbook-id</code> on the root element for add-on "
+"analytics."
+msgstr ""
+"Akcja <code>lookbook/rendered</code> jest wywoływana po wyrenderowaniu "
+"szablonu lookbooka, a element główny otrzymuje atrybut <code>data-lookbook-"
+"id</code> na potrzeby analityki w dodatkach."
 
 #. Found in changelog list item.
-msgid "Fixed: arrow glyphs in the admin menu paths, and in the strings handed to translators. An arrow inside a translatable string makes the glyph every translator's problem and changes the layout in any locale that drops it."
-msgstr "Poprawka: znaki strzałek w ścieżkach menu administracyjnego i w tekstach przekazywanych tłumaczom. Strzałka w tekście do przetłumaczenia sprawia, że ten znak staje się problemem każdego tłumacza, i zmienia układ w każdym języku, który go pomija."
+#, gp-priority: low
+msgid ""
+"Renamed to Plogins Lookbook for WooCommerce for a more distinctive plugin "
+"name."
+msgstr ""
+"Zmiana nazwy na Plogins Lookbook for WooCommerce, aby nazwa wtyczki była "
+"bardziej charakterystyczna."
 
 #. Found in changelog list item.
-msgid "Fixed: deleting the plugin left the per-user \"dismiss\" flag from the PRO notice in the database. Uninstall now removes it for every user, not just the one who dismissed it."
-msgstr "Poprawka: usunięcie wtyczki zostawiało w bazie danych flagę \"dismiss\" powiadomienia PRO zapisaną dla użytkownika. Deinstalacja usuwa ją teraz dla wszystkich użytkowników, a nie tylko dla tego, który odrzucił powiadomienie."
-
-#. Found in changelog list item.
-msgid "The translation template was regenerated. It still named an older version of the plugin and pointed at source lines that had since moved, which is what translation tools read to show a string in context."
-msgstr "Ponownie wygenerowano szablon tłumaczeń. Wciąż wskazywał starszą wersję wtyczki i odwoływał się do linii kodu, które zdążyły się przesunąć, a to z nich narzędzia tłumaczeniowe pokazują kontekst tekstu."
-
-#. Found in changelog list item.
-msgid "Renamed to Plogins Lookbook - Shoppable Lookbook for WooCommerce so the name leads with the brand rather than a generic word, which is what the WordPress.org plugin review team asks for. The plugin slug is unchanged."
-msgstr "Zmiana nazwy na Plogins Lookbook - Shoppable Lookbook for WooCommerce, aby nazwa zaczynała się od marki, a nie od ogólnego słowa, czego wymaga zespół recenzentów wtyczek WordPress.org. Uproszczona nazwa (slug) wtyczki pozostaje bez zmian."
-
-#. Found in changelog list item.
-msgid "Tested against WordPress 7.1. Verified by activating this build on a clean 7.1 install with WooCommerce 11.1, not by editing the header."
-msgstr "Przetestowano z WordPress 7.1. Sprawdzone przez aktywację tej wersji na czystej instalacji 7.1 z WooCommerce 11.1, a nie przez edycję nagłówka."
-
-#. Found in changelog list item.
-msgid "Fixed the PRO promo on the settings screen quoting a price in PLN. PRO is priced and charged in EUR, so an admin on a Polish site was shown a zloty amount and then billed in euro, and the zloty figure was a fixed conversion that drifted from the real charge as the rate moved. The promo now shows the euro price that is actually taken."
-msgstr "Poprawka: promocja PRO na ekranie ustawień podawała cenę w PLN. PRO jest wyceniane i rozliczane w EUR, więc administrator polskiej witryny widział kwotę w złotych, a płacił w euro, przy czym kwota w złotych była stałym przeliczeniem, które rozjeżdżało się z rzeczywistą opłatą wraz ze zmianą kursu. Promocja pokazuje teraz cenę w euro, która jest faktycznie pobierana."
-
-#. Found in changelog list item.
-msgid "Translations: completed Polish, German and Spanish for the PRO upgrade panel."
-msgstr "Tłumaczenia: uzupełniono tłumaczenia polskie, niemieckie i hiszpańskie panelu PRO."
-
-#. Found in changelog list item.
-msgid "Fixed low-contrast admin headings under an OS dark-mode preference."
-msgstr "Poprawka: mało kontrastowe nagłówki w panelu administracyjnym przy ciemnym motywie systemu."
-
-#. Found in changelog list item.
-msgid "Added bundled Polish, German and Spanish translations for the plugin interface."
-msgstr "Dodano dołączone tłumaczenia interfejsu wtyczki na polski, niemiecki i hiszpański."
-
-#. Found in changelog list item.
+#, gp-priority: low
 msgid "First stable release."
 msgstr "Pierwsze stabilne wydanie."
 
 #. Found in changelog list item.
-msgid "Renamed to Plogins Lookbook for WooCommerce for a more distinctive plugin name."
-msgstr "Zmiana nazwy na Plogins Lookbook for WooCommerce, aby nazwa wtyczki była bardziej charakterystyczna."
+#, gp-priority: low
+msgid ""
+"Added bundled Polish, German and Spanish translations for the plugin "
+"interface."
+msgstr ""
+"Dodano dołączone tłumaczenia interfejsu wtyczki na polski, niemiecki i "
+"hiszpański."
 
 #. Found in changelog list item.
-msgid "Fire <code>lookbook/rendered</code> after a lookbook template renders and expose <code>data-lookbook-id</code> on the root element for add-on analytics."
-msgstr "Akcja <code>lookbook/rendered</code> jest wywoływana po wyrenderowaniu szablonu lookbooka, a element główny otrzymuje atrybut <code>data-lookbook-id</code> na potrzeby analityki w dodatkach."
+#, gp-priority: low
+msgid "Fixed low-contrast admin headings under an OS dark-mode preference."
+msgstr ""
+"Poprawka: mało kontrastowe nagłówki w panelu administracyjnym przy ciemnym "
+"motywie systemu."
 
 #. Found in changelog list item.
-msgid "Add hotspot data attributes and a <code>lookbook:hotspot-opened</code> front-end event for privacy-safe add-on analytics."
-msgstr "Dodano atrybuty danych punktów aktywnych i zdarzenie front-endowe <code>lookbook:hotspot-opened</code> na potrzeby analityki w dodatkach, bezpiecznej dla prywatności."
+#, gp-priority: low
+msgid ""
+"Translations: completed Polish, German and Spanish for the PRO upgrade panel."
+msgstr ""
+"Tłumaczenia: uzupełniono tłumaczenia polskie, niemieckie i hiszpańskie panelu"
+" PRO."
 
 #. Found in changelog list item.
-msgid "Add <code>lookbook/scene_media_html</code> filter and video scene support (<code>media_type</code>, <code>video_url</code>, <code>video_id</code>) via <code>lookbook/scenes</code>."
-msgstr "Dodano filtr <code>lookbook/scene_media_html</code> i obsługę scen wideo (<code>media_type</code>, <code>video_url</code>, <code>video_id</code>) przez <code>lookbook/scenes</code>."
+#, gp-priority: low
+msgid ""
+"Fixed the PRO promo on the settings screen quoting a price in PLN. PRO is "
+"priced and charged in EUR, so an admin on a Polish site was shown a zloty "
+"amount and then billed in euro, and the zloty figure was a fixed conversion "
+"that drifted from the real charge as the rate moved. The promo now shows the "
+"euro price that is actually taken."
+msgstr ""
+"Poprawka: promocja PRO na ekranie ustawień podawała cenę w PLN. PRO jest "
+"wyceniane i rozliczane w EUR, więc administrator polskiej witryny widział "
+"kwotę w złotych, a płacił w euro, przy czym kwota w złotych była stałym "
+"przeliczeniem, które rozjeżdżało się z rzeczywistą opłatą wraz ze zmianą "
+"kursu. Promocja pokazuje teraz cenę w euro, która jest faktycznie pobierana."
 
 #. Found in changelog list item.
-msgid "Add <code>lookbook/sanitize_hotspot</code> filter and pass hotspot context to <code>lookbook/card_image_html</code> for add-on video markers."
-msgstr "Dodano filtr <code>lookbook/sanitize_hotspot</code> i przekazywanie kontekstu punktu aktywnego do <code>lookbook/card_image_html</code> na potrzeby znaczników wideo w dodatkach."
+#, gp-priority: low
+msgid ""
+"Tested against WordPress 7.1. Verified by activating this build on a clean "
+"7.1 install with WooCommerce 11.1, not by editing the header."
+msgstr ""
+"Przetestowano z WordPress 7.1. Sprawdzone przez aktywację tej wersji na "
+"czystej instalacji 7.1 z WooCommerce 11.1, a nie przez edycję nagłówka."
 
 #. Found in changelog list item.
-msgid "Add <code>lookbook/admin_hotspot_row_*</code> actions so Pro can extend the hotspot editor."
-msgstr "Dodano akcje <code>lookbook/admin_hotspot_row_*</code>, aby wersja Pro mogła rozszerzać edytor punktów aktywnych."
+#, gp-priority: low
+msgid ""
+"Renamed to Plogins Lookbook - Shoppable Lookbook for WooCommerce so the name "
+"leads with the brand rather than a generic word, which is what the "
+"WordPress.org plugin review team asks for. The plugin slug is unchanged."
+msgstr ""
+"Zmiana nazwy na Plogins Lookbook - Shoppable Lookbook for WooCommerce, aby "
+"nazwa zaczynała się od marki, a nie od ogólnego słowa, czego wymaga zespół "
+"recenzentów wtyczek WordPress.org. Uproszczona nazwa (slug) wtyczki pozostaje"
+" bez zmian."
 
 #. Found in changelog list item.
-msgid "Add <code>lookbook/card_image_html</code> filter to allow add-ons to customize product card gallery/thumbnail output."
-msgstr "Dodano filtr <code>lookbook/card_image_html</code>, który pozwala dodatkom dostosować galerię lub miniaturkę na karcie produktu."
+#, gp-priority: low
+msgid ""
+"The translation template was regenerated. It still named an older version of "
+"the plugin and pointed at source lines that had since moved, which is what "
+"translation tools read to show a string in context."
+msgstr ""
+"Ponownie wygenerowano szablon tłumaczeń. Wciąż wskazywał starszą wersję "
+"wtyczki i odwoływał się do linii kodu, które zdążyły się przesunąć, a to z "
+"nich narzędzia tłumaczeniowe pokazują kontekst tekstu."
 
 #. Found in changelog list item.
-msgid "Add <code>lookbook/scenes</code> filter so add-ons can append additional shoppable images to a lookbook."
-msgstr "Dodano filtr <code>lookbook/scenes</code>, aby dodatki mogły dołączać do lookbooka kolejne obrazy z zakupami."
+#, gp-priority: low
+msgid ""
+"Fixed: deleting the plugin left the per-user \"dismiss\" flag from the PRO "
+"notice in the database. Uninstall now removes it for every user, not just the"
+" one who dismissed it."
+msgstr ""
+"Poprawka: usunięcie wtyczki zostawiało w bazie danych flagę \"dismiss\" "
+"powiadomienia PRO zapisaną dla użytkownika. Deinstalacja usuwa ją teraz dla "
+"wszystkich użytkowników, a nie tylko dla tego, który odrzucił powiadomienie."
 
 #. Found in changelog list item.
-msgid "Initial release: shoppable lookbooks with an image, product hotspots positioned by percentage, an accessible product-card popover, and a <code>[lookbook]</code> shortcode."
-msgstr "Pierwsze wydanie: zakupowe lookbooki z obrazem, punktami aktywnymi produktów ustawianymi procentowo, dostępną wyskakującą kartą produktu i krótkim kodem <code>[lookbook]</code>."
+#, gp-priority: low
+msgid ""
+"Fixed: arrow glyphs in the admin menu paths, and in the strings handed to "
+"translators. An arrow inside a translatable string makes the glyph every "
+"translator's problem and changes the layout in any locale that drops it."
+msgstr ""
+"Poprawka: znaki strzałek w ścieżkach menu administracyjnego i w tekstach "
+"przekazywanych tłumaczom. Strzałka w tekście do przetłumaczenia sprawia, że "
+"ten znak staje się problemem każdego tłumacza, i zmienia układ w każdym "
+"języku, który go pomija."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid ""
+"Fixed: the PRO upgrade promo kept selling to people who had already bought "
+"the paid edition. Only the banner could be dismissed, so the sidebar promo "
+"and the locked feature cards followed a paying customer around for good. The "
+"promo now checks whether the paid edition is active and steps aside when it "
+"is."
+msgstr ""
+"Poprawka: promocja PRO wciąż zachęcała do zakupu osoby, które już kupiły "
+"płatną wersję. Odrzucić można było tylko baner, więc promocja w panelu "
+"bocznym i zablokowane karty funkcji towarzyszyły płacącemu klientowi na "
+"stałe. Promocja sprawdza teraz, czy płatna wersja jest aktywna, i wtedy się "
+"nie wyświetla."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid ""
+"Fixed: escaping the image through the core post allowlist was stripping "
+"<code>srcset</code>, <code>sizes</code> and <code>decoding</code>, so the "
+"card served one fixed image size instead of the responsive set WooCommerce "
+"built. The allowlist now keeps them, and keeps the <code>video</code> "
+"attributes the paid edition's video hotspots use."
+msgstr ""
+"Poprawka: escapowanie obrazu przez listę dozwolonych elementów wpisu z "
+"rdzenia usuwało <code>srcset</code>, <code>sizes</code> i "
+"<code>decoding</code>, więc karta wyświetlała jeden stały rozmiar obrazu "
+"zamiast responsywnego zestawu przygotowanego przez WooCommerce. Lista "
+"dozwolonych zachowuje je teraz, a także atrybuty <code>video</code> używane "
+"przez punkty aktywne z wideo w płatnej wersji."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid ""
+"Security (low): the lookbook card image is escaped after the "
+"<code>lookbook/card_image_html</code> filter rather than before it. The "
+"default image was sanitised on the way into the filter, so whatever a "
+"callback returned went to the page unchecked."
+msgstr ""
+"Bezpieczeństwo (niskie): obraz na karcie lookbooka jest escapowany po filtrze"
+" <code>lookbook/card_image_html</code>, a nie przed nim. Domyślny obraz był "
+"oczyszczany przed wejściem do filtra, więc cokolwiek zwrócił callback, "
+"trafiało na stronę bez sprawdzenia."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid ""
+"Renamed to Bildaro. The WordPress.org review team asks a plugin name to lead "
+"with a distinctive, coined identifier rather than a generic descriptive word."
+" Bildaro is Esperanto for a set of images. The text domain follows the name; "
+"the stored data, the settings and every hook are unchanged."
+msgstr ""
+"Zmiana nazwy na Bildaro. Zespół recenzentów WordPress.org wymaga, aby nazwa "
+"wtyczki zaczynała się od charakterystycznej, wymyślonej nazwy, a nie od "
+"ogólnego słowa opisowego. Bildaro to w esperanto zestaw obrazów. Domena "
+"tłumaczeń podąża za nazwą; zapisane dane, ustawienia i wszystkie hooki "
+"pozostają bez zmian."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid ""
+"The sidebar upgrade promo now follows the same dismissal as the banner. "
+"Dismissing the banner used to leave a full-height advert on the settings "
+"screen for good, which is not what the WordPress.org guideline on upgrade "
+"prompts means by used with moderation."
+msgstr ""
+"Promocja PRO w panelu bocznym ukrywa się teraz tak samo jak baner. Wcześniej "
+"odrzucenie banera zostawiało na ekranie ustawień reklamę na całą wysokość na "
+"stałe, a to nie jest umiar, którego wytyczne WordPress.org wymagają od zachęt"
+" do zakupu."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid ""
+"Renamed to Lookwick, a plain English name in place of the Esperanto one. The "
+"text domain and the plugin folder follow the name; the stored settings, "
+"options and every hook are unchanged."
+msgstr ""
+"Zmiana nazwy na Lookwick, prostą angielską nazwę w miejsce esperanckiej. "
+"Domena tłumaczeń i katalog wtyczki podążają za nazwą; zapisane ustawienia, "
+"opcje i wszystkie hooki pozostają bez zmian."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid ""
+"Hotspot rows are sanitised the moment they are read from the lookbook editor,"
+" before each field is validated."
+msgstr ""
+"Wiersze punktów aktywnych są oczyszczane zaraz po odczytaniu z edytora "
+"lookbooka, przed walidacją każdego pola."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid ""
+"The upgrade notice's \"Coming soon\" and \"Get notified\" labels are English "
+"source strings for every language; Polish sites used to get their own Polish "
+"source text, which translators in other languages then saw untranslated."
+msgstr ""
+"Etykiety \"Coming soon\" i \"Get notified\" w komunikacie o wersji PRO są "
+"angielskimi tekstami źródłowymi dla wszystkich języków; wcześniej polskie "
+"witryny dostawały własny polski tekst źródłowy, który tłumacze innych języków"
+" widzieli potem nieprzetłumaczony."
