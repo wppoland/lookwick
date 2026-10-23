@@ -5,7 +5,7 @@ Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
 Requires Plugins: woocommerce
-Stable tag: 1.3.1
+Stable tag: 1.3.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -120,6 +120,10 @@ Lookwick does not connect to any external service. It builds the shoppable image
 Lookwick is fully translatable and ships the `lookwick.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.3.2 =
+* Fix: with Twenty Twenty-Five and other block themes the Add to cart button in a hotspot card collapsed into an underlined line over the price. The card now resets the line height it inherited from the image stage, and the button gets an outlined fallback style when the theme has no button styles of its own. Storefront and other classic themes keep their own button look.
+* Fix: the product search fields in the hotspot editor rows now all have the same width instead of each sizing to its content.
 
 = 1.3.1 =
 * Fix: with a block theme (Twenty Twenty-Five and other site-editor themes) the lookbook loaded without its stylesheet and script, so the hotspots showed as a plain numbered list under the image. The assets now load whenever a lookbook renders.

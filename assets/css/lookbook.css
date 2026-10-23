@@ -188,6 +188,10 @@
 	background: var( --lookbook-card-bg );
 	color: var( --lookbook-card-fg );
 	box-shadow: var( --lookbook-shadow );
+	/* The stage sets line-height: 0 to drop the gap under the photo; the card
+	 * lives inside it, so without this reset its price and button collapse to
+	 * zero-height lines. */
+	line-height: 1.5;
 	/* The pin point lives at the top: the tag hangs from it. */
 	transform-origin: top center;
 	/* Popover positioning is refined by the script; this is the closed state. */
@@ -264,6 +268,18 @@
 	width: 100%;
 	text-align: center;
 	box-sizing: border-box;
+	text-decoration: none;
+}
+
+/* Fallback button for themes that give .button no styles of their own (block
+ * themes such as Twenty Twenty-Five), where the CTA would otherwise render as
+ * bare underlined text. Zero specificity, so a theme's .button rules (Storefront)
+ * still win. */
+:where( .lookbook__card-cta ) {
+	padding: 9px 16px;
+	border: 1px solid var( --lookbook-card-border );
+	border-radius: 6px;
+	font-weight: 600;
 }
 
 @media ( prefers-reduced-motion: reduce ) {
