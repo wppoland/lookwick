@@ -187,10 +187,21 @@ $active = $sceneIndex === 0;
                             <?php endif; ?>
 
                             <?php if ($showAddToCart && $product->is_purchasable() && $product->is_in_stock()) : ?>
+                                <?php
+                                // Simple products add to the cart in place through WooCommerce's own
+                                // add-to-cart script, the same switch that drives the shop loop
+                                // buttons. The href stays as the no-JS fallback; variable products
+                                // keep linking to the product page.
+                                $ajaxAdd = $product->supports('ajax_add_to_cart') && get_option('woocommerce_enable_ajax_add_to_cart') === 'yes';
+                                ?>
                                 <a
-                                    class="lookbook__card-cta button"
+                                    class="lookbook__card-cta button<?php echo $ajaxAdd ? ' add_to_cart_button ajax_add_to_cart' : ''; ?>"
                                     href="<?php echo esc_url($addUrl); ?>"
                                     data-product-id="<?php echo esc_attr((string) $hotspot['product_id']); ?>"
+                                    <?php if ($ajaxAdd) : ?>
+                                        data-product_id="<?php echo esc_attr((string) $product->get_id()); ?>"
+                                        data-quantity="1"
+                                    <?php endif; ?>
                                     rel="nofollow"
                                 >
                                     <?php echo esc_html($ctaLabel); ?>

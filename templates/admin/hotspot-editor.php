@@ -1,12 +1,13 @@
 <?php
 /**
- * Hotspot editor meta box. A simple repeater: each row is an x%, a y% and a
- * product id. The featured image is the canvas; positions are entered as
- * percentages from the top-left.
+ * Hotspot editor meta box. The featured image is the canvas: clicking it adds
+ * a hotspot and the dots on it can be dragged. Each row keeps an x%, a y% and
+ * a product, so the number inputs stay the keyboard and screen reader path.
  *
  * @package Lookbook
  *
  * @var array<int, array{x: float, y: float, product_id: int}> $hotspots Stored hotspots.
+ * @var string                                                 $imageHtml Featured image markup, empty when none is set.
  */
 
 declare(strict_types=1);
@@ -17,7 +18,14 @@ defined('ABSPATH') || exit;
 ?>
 <div class="lookbook-editor" data-lookbook-editor>
     <p class="lookbook-editor__intro">
-        <?php esc_html_e('Set the lookbook image using the Featured image box, then add a hotspot for each product. Position each one with X and Y as a percentage from the top-left of the image (0-100), and enter the product ID to link.', 'lookwick'); ?>
+        <?php esc_html_e('Set the lookbook image using the Featured image box, then click the image where a product appears to add a hotspot there. Drag a dot to move it, or type X and Y as a percentage from the top-left of the image (0-100), and search for the product to link.', 'lookwick'); ?>
+    </p>
+
+    <div class="lookbook-editor__canvas" data-lookbook-canvas<?php echo $imageHtml === '' ? ' hidden' : ''; ?>>
+        <?php echo wp_kses_post($imageHtml); ?>
+    </div>
+    <p class="lookbook-editor__no-image" data-lookbook-no-image<?php echo $imageHtml === '' ? '' : ' hidden'; ?>>
+        <?php esc_html_e('Set a lookbook image in the Featured image box to place hotspots by clicking on it.', 'lookwick'); ?>
     </p>
 
     <div class="lookbook-editor__rows-wrap">
@@ -27,7 +35,7 @@ defined('ABSPATH') || exit;
                         <th scope="col" class="lookbook-editor__col-num"><?php esc_html_e('#', 'lookwick'); ?></th>
                         <th scope="col"><?php esc_html_e('X %', 'lookwick'); ?></th>
                         <th scope="col"><?php esc_html_e('Y %', 'lookwick'); ?></th>
-                        <th scope="col"><?php esc_html_e('Product ID', 'lookwick'); ?></th>
+                        <th scope="col"><?php esc_html_e('Product', 'lookwick'); ?></th>
                         <?php do_action('lookbook/admin_hotspot_row_header'); ?>
                         <th scope="col" class="lookbook-editor__col-actions"><span class="screen-reader-text"><?php esc_html_e('Actions', 'lookwick'); ?></span></th>
                     </tr>
@@ -68,17 +76,29 @@ defined('ABSPATH') || exit;
                                 />
                             </td>
                             <td>
-                                <label class="screen-reader-text" for="lookbook_pid_<?php echo esc_attr((string) $i); ?>"><?php esc_html_e('Product ID', 'lookwick'); ?></label>
-                                <input
-                                    type="number"
+                                <?php
+                                $productId    = (int) $row['product_id'];
+                                $productLabel = '';
+                                if ($productId > 0) {
+                                    $product      = wc_get_product($productId);
+                                    $productLabel = $product instanceof \WC_Product
+                                        ? wp_strip_all_tags($product->get_formatted_name())
+                                        : '#' . $productId;
+                                }
+                                ?>
+                                <label class="screen-reader-text" for="lookbook_pid_<?php echo esc_attr((string) $i); ?>"><?php esc_html_e('Product', 'lookwick'); ?></label>
+                                <select
                                     id="lookbook_pid_<?php echo esc_attr((string) $i); ?>"
                                     name="lookbook_hotspots[<?php echo esc_attr((string) $i); ?>][product_id]"
-                                    value="<?php echo esc_attr((string) ($row['product_id'] ?: '')); ?>"
-                                    min="1"
-                                    step="1"
-                                    class="small-text"
+                                    class="wc-product-search lookbook-editor__product"
+                                    data-placeholder="<?php esc_attr_e('Search for a product', 'lookwick'); ?>"
+                                    data-allow_clear="true"
                                     data-lookbook-pid
-                                />
+                                >
+                                    <?php if ($productId > 0) : ?>
+                                        <option value="<?php echo esc_attr((string) $productId); ?>" selected><?php echo esc_html($productLabel); ?></option>
+                                    <?php endif; ?>
+                                </select>
                             </td>
                             <?php do_action('lookbook/admin_hotspot_row_cells', $i, $row); ?>
                             <td class="lookbook-editor__col-actions">
