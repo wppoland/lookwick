@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Lookwick - Shoppable Lookbook for WooCommerce 1.1.4\n"
+"Project-Id-Version: Lookwick - Shoppable Lookbook for WooCommerce 1.3.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/lookwick\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-05T12:54:44+00:00\n"
+"POT-Creation-Date: 2026-10-23T12:14:47+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: lookwick\n"
@@ -43,11 +43,11 @@ msgstr ""
 msgid "Lookwick - Shoppable Lookbook for WooCommerce requires WooCommerce to be active."
 msgstr ""
 
-#: src/Admin/MetaBox.php:44
+#: src/Admin/MetaBox.php:45
 msgid "Shoppable hotspots"
 msgstr ""
 
-#: src/Admin/MetaBox.php:81
+#: src/Admin/MetaBox.php:86
 msgid "Remove this hotspot?"
 msgstr ""
 
@@ -195,111 +195,130 @@ msgstr ""
 msgid "The ID of the lookbook to display."
 msgstr ""
 
-#: src/PostType.php:34
+#: src/PostType.php:47
+#: src/PostType.php:52
+msgid "Shortcode"
+msgstr ""
+
+#. translators: %s: lookbook title.
+#: src/PostType.php:72
+#, php-format
+msgid "Shortcode for %s"
+msgstr ""
+
+#: src/PostType.php:79
 msgctxt "post type general name"
 msgid "Lookbooks"
 msgstr ""
 
-#: src/PostType.php:35
+#: src/PostType.php:80
 msgctxt "post type singular name"
 msgid "Lookbook"
 msgstr ""
 
-#: src/PostType.php:36
+#: src/PostType.php:81
 msgctxt "admin menu"
 msgid "Lookbooks"
 msgstr ""
 
-#: src/PostType.php:37
+#: src/PostType.php:82
 msgid "Add New"
 msgstr ""
 
-#: src/PostType.php:38
+#: src/PostType.php:83
 msgid "Add New Lookbook"
 msgstr ""
 
-#: src/PostType.php:39
+#: src/PostType.php:84
 msgid "Edit Lookbook"
 msgstr ""
 
-#: src/PostType.php:40
+#: src/PostType.php:85
 msgid "New Lookbook"
 msgstr ""
 
-#: src/PostType.php:41
+#: src/PostType.php:86
 msgid "View Lookbook"
 msgstr ""
 
-#: src/PostType.php:42
+#: src/PostType.php:87
 msgid "Search Lookbooks"
 msgstr ""
 
-#: src/PostType.php:43
+#: src/PostType.php:88
 msgid "No lookbooks found."
 msgstr ""
 
-#: src/PostType.php:44
+#: src/PostType.php:89
 msgid "No lookbooks found in Trash."
 msgstr ""
 
-#: src/PostType.php:45
+#: src/PostType.php:90
 msgid "All Lookbooks"
 msgstr ""
 
-#: src/PostType.php:46
+#: src/PostType.php:91
 msgid "Lookbook image"
 msgstr ""
 
-#: src/PostType.php:47
+#: src/PostType.php:92
 msgid "Set lookbook image"
 msgstr ""
 
-#: src/PostType.php:48
+#: src/PostType.php:93
 msgid "Remove lookbook image"
 msgstr ""
 
-#: src/PostType.php:49
+#: src/PostType.php:94
 msgid "Use as lookbook image"
 msgstr ""
 
-#: templates/admin/hotspot-editor.php:20
-msgid "Set the lookbook image using the Featured image box, then add a hotspot for each product. Position each one with X and Y as a percentage from the top-left of the image (0-100), and enter the product ID to link."
-msgstr ""
-
-#: templates/admin/hotspot-editor.php:27
-msgid "#"
+#: templates/admin/hotspot-editor.php:21
+msgid "Set the lookbook image using the Featured image box, then click the image where a product appears to add a hotspot there. Drag a dot to move it, or type X and Y as a percentage from the top-left of the image (0-100), and search for the product to link."
 msgstr ""
 
 #: templates/admin/hotspot-editor.php:28
+msgid "Set a lookbook image in the Featured image box to place hotspots by clicking on it."
+msgstr ""
+
+#: templates/admin/hotspot-editor.php:35
+msgid "#"
+msgstr ""
+
+#: templates/admin/hotspot-editor.php:36
 msgid "X %"
 msgstr ""
 
-#: templates/admin/hotspot-editor.php:29
+#: templates/admin/hotspot-editor.php:37
 msgid "Y %"
 msgstr ""
 
-#: templates/admin/hotspot-editor.php:30
-#: templates/admin/hotspot-editor.php:71
-msgid "Product ID"
+#: templates/admin/hotspot-editor.php:38
+#: templates/admin/hotspot-editor.php:89
+msgid "Product"
 msgstr ""
 
-#: templates/admin/hotspot-editor.php:32
+#: templates/admin/hotspot-editor.php:40
 msgid "Actions"
 msgstr ""
 
-#: templates/admin/hotspot-editor.php:43
+#: templates/admin/hotspot-editor.php:51
 msgid "X percentage"
 msgstr ""
 
-#: templates/admin/hotspot-editor.php:57
+#: templates/admin/hotspot-editor.php:65
 msgid "Y percentage"
 msgstr ""
 
-#: templates/admin/hotspot-editor.php:86
+#: templates/admin/hotspot-editor.php:94
+msgid "Search for a product"
+msgstr ""
+
+#: templates/admin/hotspot-editor.php:106
 msgid "Remove"
 msgstr ""
 
-#: templates/admin/hotspot-editor.php:96
+#: templates/admin/hotspot-editor.php:116
 msgid "+ Add hotspot"
 msgstr ""
 
@@ -324,6 +343,6 @@ msgstr ""
 msgid "View %s"
 msgstr ""
 
-#: templates/partials/lookbook-stage.php:200
+#: templates/partials/lookbook-stage.php:211
 msgid "View product"
 msgstr ""

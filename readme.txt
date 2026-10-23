@@ -5,7 +5,7 @@ Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
 Requires Plugins: woocommerce
-Stable tag: 1.2.0
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,21 +37,23 @@ The code is developed in the open. Browse it or report a bug at
 
 1. Create a lookbook under the **Lookbooks** menu and set its image with the
    Featured image box.
-2. Add a hotspot for each product: position it with an X and Y percentage and
-   enter the product ID.
-3. Embed it with `[lookbook id="123"]`.
+2. Click the image where a product appears to add a hotspot there, drag the dot
+   to fine-tune it, and search for the product to link.
+3. Copy the shortcode from the Shortcode column of the Lookbooks list.
+4. Embed it with `[lookbook id="123"]`.
 
 = Features =
 
 * Shoppable image: pin any number of products as hotspots on one image.
-* Simple hotspot editor: position each product by X/Y percentage.
+* Visual hotspot editor: click the image to add a hotspot, drag dots to move them, pick products with the WooCommerce product search. X/Y percentage fields stay available for keyboard users.
+* Add to cart without leaving the page: simple products go into the cart from the hotspot card through WooCommerce's own AJAX add to cart, when it is enabled in WooCommerce. Variable products link to the product page.
 * Accessible hotspot markers: real buttons, keyboard operable, with screen-reader labels.
 * Product card popover with thumbnail, title, live price and an add-to-cart link.
-* `[lookbook id="N"]` shortcode, plus a Shoppable Lookbook widget for Elementor that takes the lookbook ID.
+* `[lookbook id="N"]` shortcode, shown ready to copy in the Lookbooks list, plus a Shoppable Lookbook widget for Elementor that takes the lookbook ID.
 * Reads product data live from WooCommerce, so prices and stock are always current.
 * Degrades cleanly: a lookbook with no image, no hotspots, or only deleted products renders nothing or just the image, never broken markup.
 * CSS adapts to light and dark colour schemes and honours prefers-reduced-motion.
-* No layout shift, no jQuery, assets load only where a lookbook appears.
+* No layout shift, no jQuery in the storefront script, assets load only where a lookbook appears.
 * Translation ready (POT included) and clean uninstall.
 * HPOS and cart/checkout blocks compatible.
 
@@ -72,13 +74,15 @@ WooCommerce products.
 
 = How do I find a lookbook's ID? =
 
-Open the Lookbooks list under the Lookbooks menu; the ID is shown when editing
-(post=123 in the URL). Use it in the shortcode.
+Open the Lookbooks list under the Lookbooks menu. The Shortcode column shows each
+lookbook's `[lookbook id="123"]` shortcode, ready to copy and paste.
 
 = How do I position a hotspot? =
 
-Each hotspot has an X and a Y value, both percentages from the top-left of the
-image (0-100), so you can line markers up with the products in the photo.
+Click the lookbook image in the Shoppable hotspots box where the product appears;
+a hotspot is added at that point. Drag its dot to move it. Each hotspot also has
+X and Y fields, both percentages from the top-left of the image (0-100), for
+exact positioning from the keyboard.
 
 = What happens if a pinned product is deleted? =
 
@@ -116,6 +120,12 @@ Lookwick does not connect to any external service. It builds the shoppable image
 Lookwick is fully translatable and ships the `lookwick.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.3.0 =
+* New: visual hotspot editor. The lookbook image is shown in the Shoppable hotspots box; click it to add a hotspot at that point and drag the dots to move them. The X/Y fields stay and follow every move.
+* New: pick the hotspot product with the WooCommerce product search instead of typing its ID. Existing lookbooks keep working; the saved data is unchanged.
+* New: the Add to cart button in a hotspot card adds simple products to the cart in place, using WooCommerce's AJAX add to cart when it is enabled under WooCommerce > Settings > Products. Without JavaScript the button still works as a normal link; variable products still open the product page.
+* New: a Shortcode column on the Lookbooks list shows each lookbook's shortcode, ready to copy.
 
 = 1.2.0 =
 * New: a Shoppable Lookbook widget for Elementor. Drop it on a page and enter the lookbook ID; it renders the same markup as the `[lookbook]` shortcode. The widget loads only when Elementor is active.
