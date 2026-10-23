@@ -89,13 +89,15 @@ final class Renderer implements HasHooks
 
         $hotspots = $this->resolveHotspots($lookbookId);
 
-        // Lazily load assets only when a lookbook actually renders.
-        if (wp_style_is(self::HANDLE, 'registered')) {
-            wp_enqueue_style(self::HANDLE);
+        // Lazily load assets only when a lookbook actually renders. A block
+        // theme renders the page content before wp_head, so before
+        // wp_enqueue_scripts has registered them: register here in that case,
+        // or the lookbook shows unstyled with its hotspots as a plain list.
+        if (! wp_style_is(self::HANDLE, 'registered')) {
+            $this->registerAssets();
         }
-        if (wp_script_is(self::HANDLE, 'registered')) {
-            wp_enqueue_script(self::HANDLE);
-        }
+        wp_enqueue_style(self::HANDLE);
+        wp_enqueue_script(self::HANDLE);
 
         $scenes = $this->resolveScenes($lookbookId, $post, $imageId, $hotspots);
 

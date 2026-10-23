@@ -5,7 +5,7 @@ Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
 Requires Plugins: woocommerce
-Stable tag: 1.3.0
+Stable tag: 1.3.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -120,6 +120,9 @@ Lookwick does not connect to any external service. It builds the shoppable image
 Lookwick is fully translatable and ships the `lookwick.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.3.1 =
+* Fix: with a block theme (Twenty Twenty-Five and other site-editor themes) the lookbook loaded without its stylesheet and script, so the hotspots showed as a plain numbered list under the image. The assets now load whenever a lookbook renders.
 
 = 1.3.0 =
 * New: visual hotspot editor. The lookbook image is shown in the Shoppable hotspots box; click it to add a hotspot at that point and drag the dots to move them. The X/Y fields stay and follow every move.
