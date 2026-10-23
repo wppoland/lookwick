@@ -108,7 +108,7 @@ Yes. This plugin is compatible with WordPress Multisite. Network activate it or 
 == Screenshots ==
 
 1. A shoppable lookbook on the storefront with product hotspots and an open product card.
-2. The hotspot editor on the Edit Lookbook screen.
+2. The hotspot editor: click the image to place a hotspot, drag to adjust, and search for the product.
 3. The Lookwick settings screen under WooCommerce.
 
 == External Services ==
