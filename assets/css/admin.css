@@ -151,3 +151,53 @@
 @media (prefers-reduced-motion: no-preference) {
 	.lookbook-admin .lookbook-pro-banner__cta, .lookbook-admin .lookbook-pro-aside__cta { transition: background-color .15s ease, border-color .15s ease; }
 }
+
+.lookbook-editor__canvas {
+	position: relative;
+	display: inline-block;
+	max-width: 100%;
+	margin: 0 0 12px;
+	line-height: 0;
+	cursor: crosshair;
+	user-select: none;
+}
+
+.lookbook-editor__canvas[hidden] {
+	display: none;
+}
+
+.lookbook-editor__image {
+	display: block;
+	max-width: 100%;
+	max-height: 520px;
+	width: auto;
+	height: auto;
+}
+
+.lookbook-editor__dot {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	width: 26px;
+	height: 26px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	background: #2271b1;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 22px;
+	text-align: center;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+	cursor: grab;
+	touch-action: none;
+}
+
+.lookbook-editor__dot.is-dragging {
+	cursor: grabbing;
+	background: #135e96;
+}
+
+.lookbook-editor__product {
+	width: 100%;
+	min-width: 220px;
+}

@@ -26,6 +26,51 @@ final class PostType implements HasHooks
     public function registerHooks(): void
     {
         add_action('init', [$this, 'register']);
+        add_filter('manage_' . self::POST_TYPE . '_posts_columns', [$this, 'addShortcodeColumn']);
+        add_action('manage_' . self::POST_TYPE . '_posts_custom_column', [$this, 'renderShortcodeColumn'], 10, 2);
+    }
+
+    /**
+     * Add a Shortcode column right after the title on the Lookbooks list.
+     *
+     * @param array<string, string> $columns
+     * @return array<string, string>
+     */
+    public function addShortcodeColumn(array $columns): array
+    {
+        $out = [];
+
+        foreach ($columns as $key => $label) {
+            $out[$key] = $label;
+
+            if ($key === 'title') {
+                $out['lookbook_shortcode'] = __('Shortcode', 'lookwick');
+            }
+        }
+
+        if (! isset($out['lookbook_shortcode'])) {
+            $out['lookbook_shortcode'] = __('Shortcode', 'lookwick');
+        }
+
+        return $out;
+    }
+
+    /**
+     * Print the lookbook's shortcode as a read-only field, ready to copy.
+     */
+    public function renderShortcodeColumn(string $column, int $postId): void
+    {
+        if ($column !== 'lookbook_shortcode') {
+            return;
+        }
+
+        $shortcode = sprintf('[lookbook id="%d"]', $postId);
+
+        printf(
+            '<input type="text" readonly class="code" style="width:100%%;max-width:16em" value="%1$s" aria-label="%2$s" />',
+            esc_attr($shortcode),
+            esc_attr(sprintf(/* translators: %s: lookbook title. */ __('Shortcode for %s', 'lookwick'), get_the_title($postId))),
+        );
     }
 
     public function register(): void
