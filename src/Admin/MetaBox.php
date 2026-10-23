@@ -13,9 +13,10 @@ defined('ABSPATH') || exit;
 /**
  * The hotspot editor meta box shown on the Edit Lookbook screen.
  *
- * The editor is deliberately simple: a repeater where each row is an x%, a
- * y% and a product id. The featured image is the canvas; positions are entered
- * as percentages from the top-left.
+ * Each hotspot row is an x%, a y% and a product picked with the WooCommerce
+ * product search. The featured image is shown as a canvas: a click adds a row
+ * at that point and the dots can be dragged, while the number inputs remain the
+ * keyboard path. The stored meta format is unchanged.
  *
  * All output is escaped; the save handler verifies a nonce and the edit
  * capability, then defers to {@see Repository::sanitizeHotspots()} for shape and
@@ -68,10 +69,14 @@ final class MetaBox implements HasHooks
             \Lookbook\VERSION,
         );
 
+        // WooCommerce registers these on every admin screen but only enqueues them
+        // on its own, so the product search needs both pulled in here.
+        wp_enqueue_style('woocommerce_admin_styles');
+
         wp_enqueue_script(
             'lookbook-editor',
             LOOKBOOK_URL . 'assets/js/editor.js',
-            [],
+            ['wc-enhanced-select'],
             \Lookbook\VERSION,
             ['in_footer' => true, 'strategy' => 'defer'],
         );
@@ -87,8 +92,17 @@ final class MetaBox implements HasHooks
     {
         wp_nonce_field(self::NONCE_ACTION, self::NONCE_NAME);
 
+        $imageId   = (int) get_post_thumbnail_id($post);
+        $imageHtml = $imageId > 0
+            ? wp_get_attachment_image($imageId, 'large', false, [
+                'class' => 'lookbook-editor__image',
+                'alt'   => '',
+            ])
+            : '';
+
         $context = [
-            'hotspots' => $this->repository->hotspots($post->ID),
+            'hotspots'  => $this->repository->hotspots($post->ID),
+            'imageHtml' => $imageHtml,
         ];
 
         $file = LOOKBOOK_DIR . 'templates/admin/hotspot-editor.php';
