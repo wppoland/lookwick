@@ -201,3 +201,13 @@
 	width: 100%;
 	min-width: 220px;
 }
+
+/* selectWoo writes a pixel width inline, measured as each row is enhanced, so
+ * rows enhanced while the table was still growing end up uneven. Every product
+ * search fills its cell instead; inline-size containment keeps a long product
+ * name from widening the table past its box. */
+.lookbook-editor__product + .select2-container {
+	width: 100% !important;
+	min-width: 220px;
+	contain: inline-size;
+}
