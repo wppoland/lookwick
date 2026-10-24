@@ -2,9 +2,10 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Lookbook - Shoppable Image Gallery for WooCommerce 0.1.0\n"
+"Project-Id-Version: Lookbook - Shoppable Image Gallery for WooCommerce "
+"0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/lookwick\n"
-"POT-Creation-Date: 2026-10-05T12:54:44+00:00\n"
+"POT-Creation-Date: 2026-10-23T12:14:47+00:00\n"
 "PO-Revision-Date: 2026-06-15 12:00+0000\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -12,7 +13,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
+"|| n%100>14) ? 1 : 2);\n"
 "X-Domain: lookwick\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
@@ -50,11 +52,11 @@ msgid ""
 msgstr ""
 "Lookwick - zakupowy lookbook dla WooCommerce wymaga aktywnego WooCommerce."
 
-#: src/Admin/MetaBox.php:44
+#: src/Admin/MetaBox.php:45
 msgid "Shoppable hotspots"
 msgstr "Punkty aktywne z zakupami"
 
-#: src/Admin/MetaBox.php:81
+#: src/Admin/MetaBox.php:86
 msgid "Remove this hotspot?"
 msgstr "Usunąć ten punkt aktywny?"
 
@@ -116,8 +118,8 @@ msgstr "Lookwick"
 msgid ""
 "Lookwick turns an image into a shoppable scene: pin products as hotspots, "
 "then embed the lookbook anywhere with a shortcode. Create and edit lookbooks "
-"under the Lookbooks menu; these settings control how every lookbook looks and"
-" behaves on the storefront."
+"under the Lookbooks menu; these settings control how every lookbook looks "
+"and behaves on the storefront."
 msgstr ""
 "Lookwick zamienia obraz w zakupową scenę: przypnij produkty jako punkty "
 "aktywne, a potem osadź lookbook w dowolnym miejscu krótkim kodem. Twórz i "
@@ -219,8 +221,8 @@ msgid ""
 msgstr ""
 "Zastępuje treść linku dodawania do koszyka dla każdego produktu, na przykład "
 "„Dodaj do koszyka”, „Kupuj wygląd” lub „Dodaj do koszyka”. Pozostaw puste, "
-"aby zachować własny tekst przycisku WooCommerce dla każdego produktu. Używane"
-" tylko wtedy, gdy powyższy link dodawania do koszyka jest włączony."
+"aby zachować własny tekst przycisku WooCommerce dla każdego produktu. "
+"Używane tylko wtedy, gdy powyższy link dodawania do koszyka jest włączony."
 
 #: src/Elementor/LookbookWidget.php:42
 msgid "Shoppable Lookbook"
@@ -238,117 +240,134 @@ msgstr "ID lookbooka"
 msgid "The ID of the lookbook to display."
 msgstr "ID lookbooka do wyświetlenia."
 
-#: src/PostType.php:34
+#: src/PostType.php:47 src/PostType.php:52
+msgid "Shortcode"
+msgstr ""
+
+#. translators: %s: lookbook title.
+#: src/PostType.php:72
+#, php-format
+msgid "Shortcode for %s"
+msgstr ""
+
+#: src/PostType.php:79
 msgctxt "post type general name"
 msgid "Lookbooks"
 msgstr "Lookbooki"
 
-#: src/PostType.php:35
+#: src/PostType.php:80
 msgctxt "post type singular name"
 msgid "Lookbook"
 msgstr "Lookbook"
 
-#: src/PostType.php:36
+#: src/PostType.php:81
 msgctxt "admin menu"
 msgid "Lookbooks"
 msgstr "Lookbooki"
 
-#: src/PostType.php:37
+#: src/PostType.php:82
 msgid "Add New"
 msgstr "Dodaj nowy"
 
-#: src/PostType.php:38
+#: src/PostType.php:83
 msgid "Add New Lookbook"
 msgstr "Dodaj nowy lookbook"
 
-#: src/PostType.php:39
+#: src/PostType.php:84
 msgid "Edit Lookbook"
 msgstr "Edytuj lookbook"
 
-#: src/PostType.php:40
+#: src/PostType.php:85
 msgid "New Lookbook"
 msgstr "Nowy lookbook"
 
-#: src/PostType.php:41
+#: src/PostType.php:86
 msgid "View Lookbook"
 msgstr "Zobacz lookbook"
 
-#: src/PostType.php:42
+#: src/PostType.php:87
 msgid "Search Lookbooks"
 msgstr "Szukaj lookbooków"
 
-#: src/PostType.php:43
+#: src/PostType.php:88
 msgid "No lookbooks found."
 msgstr "Nie znaleziono lookbooków."
 
-#: src/PostType.php:44
+#: src/PostType.php:89
 msgid "No lookbooks found in Trash."
 msgstr "Nie znaleziono lookbooków w koszu."
 
-#: src/PostType.php:45
+#: src/PostType.php:90
 msgid "All Lookbooks"
 msgstr "Wszystkie lookbooki"
 
-#: src/PostType.php:46
+#: src/PostType.php:91
 msgid "Lookbook image"
 msgstr "Obraz lookbooka"
 
-#: src/PostType.php:47
+#: src/PostType.php:92
 msgid "Set lookbook image"
 msgstr "Ustaw obraz lookbooka"
 
-#: src/PostType.php:48
+#: src/PostType.php:93
 msgid "Remove lookbook image"
 msgstr "Usuń obraz lookbooka"
 
-#: src/PostType.php:49
+#: src/PostType.php:94
 msgid "Use as lookbook image"
 msgstr "Użyj jako obrazu lookbooka"
 
-#: templates/admin/hotspot-editor.php:20
+#: templates/admin/hotspot-editor.php:21
 msgid ""
-"Set the lookbook image using the Featured image box, then add a hotspot for "
-"each product. Position each one with X and Y as a percentage from the top-"
-"left of the image (0-100), and enter the product ID to link."
+"Set the lookbook image using the Featured image box, then click the image "
+"where a product appears to add a hotspot there. Drag a dot to move it, or "
+"type X and Y as a percentage from the top-left of the image (0-100), and "
+"search for the product to link."
 msgstr ""
-"Ustaw obraz lookbooka za pomocą pola Obrazek wyróżniający, a następnie dodaj "
-"punkt aktywny dla każdego produktu. Ustaw pozycję każdego z nich za pomocą X "
-"i Y jako procentu od lewego górnego rogu obrazu (0-100) i wpisz identyfikator"
-" produktu do powiązania."
 
-#: templates/admin/hotspot-editor.php:27
+#: templates/admin/hotspot-editor.php:28
+msgid ""
+"Set a lookbook image in the Featured image box to place hotspots by clicking "
+"on it."
+msgstr ""
+
+#: templates/admin/hotspot-editor.php:35
 msgid "#"
 msgstr "#"
 
-#: templates/admin/hotspot-editor.php:28
+#: templates/admin/hotspot-editor.php:36
 msgid "X %"
 msgstr "X %"
 
-#: templates/admin/hotspot-editor.php:29
+#: templates/admin/hotspot-editor.php:37
 msgid "Y %"
 msgstr "Y %"
 
-#: templates/admin/hotspot-editor.php:30 templates/admin/hotspot-editor.php:71
-msgid "Product ID"
-msgstr "Identyfikator produktu"
+#: templates/admin/hotspot-editor.php:38 templates/admin/hotspot-editor.php:89
+msgid "Product"
+msgstr ""
 
-#: templates/admin/hotspot-editor.php:32
+#: templates/admin/hotspot-editor.php:40
 msgid "Actions"
 msgstr "Akcje"
 
-#: templates/admin/hotspot-editor.php:43
+#: templates/admin/hotspot-editor.php:51
 msgid "X percentage"
 msgstr "Procent X"
 
-#: templates/admin/hotspot-editor.php:57
+#: templates/admin/hotspot-editor.php:65
 msgid "Y percentage"
 msgstr "Procent Y"
 
-#: templates/admin/hotspot-editor.php:86
+#: templates/admin/hotspot-editor.php:94
+msgid "Search for a product"
+msgstr ""
+
+#: templates/admin/hotspot-editor.php:106
 msgid "Remove"
 msgstr "Usuń"
 
-#: templates/admin/hotspot-editor.php:96
+#: templates/admin/hotspot-editor.php:116
 msgid "+ Add hotspot"
 msgstr "+ Dodaj punkt aktywny"
 
@@ -372,6 +391,19 @@ msgstr "Lookbook z zakupami"
 msgid "View %s"
 msgstr "Zobacz %s"
 
-#: templates/partials/lookbook-stage.php:200
+#: templates/partials/lookbook-stage.php:211
 msgid "View product"
 msgstr "Zobacz produkt"
+
+#~ msgid ""
+#~ "Set the lookbook image using the Featured image box, then add a hotspot "
+#~ "for each product. Position each one with X and Y as a percentage from the "
+#~ "top-left of the image (0-100), and enter the product ID to link."
+#~ msgstr ""
+#~ "Ustaw obraz lookbooka za pomocą pola Obrazek wyróżniający, a następnie "
+#~ "dodaj punkt aktywny dla każdego produktu. Ustaw pozycję każdego z nich za "
+#~ "pomocą X i Y jako procentu od lewego górnego rogu obrazu (0-100) i wpisz "
+#~ "identyfikator produktu do powiązania."
+
+#~ msgid "Product ID"
+#~ msgstr "Identyfikator produktu"
