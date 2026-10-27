@@ -60,13 +60,20 @@ The code is developed in the open. Browse it or report a bug at
 
 == Lookwick Pro ==
 
-Lookwick Pro is a separate paid plugin that works on top of Lookwick. It adds:
+Lookwick Pro is a separate paid plugin that extends Lookwick:
 
-* Marker accent colour
-* Gallery in hotspot cards
-* Multiple images per lookbook
-* Video hotspots
-* Click analytics
+| Feature | Free | Pro |
+|:--- |:---:|:---:|
+| Shoppable image | Yes | Yes |
+| Simple hotspot editor | Yes | Yes |
+| Accessible markers | Yes | Yes |
+| Product card popover | Yes | Yes |
+| Clean uninstall | Yes | Yes |
+| Marker accent colour | - | Yes |
+| Gallery in hotspot cards | - | Yes |
+| Multiple images per lookbook | - | Yes |
+| Video hotspots | - | Yes |
+| Click analytics | - | Yes |
 
 The free edition is not a trial and its features stay available without a time limit.
 
