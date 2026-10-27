@@ -5,7 +5,7 @@ Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
 Requires Plugins: woocommerce
-Stable tag: 1.3.2
+Stable tag: 1.3.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,6 +31,7 @@ The code is developed in the open. Browse it or report a bug at
 * **Plugin page**: [plogins.com/plogins-lookbook/](https://plogins.com/plogins-lookbook/)
 * **Source code**: [github.com/wppoland/plogins-lookbook](https://github.com/wppoland/plogins-lookbook)
 * **Bug reports and feature requests**: [github.com/wppoland/plogins-lookbook/issues](https://github.com/wppoland/plogins-lookbook/issues)
+* **Lookwick Pro**: [plogins.com/plogins-lookbook-pro/](https://plogins.com/plogins-lookbook-pro/)
 
 
 = How it works =
@@ -56,6 +57,22 @@ The code is developed in the open. Browse it or report a bug at
 * No layout shift, no jQuery in the storefront script, assets load only where a lookbook appears.
 * Translation ready (POT included) and clean uninstall.
 * HPOS and cart/checkout blocks compatible.
+
+== Lookwick Pro ==
+
+Lookwick Pro is a separate paid plugin that works on top of Lookwick. It adds:
+
+* Marker accent colour
+* Gallery in hotspot cards
+* Multiple images per lookbook
+* Video hotspots
+* Click analytics
+
+The free edition is not a trial and its features stay available without a time limit.
+
+* **Lookwick Pro** - [plogins.com/plogins-lookbook-pro/](https://plogins.com/plogins-lookbook-pro/)
+* **Compare editions and pricing** - [plogins.com/plogins-lookbook-pro/pricing/](https://plogins.com/plogins-lookbook-pro/pricing/)
+* **PRO documentation** - [plogins.com/plogins-lookbook-pro/docs/](https://plogins.com/plogins-lookbook-pro/docs/)
 
 == Installation ==
 
@@ -120,6 +137,9 @@ Lookwick does not connect to any external service. It builds the shoppable image
 Lookwick is fully translatable and ships the `lookwick.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.3.3 =
+* Readme only: a PRO section with links to the paid edition.
 
 = 1.3.2 =
 * Fix: with Twenty Twenty-Five and other block themes the Add to cart button in a hotspot card collapsed into an underlined line over the price. The card now resets the line height it inherited from the image stage, and the button gets an outlined fallback style when the theme has no button styles of its own. Storefront and other classic themes keep their own button look.
