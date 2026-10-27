@@ -12,6 +12,8 @@ defined('ABSPATH') || exit;
 return [
     'name'       => 'Lookwick Pro',
     'url'        => 'https://plogins.com/plogins-lookbook-pro/pricing/',
+    'campaign'   => 'plogins-lookbook',
+    'locales'    => ['pl', 'de', 'es'],
     'sellable'   => true,
     'price_from' => 19,
     'currency'   => 'EUR',
