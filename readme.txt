@@ -5,7 +5,7 @@ Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
 Requires Plugins: woocommerce
-Stable tag: 1.3.3
+Stable tag: 1.3.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -60,20 +60,23 @@ The code is developed in the open. Browse it or report a bug at
 
 == Lookwick Pro ==
 
-Lookwick Pro is a separate paid plugin that extends Lookwick:
+Lookwick Pro is a separate paid plugin that extends Lookwick.
 
-| Feature | Free | Pro |
-|:--- |:---:|:---:|
-| Shoppable image | Yes | Yes |
-| Simple hotspot editor | Yes | Yes |
-| Accessible markers | Yes | Yes |
-| Product card popover | Yes | Yes |
-| Clean uninstall | Yes | Yes |
-| Marker accent colour | - | Yes |
-| Gallery in hotspot cards | - | Yes |
-| Multiple images per lookbook | - | Yes |
-| Video hotspots | - | Yes |
-| Click analytics | - | Yes |
+Included in Lookwick:
+
+* Shoppable image
+* Simple hotspot editor
+* Accessible markers
+* Product card popover
+* Clean uninstall
+
+Lookwick Pro adds:
+
+* Marker accent colour
+* Gallery in hotspot cards
+* Multiple images per lookbook
+* Video hotspots
+* Click analytics
 
 The free edition is not a trial and its features stay available without a time limit.
 
@@ -144,6 +147,10 @@ Lookwick does not connect to any external service. It builds the shoppable image
 Lookwick is fully translatable and ships the `lookwick.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.3.4 =
+* The Upgrade to PRO links open the pricing page in the admin's language where plogins.com has one, and tell plogins.com which plugin the visit came from (utm_source, utm_medium and utm_campaign in the link). Nothing is sent from your site.
+* Readme: the PRO section lists what the free plugin includes and what the paid edition adds as two lists, which WordPress.org can display (it does not display tables).
 
 = 1.3.3 =
 * Readme only: a PRO section with links to the paid edition.
