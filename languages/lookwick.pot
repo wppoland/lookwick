@@ -21,7 +21,7 @@ msgstr ""
 
 #. Plugin URI of the plugin
 #: lookwick.php
-msgid "https://plogins.com/plogins-lookbook/"
+msgid "https://plogins.com/lookwick/"
 msgstr ""
 
 #. Description of the plugin
