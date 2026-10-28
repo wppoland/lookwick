@@ -24,8 +24,8 @@ msgstr "Lookwick - Lookbook comprable para WooCommerce"
 
 #. Plugin URI of the plugin
 #: lookwick.php
-msgid "https://plogins.com/plogins-lookbook/"
-msgstr "https://plogins.com/plogins-lookbook/"
+msgid "https://plogins.com/lookwick/"
+msgstr "https://plogins.com/lookwick/"
 
 #. Description of the plugin
 #: lookwick.php
