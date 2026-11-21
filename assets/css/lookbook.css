@@ -296,12 +296,28 @@
 	}
 }
 
-@media ( prefers-color-scheme: dark ) {
+/* Dark styling follows the page's color-scheme (set by the theme), not the
+   visitor's OS. Tokens sit in @supports: a custom property is never dropped
+   at parse time, so an unsupported light-dark() would blank every use site. */
+@supports ( color: light-dark( white, black ) ) {
 	.lookbook {
-		--lookbook-card-bg: #1c1814;
-		--lookbook-card-fg: #f6f1e8;
-		--lookbook-card-muted: #c2b6a1;
-		--lookbook-card-border: rgba( 184, 132, 63, 0.78 );
-		--lookbook-pin-ring: rgba( 246, 241, 232, 0.85 );
+		--lookbook-card-bg: light-dark( #14110f, #1c1814 );
+		--lookbook-card-fg: light-dark( #f6f1e8, #f6f1e8 );
+		--lookbook-card-muted: light-dark( #b7ab97, #c2b6a1 );
+		--lookbook-card-border: light-dark( rgba( 184, 132, 63, 0.72 ), rgba( 184, 132, 63, 0.78 ) );
+		--lookbook-pin-ring: light-dark( rgba( 255, 255, 255, 0.92 ), rgba( 246, 241, 232, 0.85 ) );
+	}
+}
+
+/* Browsers without light-dark() keep the previous OS-based dark pass. */
+@supports not ( color: light-dark( white, black ) ) {
+	@media ( prefers-color-scheme: dark ) {
+		.lookbook {
+			--lookbook-card-bg: #1c1814;
+			--lookbook-card-fg: #f6f1e8;
+			--lookbook-card-muted: #c2b6a1;
+			--lookbook-card-border: rgba( 184, 132, 63, 0.78 );
+			--lookbook-pin-ring: rgba( 246, 241, 232, 0.85 );
+		}
 	}
 }
