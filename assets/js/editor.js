@@ -148,7 +148,7 @@
 	}
 
 	function clearProduct( select ) {
-		select.innerHTML = '';
+		select.replaceChildren();
 		if ( window.jQuery ) {
 			window.jQuery( select ).trigger( 'change' );
 		}
@@ -177,7 +177,7 @@
 			select.removeAttribute( 'data-select2-id' );
 			select.removeAttribute( 'aria-hidden' );
 			select.removeAttribute( 'tabindex' );
-			select.innerHTML = '';
+			select.replaceChildren();
 		} );
 		clone.querySelectorAll( 'input' ).forEach( function ( input ) {
 			if ( input.hasAttribute( 'data-lookbook-x' ) ) {
