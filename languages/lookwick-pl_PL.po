@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Lookbook - Shoppable Image Gallery for WooCommerce "
 "0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/lookwick\n"
-"POT-Creation-Date: 2026-10-23T12:14:47+00:00\n"
+"POT-Creation-Date: 2026-11-25T14:32:01+00:00\n"
 "PO-Revision-Date: 2026-06-15 12:00+0000\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -60,61 +60,70 @@ msgstr "Punkty aktywne z zakupami"
 msgid "Remove this hotspot?"
 msgstr "Usunąć ten punkt aktywny?"
 
-#: src/Admin/ProUpsell.php:85
+#: src/Admin/ProUpsell.php:110
 msgid "Coming soon"
 msgstr "Wkrótce"
 
 #. translators: 1: currency symbol, 2: yearly price
-#: src/Admin/ProUpsell.php:91
+#: src/Admin/ProUpsell.php:116
 #, php-format
 msgid "from %1$s%2$d/yr"
 msgstr "od %1$s%2$d/rok"
 
-#: src/Admin/ProUpsell.php:100
+#: src/Admin/ProUpsell.php:125
 msgid "Upgrade to PRO"
 msgstr "Przejdź na PRO"
 
-#: src/Admin/ProUpsell.php:101
+#: src/Admin/ProUpsell.php:126
 msgid "Get notified"
 msgstr "Powiadom mnie"
 
-#: src/Admin/ProUpsell.php:131
+#: src/Admin/ProUpsell.php:156
 msgid "Permission denied."
 msgstr "Brak uprawnień."
 
 #. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:161
+#: src/Admin/ProUpsell.php:186
 #, php-format
 msgid "Do more with %s"
 msgstr "Zrób więcej dzięki %s"
 
-#: src/Admin/ProUpsell.php:168
+#: src/Admin/ProUpsell.php:193
 msgid "Dismiss this notice"
 msgstr "Odrzuć to powiadomienie"
 
-#: src/Admin/ProUpsell.php:190
+#: src/Admin/ProUpsell.php:215
 msgid "Unlock every PRO feature"
 msgstr "Odblokuj wszystkie funkcje PRO"
 
-#: src/Admin/ProUpsell.php:203
+#: src/Admin/ProUpsell.php:228
 msgid "one licence, every PRO feature"
 msgstr "jedna licencja, wszystkie funkcje PRO"
 
 #. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:222
+#: src/Admin/ProUpsell.php:247
 #, php-format
 msgid "What %s adds"
 msgstr "Co dodaje %s"
 
-#: src/Admin/Settings.php:58
+#: src/Admin/Settings.php:59
 msgid "Lookwick: shoppable lookbook"
 msgstr "Lookwick: zakupowy lookbook"
 
-#: src/Admin/Settings.php:59
+#: src/Admin/Settings.php:60
 msgid "Lookwick"
 msgstr "Lookwick"
 
-#: src/Admin/Settings.php:98
+#: src/Admin/Settings.php:77
+msgid "Settings"
+msgstr ""
+
+#: src/Admin/Settings.php:78 src/PostType.php:81
+msgctxt "admin menu"
+msgid "Lookbooks"
+msgstr "Lookbooki"
+
+#: src/Admin/Settings.php:116
 msgid ""
 "Lookwick turns an image into a shoppable scene: pin products as hotspots, "
 "then embed the lookbook anywhere with a shortcode. Create and edit lookbooks "
@@ -127,7 +136,7 @@ msgstr ""
 "lookbook wygląda i zachowuje się w sklepie."
 
 #. translators: %s: the shortcode example.
-#: src/Admin/Settings.php:104
+#: src/Admin/Settings.php:122
 #, php-format
 msgid ""
 "Embed a lookbook with %s (replace 123 with the lookbook ID shown in the "
@@ -136,23 +145,23 @@ msgstr ""
 "Osadź lookbook za pomocą %s (zastąp 123 identyfikatorem lookbooka widocznym "
 "na liście Lookbooki)."
 
-#: src/Admin/Settings.php:115
+#: src/Admin/Settings.php:133
 msgid "General"
 msgstr "Ogólne"
 
-#: src/Admin/Settings.php:117
+#: src/Admin/Settings.php:135
 msgid "The master switch for everything Lookwick puts on your storefront."
 msgstr "Główny przełącznik wszystkiego, co Lookwick wyświetla w Twoim sklepie."
 
-#: src/Admin/Settings.php:123
+#: src/Admin/Settings.php:141
 msgid "Show lookbooks on the storefront"
 msgstr "Pokaż lookbooki na witrynie sklepu"
 
-#: src/Admin/Settings.php:134
+#: src/Admin/Settings.php:152
 msgid "Render your lookbooks where the shortcode appears."
 msgstr "Renderuj swoje lookbooki, w których pojawia się krótki kod."
 
-#: src/Admin/Settings.php:137
+#: src/Admin/Settings.php:155
 msgid ""
 "Turn this off to hide every lookbook at once without deleting anything, the "
 "shortcode outputs nothing and Lookwick loads no CSS or JavaScript on the "
@@ -162,11 +171,11 @@ msgstr ""
 "krótki kod nic nie wyświetla, a Lookwick nie ładuje na stronie żadnego CSS "
 "ani JavaScriptu. Przydatne, gdy dopiero konfigurujesz. Domyślnie włączone."
 
-#: src/Admin/Settings.php:146
+#: src/Admin/Settings.php:164
 msgid "Product card"
 msgstr "Karta produktu"
 
-#: src/Admin/Settings.php:148
+#: src/Admin/Settings.php:166
 msgid ""
 "What a shopper sees in the little card that pops up when they tap a hotspot. "
 "These apply to every lookbook; the product name and image always show."
@@ -174,29 +183,29 @@ msgstr ""
 "Co kupujący widzi na małej karcie, która pojawia się po dotknięciu hotspotu. "
 "Dotyczy to każdego lookbooka; nazwa produktu i zdjęcie są zawsze widoczne."
 
-#: src/Admin/Settings.php:155
+#: src/Admin/Settings.php:173
 msgid "Price"
 msgstr "Cena"
 
-#: src/Admin/Settings.php:156
+#: src/Admin/Settings.php:174
 msgid "Show the product price in the pop-up card."
 msgstr "Pokaż cenę produktu na wyskakującej karcie."
 
-#: src/Admin/Settings.php:157
+#: src/Admin/Settings.php:175
 msgid "Lets shoppers see the cost before they leave the image. On by default."
 msgstr ""
 "Umożliwia kupującym sprawdzenie kosztów, zanim opuszczą obraz. Domyślnie "
 "włączone."
 
-#: src/Admin/Settings.php:162
+#: src/Admin/Settings.php:180
 msgid "Add to cart link"
 msgstr "Link dodawania do koszyka"
 
-#: src/Admin/Settings.php:163
+#: src/Admin/Settings.php:181
 msgid "Show an add-to-cart link in the pop-up card."
 msgstr "Pokaż link do dodania do koszyka na wyskakującej karcie."
 
-#: src/Admin/Settings.php:164
+#: src/Admin/Settings.php:182
 msgid ""
 "Lets shoppers buy straight from the image without opening the product page. "
 "On by default."
@@ -204,15 +213,15 @@ msgstr ""
 "Umożliwia kupującym kupowanie bezpośrednio ze zdjęcia, bez konieczności "
 "otwierania strony produktu. Domyślnie włączone."
 
-#: src/Admin/Settings.php:170
+#: src/Admin/Settings.php:188
 msgid "Add to cart label"
 msgstr "Etykieta dodawania do koszyka"
 
-#: src/Admin/Settings.php:179
+#: src/Admin/Settings.php:197
 msgid "e.g. Add to cart"
 msgstr "np. Dodaj do koszyka"
 
-#: src/Admin/Settings.php:182
+#: src/Admin/Settings.php:200
 msgid ""
 "Overrides the wording on the add-to-cart link for every product, for example "
 "“Add to cart”, “Shop the look”, or “Add to bag”. Leave blank to keep each "
@@ -259,11 +268,6 @@ msgstr "Lookbooki"
 msgctxt "post type singular name"
 msgid "Lookbook"
 msgstr "Lookbook"
-
-#: src/PostType.php:81
-msgctxt "admin menu"
-msgid "Lookbooks"
-msgstr "Lookbooki"
 
 #: src/PostType.php:82
 msgid "Add New"
