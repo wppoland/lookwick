@@ -39,12 +39,8 @@ return [
             'pl' => ['title' => 'Hotspoty na wideo', 'desc' => 'Przypięcie produktów do klatki wideo, nie tylko do nieruchomego obrazu (wdrożone).'],
         ],
         [
-            'en' => ['title' => 'Animation styles (planned)', 'desc' => 'Extra marker and popover animations beyond the three free marker styles.'],
-            'pl' => ['title' => 'Style animacji (planowane)', 'desc' => 'Dodatkowe animacje znaczników i popoverów poza trzema darmowymi stylami.'],
-        ],
-        [
-            'en' => ['title' => 'Click analytics', 'desc' => 'Report on hotspot opens, product-card clicks and image-to-cart conversion (shipped).'],
-            'pl' => ['title' => 'Analityka kliknięć', 'desc' => 'Raporty o otwarciach hotspotów, kliknięciach produktów i konwersji obrazu do koszyka (wdrożone).'],
+            'en' => ['title' => 'Click analytics', 'desc' => 'Report on hotspot opens and product-card clicks, with no personal data (shipped).'],
+            'pl' => ['title' => 'Analityka kliknięć', 'desc' => 'Raporty o otwarciach hotspotów i kliknięciach kart produktów, bez danych osobowych (wdrożone).'],
         ],
     ],
 ];
